@@ -70,3 +70,52 @@ const main_intro_slider = new Swiper('.main-intro__slider', {
         },
     },
 });
+
+const popular_slider = new Swiper('.popular__slider', {
+    direction: 'horizontal',
+    loop: true,
+
+    breakpoints: {
+        769: {
+            slidesPerView: 3,
+            spaceBetween: rem(5),
+        },
+        0: {
+            slidesPerView: 1.3,
+            spaceBetween: rem(2),
+        },
+    },
+
+    pagination: {
+        el: '.popular .slider-nav__pagination-block',
+        type: 'fraction',
+        renderFraction: function (currentClass, totalClass, index, total) {
+            return '<div class="' + currentClass + '">'+ index +'</div>' +
+                '<div class="slider-nav__pagination-separator"></div>' +
+                '<div class="' + totalClass + '">'+ total +'</div>';
+        },
+        formatFractionCurrent: function (number) {
+            if (number < 10) {
+                return '0' + number;
+            } else {
+                return number;
+            }
+        },
+        formatFractionTotal: function (number) {
+            if (number < 10) {
+                return '0' + number;
+            } else {
+                return number;
+            }
+        },
+    },
+
+    navigation: {
+        nextEl: '.popular .next',
+        prevEl: '.popular .prev',
+    },
+
+    autoplay: {
+        delay: 7500,
+    },
+});

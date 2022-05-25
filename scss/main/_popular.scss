@@ -1,0 +1,184 @@
+@import "../param";
+
+.popular {
+  margin-bottom: 16rem;
+
+  &__title-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+  }
+
+  &__title-content {
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 5.2rem;
+    text-transform: uppercase;
+  }
+
+  &__sub-title {
+    font-family: $font-antarctic;
+    font-size: 5.9rem;
+    line-height: 3rem;
+    color: $red;
+  }
+
+  &__slider {
+    margin-bottom: 6rem;
+  }
+
+  &__slide {
+    padding: 3.3rem 2.6rem;
+    border-radius: 100rem 100rem 0 0;
+    background-color: $white;
+  }
+
+  &__author-img {
+    width: 8.5rem;
+    height: 8.5rem;
+    margin: 0 auto 3rem auto;
+    border-radius: 100%;
+    overflow: hidden;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__author-name {
+    display: block;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__data-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    margin-bottom: 3.3rem;
+    border-top: 1px solid rgba(184, 172, 176, 0.6);
+    border-bottom: 1px solid rgba(184, 172, 176, 0.6);
+  }
+
+  &__country {
+    display: flex;
+    align-items: center;
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+
+    > svg {
+      width: 1.7rem;
+      height: 1.7rem;
+      margin-right: 0.6rem;
+    }
+  }
+
+  &__category {
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+  }
+
+  &__qty {
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+  }
+
+  &__image-block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img-box {
+    width: 12.6rem;
+    height: 18.6rem;
+    border-radius: 100rem;
+    overflow: hidden;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .popular {
+    margin-bottom: 26rem;
+
+    &__title-block {
+      display: block;
+      margin-bottom: 10rem;
+    }
+
+    &__title-content {
+      margin-bottom: 8rem;
+    }
+
+    &__title {
+      font-size: 5.6rem;
+    }
+
+    &__sub-title {
+      font-size: 8rem;
+    }
+
+    &__slider {
+      margin-bottom: 12rem;
+      margin-right: -4rem;
+    }
+
+    &__slide {
+      padding: 5rem 3.2rem;
+    }
+
+    &__author-img {
+      width: 13.2rem;
+      height: 13.2rem;
+      margin: 0 auto 3.8rem auto;
+    }
+
+    &__author-name {
+      font-size: 3.8rem;
+    }
+
+    &__data-block {
+      margin-bottom: 4rem;
+    }
+
+    &__country {
+      font-size: 3.2rem;
+
+      > svg {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1rem;
+      }
+    }
+
+    &__category {
+      font-size: 3.2rem;
+    }
+
+    &__qty {
+      font-size: 3.2rem;
+    }
+
+    &__image-block {
+    }
+
+    &__img-box {
+      width: 16.6rem;
+      height: 24.4rem;
+    }
+  }
+}
