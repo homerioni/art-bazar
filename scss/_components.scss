@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: fit-content;
   min-width: 26.6rem;
   height: 7.4rem;
   padding: 0 3.5rem;
@@ -127,17 +128,20 @@
       .slider-nav__pagination-separator {
         position: relative;
         top: -0.5rem;
+        left: 0.5rem;
         width: 6.5rem;
         background-color: #B8ACB0;
         transform: rotate(-40deg);
       }
 
-      .current {
+      .current,
+      .slider-nav__current {
         font-size: 2.8rem;
       }
 
-      .total {
-        margin-left: 3.5rem;
+      .total,
+      .slider-nav__total {
+        margin-left: 4.5rem;
         font-size: 2rem;
         color: $default-color-light;
       }
@@ -169,20 +173,21 @@
       display: flex;
       align-items: center;
 
-      .bullet {
+      .swiper-pagination-bullet {
         width: 0.8rem;
         height: 0.8rem;
+        margin-left: 0 !important;
         border-radius: 100%;
         background-color: $default-color;
         opacity: 0.2;
         cursor: pointer;
 
         &:not(:last-child) {
-          margin-right: 1.3rem;
+          margin-right: 1rem;
         }
       }
 
-      .bullet-active {
+      .swiper-pagination-bullet-active {
         opacity: 1;
       }
     }
@@ -749,11 +754,13 @@
           transform: rotate(-40deg);
         }
 
-        .current {
+        .current,
+        .slider-nav__current {
           font-size: 3.8rem;
         }
 
-        .total {
+        .total,
+        .slider-nav__total {
           margin-left: 6rem;
           font-size: 3.2rem;
         }
@@ -764,7 +771,7 @@
       }
 
       &--circle {
-        .bullet {
+        .swiper-pagination-bullet {
           width: 1.6rem;
           height: 1.6rem;
 
@@ -773,7 +780,7 @@
           }
         }
 
-        .bullet-active {
+        .swiper-pagination-bullet-active {
         }
       }
     }
