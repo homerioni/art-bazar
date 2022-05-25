@@ -1,0 +1,171 @@
+@import "param";
+
+.header {
+  padding: 2.5rem 0;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__burger {
+  }
+
+  &__logo {
+    display: block;
+    width: 19.1rem;
+    height: 4.8rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu-item {
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+  }
+
+  &__menu-link {
+    font-family: $font-raleway;
+    font-size: 1.4rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    &:not(:last-child) {
+      margin-right: 2.5rem;
+    }
+
+    > svg {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .header {
+    padding: 3rem 0;
+
+    &__container {
+    }
+
+    &__burger {
+      order: 1;
+      position: relative;
+      display: block;
+      width: 6.4rem;
+      height: 4.4rem;
+
+      > span {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: $default-color;
+        opacity: 1;
+        transition: 0.2s ease opacity;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: $default-color;
+        transition: 0.3s ease transform;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: $default-color;
+        transition: 0.3s ease transform;
+      }
+
+      &.active {
+        > span {
+          opacity: 0;
+        }
+
+        &:before {
+          transform: translate(0, 2.1rem) rotate(45deg);
+        }
+
+        &:after {
+          transform: translate(0, -2.1rem) rotate(-45deg);
+        }
+      }
+    }
+
+    &__logo {
+      order: 3;
+      width: 21.8rem;
+      height: 13.4rem;
+      margin: 0 5rem;
+    }
+
+    &__menu {
+      // not change
+    }
+
+    &__menu-item {
+      // not change
+    }
+
+    &__menu-link {
+      // not change
+    }
+
+    &__buttons {
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &__button {
+      &--search {
+        order: 2;
+      }
+
+      &--personal {
+        order: 4;
+      }
+
+      &--cart {
+        order: 5;
+      }
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+
+      > svg {
+        width: 5.4rem;
+        height: 5.4rem;
+      }
+    }
+  }
+}
