@@ -165,6 +165,6 @@ const category_paint_slider = new Swiper('.category-paint__slider', {
     },
 
     autoplay: {
-        delay: 7500,
+        delay: 5000,
     },
 });

@@ -1757,6 +1757,306 @@ input[type=number] {
     height: 28rem;
   }
 }
+.country {
+  margin-bottom: 19rem;
+}
+.country__title {
+  margin-bottom: 2rem;
+  font-weight: bold;
+  font-size: 5.2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.country__link-more {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 6rem;
+}
+.country__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.country__item {
+  -webkit-box-flex: 33.333%;
+      -ms-flex: 33.333%;
+          flex: 33.333%;
+  position: relative;
+  max-width: 45.5rem;
+  height: 50.1rem;
+  overflow: hidden;
+}
+.country__item:nth-child(3n+2) {
+  margin: 0 auto;
+}
+.country__item:nth-child(n+4) {
+  margin-top: 5rem;
+}
+.country__item--one {
+  background-color: #FCF7F7;
+}
+.country__item--one .country__item-bg {
+  color: #A83248;
+}
+.country__item--one .country__img-box {
+  position: absolute;
+  left: 10rem;
+  top: 5rem;
+  width: 30.8rem;
+  height: 26.5rem;
+}
+.country__item--one .country__img {
+  width: 70%;
+  height: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.country__item--two {
+  background-color: #353535;
+}
+.country__item--two .country__item-bg {
+  color: #545554;
+}
+.country__item--two .country__item-bg > div:first-child {
+  left: 14.5rem;
+  top: -1.6rem;
+}
+.country__item--two .country__item-bg > div:last-child {
+  left: auto;
+  right: -48.5rem;
+  top: 11rem;
+  text-align: right;
+}
+.country__item--two .country__item-bg > div:last-child > div:nth-child(2) {
+  margin-left: 0;
+  margin-right: 15rem;
+}
+.country__item--two .country__item-bg > div:last-child > div:nth-child(3) {
+  margin-left: 0;
+}
+.country__item--two .country__img-box {
+  position: absolute;
+  left: 13rem;
+  top: 11.5rem;
+  width: 27.5rem;
+  height: 27.5rem;
+}
+.country__item--two .country__img {
+  width: 90%;
+  height: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.country__item--two .country__item-sub-title {
+  color: #686868;
+}
+.country__item--two .country__item-name {
+  color: #fff;
+}
+.country__item--three {
+  background-color: #FCF7F7;
+}
+.country__item--three .country__item-bg {
+  color: #745858;
+}
+.country__item--three .country__img-box {
+  position: absolute;
+  left: 5rem;
+  top: 5rem;
+  width: 39.6rem;
+  height: 26.4rem;
+}
+.country__item--three .country__img {
+  width: 55%;
+  height: 55%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.country__item-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 10rem;
+  line-height: 10rem;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.country__item-bg > div:first-child {
+  position: absolute;
+  right: -28rem;
+  top: -1rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.country__item-bg > div:last-child {
+  position: absolute;
+  left: 2.5rem;
+  top: 11rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.country__item-bg > div:last-child > div:nth-child(2) {
+  margin-left: 1rem;
+}
+.country__item-bg > div:last-child > div:nth-child(3) {
+  margin-left: 15rem;
+}
+.country__item-content {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 100%;
+}
+.country__img-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.country__img-border {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.country__text-block {
+  padding: 3.5rem 5rem;
+}
+.country__item-sub-title {
+  margin-bottom: 0.5rem;
+  font-family: "Raleway";
+  font-size: 1.7rem;
+  color: #89767D;
+}
+.country__item-name {
+  font-weight: bold;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 48em) {
+  .country {
+    margin-bottom: 26rem;
+  }
+  .country__title {
+    width: 65rem;
+    margin-bottom: 3rem;
+    font-size: 5.6rem;
+    text-align: left;
+  }
+  .country__link-more {
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+    margin-bottom: 10rem;
+  }
+  .country__link-more > span {
+    font-size: 2.8rem;
+  }
+  .country__item {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: none;
+    height: 80rem;
+  }
+  .country__item:nth-child(n+2) {
+    margin-top: 8rem;
+  }
+  .country__item--one .country__img-box {
+    left: 15rem;
+    top: 6rem;
+    width: 53.4rem;
+    height: 46rem;
+  }
+  .country__item--two .country__item-bg > div:first-child {
+    left: 24rem;
+    top: -6rem;
+  }
+  .country__item--two .country__item-bg > div:last-child {
+    right: -75rem;
+    top: 11rem;
+  }
+  .country__item--two .country__item-bg > div:last-child > div:nth-child(2) {
+    margin-left: 0;
+    margin-right: 15rem;
+  }
+  .country__item--two .country__item-bg > div:last-child > div:nth-child(3) {
+    margin-left: 0;
+    margin-right: 55rem;
+  }
+  .country__item--two .country__img-box {
+    left: 23rem;
+    top: 12rem;
+    width: 43.2rem;
+    height: 43.2rem;
+  }
+  .country__item--three .country__img-box {
+    left: 10rem;
+    top: 8.5rem;
+    width: 65rem;
+    height: 43.4rem;
+  }
+  .country__item-bg {
+    font-size: 16rem;
+    line-height: 16rem;
+  }
+  .country__item-bg > div:first-child {
+    right: -40rem;
+    top: -3rem;
+  }
+  .country__item-bg > div:last-child {
+    left: 4rem;
+    top: 15.4rem;
+  }
+  .country__item-bg > div:last-child > div:nth-child(2) {
+    margin-left: 2rem;
+  }
+  .country__item-bg > div:last-child > div:nth-child(3) {
+    margin-left: 25rem;
+  }
+  .country__text-block {
+    padding: 4.4rem 5rem;
+  }
+  .country__item-sub-title {
+    margin-bottom: 1.4rem;
+    font-size: 3.2rem;
+  }
+  .country__item-name {
+    font-size: 3.8rem;
+  }
+}
 body.lock {
   overflow: hidden;
 }
