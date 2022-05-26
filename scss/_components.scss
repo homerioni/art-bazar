@@ -557,9 +557,14 @@
     background-color: $pale-pink;
   }
 
-  &__image-block {
+  &__picture-block {
     flex: none;
     width: 33.7rem;
+  }
+
+  &__image-block {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   &__img-box {
@@ -567,6 +572,23 @@
     height: 24.4rem;
     border-radius: 100rem 100rem 0 0;
     overflow: hidden;
+
+    &:first-child {
+      flex: 100%;
+    }
+
+    &:nth-child(n + 2) {
+      flex: 33.333%;
+      min-width: 10.3rem;
+      max-width: 10.3rem;
+      height: 6rem;
+      margin-top: 1.5rem;
+      border-radius: 0;
+    }
+
+    &:nth-child(3n + 3) {
+      margin: 1.5rem auto 0 auto;
+    }
 
     > img {
       width: 100%;
@@ -903,13 +925,27 @@
       padding: 3rem 3rem 5rem 3rem;
     }
 
-    &__image-block {
+    &__picture-block {
       width: 100%;
+    }
+
+    &__image-block {
+      margin-bottom: 2rem;
     }
 
     &__img-box {
       height: 46rem;
-      margin-bottom: 3.4rem;
+
+      &:nth-child(n + 2) {
+        min-width: 20rem;
+        max-width: 20rem;
+        height: 14rem;
+        margin-top: 3rem;
+      }
+
+      &:nth-child(3n + 3) {
+        margin: 3rem auto 0 auto;
+      }
     }
 
     &__data-block {
