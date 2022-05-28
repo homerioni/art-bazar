@@ -1,0 +1,65 @@
+@import "../param";
+
+.prod-about {
+  margin-bottom: 16rem;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__title {
+    width: 100%;
+    margin-bottom: 6rem;
+    font-weight: bold;
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+
+  &__block {
+    width: 72rem;
+
+    a {
+      font-weight: bold;
+      text-decoration: underline;
+      color: $default-color;
+    }
+  }
+
+  &__feature {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    > div:first-child {
+      width: 21rem;
+      margin-right: 3rem;
+    }
+  }
+
+  &__text {
+    &--light {
+      font-family: $font-raleway;
+      font-size: 1.7rem;
+      line-height: 3.1rem;
+      color: $default-color-light;
+    }
+
+    &--bold {
+      margin-top: 0.6rem;
+      font-weight: bold;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+    }
+  }
+
+  &__block-title {
+    margin-bottom: 3.5rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+}
