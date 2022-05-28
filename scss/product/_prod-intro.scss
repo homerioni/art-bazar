@@ -1,0 +1,224 @@
+@import "../param";
+
+.prod-intro {
+  margin-bottom: 16rem;
+  border-top: 1px solid rgba(184, 172, 176, 0.7);
+  border-bottom: 1px solid rgba(184, 172, 176, 0.7);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 0;
+  }
+
+  .prod-intro__pagination-bullet {
+    flex-direction: column;
+    align-items: baseline;
+    width: fit-content;
+
+    .swiper-pagination-bullet {
+      margin: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &__image-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__slider {
+    width: 60rem;
+    height: 60rem;
+  }
+
+  &__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > img {
+      width: auto;
+      max-width: 100%;
+      max-height: 100%;
+      border: 8rem solid $pale-pink;
+      border-image: url("../../img/img-border1.png") 107 104 95 107 round;
+    }
+
+    &--not-border {
+      > img {
+        border: 4rem solid $pale-pink;
+        border-image: none;
+      }
+    }
+  }
+
+  &__audio-block {
+    display: flex;
+    align-items: center;
+  }
+
+  &__audio-icon {
+    width: 3.7rem;
+    height: 2.8rem;
+    margin-right: 3rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__audio-author {
+    margin-right: 0.7rem;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  &__audio-name {
+    margin-right: 5rem;
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    color: $default-color-light;
+  }
+
+  &__audio-play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    border: 1px solid rgba(199, 189, 192, 1);
+
+    > svg {
+      width: 0.9rem;
+      height: 1.6rem;
+
+      path {
+        fill: $default-color;
+      }
+    }
+
+    &.play {
+      > svg {
+        display: none;
+      }
+
+      &:before {
+        content: '';
+        display: block;
+        width: 3px;
+        height: 1.6rem;
+        margin-right: 0.5rem;
+        background-color: $default-color;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        width: 3px;
+        height: 1.6rem;
+        background-color: $default-color;
+      }
+    }
+  }
+
+  &__slider-nav {
+    margin: -6rem 0;
+    padding: 6rem 3rem;
+    border-right: 1px solid rgba(184, 172, 176, 0.7);
+    border-left: 1px solid rgba(184, 172, 176, 0.7);
+
+    .slider-nav__arrow {
+      margin: 3rem 0;
+    }
+  }
+
+  &__info-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60rem;
+    min-height: 65rem;
+  }
+
+  &__title-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+  }
+
+  &__title {
+    width: 33rem;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 6rem;
+    text-transform: uppercase;
+  }
+
+  &__desc-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__desc-block {
+    width: 45%;
+
+    &:nth-child(n + 3) {
+      margin-top: 5rem;
+    }
+  }
+
+  &__desc-title {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+
+  &__desc-text {
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    color: $default-color-light;
+
+    &--title {
+      width: 22rem;
+    }
+  }
+
+  &__button-block {
+    display: flex;
+    align-items: center;
+  }
+
+  &__price-block {
+    margin-right: auto;
+  }
+
+  &__price {
+    display: flex;
+    align-items: flex-start;
+    font-family: $font-fogli;
+    font-size: 4rem;
+
+    &:before {
+      content: '$';
+      margin-right: 0.7rem;
+      font-size: 1.9rem;
+    }
+  }
+
+  &__button {
+    margin-right: 3rem;
+  }
+}

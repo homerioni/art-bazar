@@ -168,3 +168,39 @@ const category_paint_slider = new Swiper('.category-paint__slider', {
         delay: 5000,
     },
 });
+
+const prod_intro_slider = new Swiper(".prod-intro__slider", {
+    direction: "vertical",
+    slidesPerView: 1,
+    loop: true,
+
+    pagination: {
+        el: '.prod-intro__pagination-bullet',
+        type: 'bullets',
+    },
+
+    navigation: {
+        nextEl: '.prod-intro .next',
+        prevEl: '.prod-intro .prev',
+    },
+
+    on: {
+        beforeInit: function () {
+            let total = $('.prod-intro__slide').length;
+            if (total < 10) {
+                total = '0' + total;
+            }
+            $('.prod-intro .slider-nav__total').text(total);
+            $('.prod-intro .slider-nav__current').text('01');
+            $('.prod-intro__slider-nav').height($('.prod-intro__container').height());
+        },
+
+        slideChange: function (slider) {
+            let current = slider.realIndex + 1;
+            if (current < 10) {
+                current = '0' + current;
+            }
+            $('.prod-intro .slider-nav__current').text(current);
+        },
+    },
+});

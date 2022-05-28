@@ -12,4 +12,13 @@ $(document).ready(function () {
         $(this).toggleClass('active');
     });
 
+    // Player
+    $('.prod-intro__audio-play').click(function () {
+        if ($(this).hasClass('play')) {
+            $(this).removeClass('play').parent().find('audio')[0].pause();
+        } else {
+            $(this).addClass('play').parent().find('audio')[0].play();
+        }
+    });
+
 });

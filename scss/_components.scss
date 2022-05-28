@@ -160,12 +160,14 @@
         background-color: #C6BCBF;
       }
 
-      .current {
+      .swiper-pagination-current,
+      .slider-nav__current {
         margin-bottom: -0.6rem;
         font-size: 2.2rem;
       }
 
-      .total {
+      .swiper-pagination-total,
+      .slider-nav__total {
         font-size: 1.6rem;
         color: $default-color-light;
       }
