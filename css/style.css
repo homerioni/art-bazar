@@ -1655,7 +1655,7 @@ input[type=number] {
 }
 .category-paint__slide-title-block {
   padding: 2.5rem;
-  border: 1px solid #b8acb0;
+  border: 1px solid rgb(184, 172, 176);
 }
 .category-paint__slide-title {
   font-weight: bold;
@@ -1682,15 +1682,15 @@ input[type=number] {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 2rem 2.5rem;
-  border-left: 1px solid #b8acb0;
-  border-right: 1px solid #b8acb0;
-  border-bottom: 1px solid #b8acb0;
+  border-left: 1px solid rgb(184, 172, 176);
+  border-right: 1px solid rgb(184, 172, 176);
+  border-bottom: 1px solid rgb(184, 172, 176);
 }
 .category-paint__slide-text {
   width: 6.5rem;
   padding: 1rem 0;
-  border-top: 1px solid #b8acb0;
-  border-bottom: 1px solid #b8acb0;
+  border-top: 1px solid rgb(184, 172, 176);
+  border-bottom: 1px solid rgb(184, 172, 176);
   font-family: "Raleway";
   font-size: 1.7rem;
   text-align: center;
@@ -2200,6 +2200,7 @@ input[type=number] {
 .prod-intro__slider {
   width: 60rem;
   height: 60rem;
+  margin-bottom: 3rem;
 }
 .prod-intro__slide {
   display: -webkit-box;
@@ -2270,7 +2271,7 @@ input[type=number] {
   width: 5rem;
   height: 5rem;
   border-radius: 100%;
-  border: 1px solid #c7bdc0;
+  border: 1px solid rgb(199, 189, 192);
 }
 .prod-intro__audio-play > svg {
   width: 0.9rem;
@@ -2355,10 +2356,37 @@ input[type=number] {
 .prod-intro__desc-block:nth-child(n+3) {
   margin-top: 5rem;
 }
+.prod-intro__desc-block--auction {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
 .prod-intro__desc-title {
   margin-bottom: 0.5rem;
   font-weight: bold;
   font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.prod-intro__desc-title--auction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #A83248;
+  text-transform: none;
+}
+.prod-intro__desc-title--auction > svg {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 1rem;
+}
+.prod-intro__desc-title--auction > svg path {
+  stroke: #A83248;
+}
+.prod-intro__desc-title--auction > span {
+  margin-top: 0.8rem;
 }
 .prod-intro__desc-text {
   font-family: "Raleway";
@@ -2368,6 +2396,15 @@ input[type=number] {
 .prod-intro__desc-text--title {
   width: 22rem;
 }
+.prod-intro__desc-text--btn {
+  margin-left: 1.8rem;
+}
+.prod-intro__auction-title {
+  font-family: "antarcticregular";
+  font-size: 6rem;
+  line-height: 3rem;
+  color: #A83248;
+}
 .prod-intro__button-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2375,6 +2412,12 @@ input[type=number] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.prod-intro__button-block:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.prod-intro__button-block--not-like {
+  padding-right: 6.8rem;
 }
 .prod-intro__price-block {
   margin-right: auto;
@@ -2476,7 +2519,7 @@ input[type=number] {
           flex: none;
   width: 97rem;
   padding: 5rem;
-  border: 1px solid #b8acb0;
+  border: 1px solid rgb(184, 172, 176);
 }
 .creator__title {
   font-weight: bold;
@@ -2617,7 +2660,7 @@ input[type=number] {
       -ms-flex-align: center;
           align-items: center;
   padding: 5rem 5rem 8rem 5rem;
-  border: 1px solid #b8acb0;
+  border: 1px solid rgb(184, 172, 176);
   border-left: none;
 }
 .creator__btn-title {

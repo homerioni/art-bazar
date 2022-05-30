@@ -35,6 +35,7 @@
   &__slider {
     width: 60rem;
     height: 60rem;
+    margin-bottom: 3rem;
   }
 
   &__slide {
@@ -178,12 +179,38 @@
     &:nth-child(n + 3) {
       margin-top: 5rem;
     }
+
+    &--auction {
+      align-self: center;
+    }
   }
 
   &__desc-title {
     margin-bottom: 0.5rem;
     font-weight: bold;
     font-size: 1.8rem;
+    text-transform: uppercase;
+
+    &--auction {
+      display: flex;
+      align-items: center;
+      color: $red;
+      text-transform: none;
+
+      > svg {
+        width: 2.4rem;
+        height: 2.4rem;
+        margin-right: 1rem;
+
+        path {
+          stroke: $red;
+        }
+      }
+
+      > span {
+        margin-top: 0.8rem;
+      }
+    }
   }
 
   &__desc-text {
@@ -194,11 +221,30 @@
     &--title {
       width: 22rem;
     }
+
+    &--btn {
+      margin-left: 1.8rem;
+    }
+  }
+
+  &__auction-title {
+    font-family: $font-antarctic;
+    font-size: 6rem;
+    line-height: 3rem;
+    color: $red;
   }
 
   &__button-block {
     display: flex;
     align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+
+    &--not-like {
+      padding-right: 6.8rem;
+    }
   }
 
   &__price-block {

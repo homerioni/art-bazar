@@ -173,6 +173,7 @@ const prod_intro_slider = new Swiper(".prod-intro__slider", {
     direction: "vertical",
     slidesPerView: 1,
     loop: true,
+    spaceBetween: 20,
 
     pagination: {
         el: '.prod-intro__pagination-bullet',
