@@ -484,6 +484,7 @@ input[type=number] {
      object-fit: cover;
 }
 .preview__data-block {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -497,6 +498,19 @@ input[type=number] {
   margin-bottom: 4rem;
   border-top: 1px solid #B8ACB0;
   border-bottom: 1px solid #B8ACB0;
+}
+.preview__auction-day {
+  position: absolute;
+  left: 50%;
+  top: -5rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 0.8rem 2rem;
+  background-color: #FCF7F7;
+  white-space: nowrap;
+  font-family: "Raleway";
+  font-size: 1.6rem;
+  color: #89767D;
 }
 .preview__country {
   display: -webkit-box;
@@ -532,6 +546,22 @@ input[type=number] {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.8rem;
+}
+.preview__price-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.preview__price-block > svg {
+  width: 2.2rem;
+  height: 2.2rem;
+  margin-right: 1.5rem;
 }
 .preview__price {
   display: -webkit-box;
