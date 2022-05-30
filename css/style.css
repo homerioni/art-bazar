@@ -3207,6 +3207,162 @@ input[type=number] {
   margin-top: 6.6rem;
 }
 
+.add-paint {
+  margin-top: 6rem;
+  margin-bottom: 16rem;
+}
+.add-paint__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.add-paint__status-block-bg {
+  width: 33.1rem;
+  padding: 1.5rem;
+  border-radius: 100rem 100rem 0 0;
+  background-color: #C3B2B2;
+}
+.add-paint__status-block {
+  position: relative;
+  border-radius: 100rem 100rem 0 0;
+  border: 1px solid rgb(235, 230, 230);
+}
+.add-paint__status-bg-text {
+  position: absolute;
+  left: -0.5rem;
+  top: -0.7rem;
+}
+.add-paint__status-title {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 11.2rem auto 6rem auto;
+  font-family: "antarcticregular";
+  font-size: 6rem;
+  line-height: 3rem;
+}
+.add-paint__status-title > img {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 1;
+  width: 10.8rem;
+  height: 7.7rem;
+}
+.add-paint__status-title > span {
+  position: relative;
+  z-index: 2;
+}
+.add-paint__list {
+  margin-bottom: 4rem;
+  padding: 0 2rem;
+}
+.add-paint__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.add-paint__item:not(:last-child) {
+  margin-bottom: 6.3rem;
+}
+.add-paint__item:not(:last-child) .add-paint__item-icon:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 1.5rem);
+  display: block;
+  width: 1px;
+  height: 3.3rem;
+  background-color: #EBE6E6;
+}
+.add-paint__item.active .add-paint__item-text {
+  font-weight: 600;
+}
+.add-paint__item-icon {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 5.8rem;
+  height: 5.8rem;
+  margin-right: 1.5rem;
+  border-radius: 100%;
+  border: 1px solid rgb(235, 230, 230);
+}
+.add-paint__item-icon > svg {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+.add-paint__item-icon > svg path {
+  stroke: #EBE6E6;
+}
+.add-paint__item-text {
+  font-family: "Raleway";
+  font-size: 1.7rem;
+  line-height: 2.9rem;
+  color: #fff;
+}
+.add-paint__ask-btn {
+  display: block;
+  padding: 2rem 2rem 1.5rem 2rem;
+  background-color: #FCF7F7;
+}
+.add-paint__ask-sub-text {
+  font-family: "Raleway";
+  font-size: 1.7rem;
+  color: #89767D;
+}
+.add-paint__ask-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.add-paint__ask-text > svg {
+  width: 3.8rem;
+  height: 1rem;
+}
+.add-paint__ask-text > svg path {
+  fill: #503C3C;
+}
+.add-paint__ask-text > span {
+  margin-top: 0.8rem;
+}
+.add-paint__content {
+  width: 108.6rem;
+  padding-top: 3rem;
+}
+.add-paint__title {
+  margin-bottom: 4.5rem;
+  font-weight: bold;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+.add-paint__publish-btn.disabled {
+  opacity: 0.5;
+}
+
 body.lock {
   overflow: hidden;
 }

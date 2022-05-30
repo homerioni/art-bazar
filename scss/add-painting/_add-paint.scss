@@ -1,0 +1,165 @@
+@import "../param";
+
+.add-paint {
+  margin-top: 6rem;
+  margin-bottom: 16rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__status-block-bg {
+    width: 33.1rem;
+    padding: 1.5rem;
+    border-radius: 100rem 100rem 0 0;
+    background-color: #C3B2B2;
+  }
+
+  &__status-block {
+    position: relative;
+    border-radius: 100rem 100rem 0 0;
+    border: 1px solid rgba(235, 230, 230, 1);
+  }
+
+  &__status-bg-text {
+    position: absolute;
+    left: -0.5rem;
+    top: -0.7rem;
+  }
+
+  &__status-title {
+    position: relative;
+    width: fit-content;
+    margin: 11.2rem auto 6rem auto;
+    font-family: $font-antarctic;
+    font-size: 6rem;
+    line-height: 3rem;
+
+    > img {
+      position: absolute;
+      left: 1rem;
+      top: -3rem;
+      z-index: 1;
+      width: 10.8rem;
+      height: 7.7rem;
+    }
+
+    > span {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &__list {
+    margin-bottom: 4rem;
+    padding: 0 2rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 6.3rem;
+
+      .add-paint__item-icon:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: calc(100% + 1.5rem);
+        display: block;
+        width: 1px;
+        height: 3.3rem;
+        background-color: #EBE6E6;
+      }
+    }
+
+    &.active {
+      .add-paint__item-text {
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__item-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5.8rem;
+    height: 5.8rem;
+    margin-right: 1.5rem;
+    border-radius: 100%;
+    border: 1px solid rgba(235, 230, 230, 1);
+
+    > svg {
+      width: 2.8rem;
+      height: 2.8rem;
+
+      path {
+        stroke: #EBE6E6;
+      }
+    }
+  }
+
+  &__item-text {
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    line-height: 2.9rem;
+    color: $white;
+  }
+
+  &__ask-btn {
+    display: block;
+    padding: 2rem 2rem 1.5rem 2rem;
+    background-color: $pale-pink;
+  }
+
+  &__ask-sub-text {
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    color: $default-color-light;
+  }
+
+  &__ask-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 1.7rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    > svg {
+      width: 3.8rem;
+      height: 1rem;
+
+      path {
+        fill: $default-color;
+      }
+    }
+
+    > span {
+      margin-top: 0.8rem;
+    }
+  }
+
+  &__content {
+    width: 108.6rem;
+    padding-top: 3rem;
+  }
+
+  &__title {
+    margin-bottom: 4.5rem;
+    font-weight: bold;
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+
+  &__publish-btn {
+    &.disabled {
+      opacity: 0.5;
+    }
+  }
+}
