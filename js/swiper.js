@@ -222,6 +222,10 @@ const catalog_intro_slider = new Swiper(".catalog-intro__slider", {
         prevEl: '.catalog-intro .prev',
     },
 
+    autoplay: {
+        delay: 6000,
+    },
+
     on: {
         beforeInit: function () {
             let total = $('.catalog-intro__slide').length;

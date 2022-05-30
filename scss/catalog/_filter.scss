@@ -1,0 +1,172 @@
+@import "../param";
+
+.filter {
+  &__block {
+    &:not(:last-child) {
+      margin-bottom: 7.5rem;
+    }
+  }
+
+  &__block-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(184, 172, 176, 0.7);
+    cursor: pointer;
+
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    text-transform: uppercase;
+
+    > svg {
+      flex: none;
+      width: 2.5rem;
+      height: 2.4rem;
+      margin-left: 2rem;
+      transition: transform 0.3s;
+
+      path {
+        stroke: $default-color;
+      }
+    }
+
+    > span {
+      margin-top: 0.6rem;
+    }
+
+    &.closed {
+      > svg {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  &__block-content {
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    line-height: 2.9rem;
+    color: $default-color-light;
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+
+    input {
+      display: none;
+    }
+
+    > a:hover {
+      font-weight: 500;
+      color: $default-color;
+    }
+
+    &--range {
+      &:nth-child(n) {
+        margin: 3rem 0;
+      }
+
+      input {
+        display: block;
+      }
+    }
+  }
+
+  &__item-name {
+  }
+
+  &__qty {
+    flex: none;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &.active {
+      font-weight: 500;
+      color: $default-color;
+
+      .filter__radio-btn {
+        &:before {
+          content: '';
+        }
+      }
+
+      .filter__checkbox-btn {
+        background-color: $default-color;
+
+        > svg {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__radio-btn {
+    position: relative;
+    width: 3.6rem;
+    height: 3.6rem;
+    margin-right: 1.3rem;
+    border-radius: 100%;
+    background-color: $white;
+
+    &:before {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 1.4rem;
+      height: 1.4rem;
+      transform: translate(-50%, -50%);
+      border-radius: 100%;
+      background-color: $default-color;
+    }
+  }
+
+  &__range {
+    width: 13rem;
+    height: 5rem;
+    padding: 0 1.8rem;
+    background-color: $white;
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+  }
+
+  &__checkbox-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.6rem;
+    height: 3.6rem;
+    margin-right: 1.3rem;
+    background-color: $white;
+
+    > svg {
+      display: none;
+      width: 1.8rem;
+      height: 1.3rem;
+
+      path {
+        stroke: $white;
+      }
+    }
+  }
+
+  &__see-more {
+    margin-top: 2rem;
+    font-family: $font-raleway;
+    font-weight: bold;
+    font-size: 1.7rem;
+    cursor: pointer;
+  }
+}

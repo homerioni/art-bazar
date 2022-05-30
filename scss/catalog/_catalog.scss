@@ -1,0 +1,73 @@
+@import "../param";
+
+.catalog {
+  margin-bottom: 16rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__filters {
+    width: 32.2rem;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    text-transform: uppercase;
+
+    &--filter {
+      margin-bottom: 7rem;
+    }
+  }
+
+  &__content {
+    width: 109rem;
+  }
+
+  &__title-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 7rem;
+  }
+
+  &__select-block {
+  }
+
+  &__select {
+    padding-right: 1rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    color: $default-color-light;
+    text-align: right;
+
+    &:not(:last-child) {
+      margin-right: 7rem;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-right: 4.8rem;
+
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+
+    &:nth-child(n + 4) {
+      margin-top: 6.6rem;
+    }
+  }
+}

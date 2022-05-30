@@ -21,4 +21,23 @@ $(document).ready(function () {
         }
     });
 
+    // Catalog and Filter
+    $('.filter__block-title').click(function () {
+        $(this).toggleClass('closed')
+            .parent().find('.filter__block-content').slideToggle();
+    });
+    $('.checkbox-label').click(function () {
+        if ($(this).find('input').prop('checked')) {
+            $(this).addClass('active');
+        } else {
+            $(this).removeClass('active');
+        }
+    });
+    $('.radio-label').click(function () {
+        if ($(this).find('input').prop('checked')) {
+            $('.radio-label').removeClass('active');
+            $(this).addClass('active');
+        }
+    });
+
 });
