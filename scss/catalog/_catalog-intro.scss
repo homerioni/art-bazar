@@ -1,0 +1,165 @@
+@import "../param";
+
+.catalog-intro {
+  margin-bottom: 14rem;
+  border-top: 1px solid rgba(184, 172, 176, 0.7);
+  border-bottom: 1px solid rgba(184, 172, 176, 0.7);
+
+  &__container {
+    display: flex;
+  }
+
+  &__info-block {
+    width: 73.4rem;
+    border-right: 1px solid rgba(184, 172, 176, 0.7);
+  }
+
+  &__title-block {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 22.5rem;
+    border-bottom: 1px solid rgba(184, 172, 176, 0.7);
+  }
+
+  &__title {
+    width: 43rem;
+    font-weight: bold;
+    font-size: 5.2rem;
+    line-height: 7.5rem;
+    text-transform: uppercase;
+  }
+
+  &__sub-title {
+    font-family: $font-antarctic;
+    font-size: 6rem;
+    line-height: 3rem;
+    color: $red;
+  }
+
+  &__navigation-block {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 8rem 0 22.5rem;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6rem;
+  }
+
+  &__info-img-box {
+    width: 14.5rem;
+    height: 19.8rem;
+    margin-right: 4rem;
+    border-radius: 100rem;
+    overflow: hidden;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__info-text-block {
+    width: 22.6rem;
+  }
+
+  &__info-title {
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    text-transform: uppercase;
+  }
+
+  &__info-text {
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    line-height: 2.9rem;
+    color: $default-color-light;
+  }
+
+  &__slider {
+    padding: 5rem 0;
+  }
+
+  &__slide {
+  }
+
+  &__img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 56rem;
+    margin: 0 auto 3rem auto;
+
+    > img {
+      width: auto;
+      max-width: 100%;
+      max-height: 100%;
+      border: 8rem solid $pale-pink;
+      border-image: url("../../img/img-border1.png") 107 104 95 107 round;
+    }
+  }
+
+  &__slide-text-block {
+    text-align: center;
+  }
+
+  &__slide-title {
+    font-weight: bold;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+  }
+
+  &__slide-price {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    font-family: $font-fogli;
+    font-size: 3rem;
+    color: $red;
+
+    &:before {
+      content: '$';
+      margin-right: 0.5rem;
+      font-size: 1.9rem;
+    }
+  }
+
+  &__pagination-fraction {
+    position: absolute;
+    left: 65rem;
+    top: 8rem;
+    height: 100%;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: -8rem;
+      z-index: -1;
+      display: block;
+      width: 1px;
+      height: 100%;
+      background-color: rgba(184, 172, 176, 0.7);
+    }
+
+    .slider-nav__pagination-block {
+      justify-content: center;
+      width: 10rem;
+      height: 10rem;
+      border-radius: 100%;
+      border: 1px solid rgba(199, 189, 192, 1);
+      background-color: #EBE6E6;
+    }
+  }
+}

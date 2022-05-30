@@ -2696,6 +2696,180 @@ input[type=number] {
   margin-top: 4.8rem;
 }
 
+.catalog-intro {
+  margin-bottom: 14rem;
+  border-top: 1px solid rgba(184, 172, 176, 0.7);
+  border-bottom: 1px solid rgba(184, 172, 176, 0.7);
+}
+.catalog-intro__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.catalog-intro__info-block {
+  width: 73.4rem;
+  border-right: 1px solid rgba(184, 172, 176, 0.7);
+}
+.catalog-intro__title-block {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 22.5rem;
+  border-bottom: 1px solid rgba(184, 172, 176, 0.7);
+}
+.catalog-intro__title {
+  width: 43rem;
+  font-weight: bold;
+  font-size: 5.2rem;
+  line-height: 7.5rem;
+  text-transform: uppercase;
+}
+.catalog-intro__sub-title {
+  font-family: "antarcticregular";
+  font-size: 6rem;
+  line-height: 3rem;
+  color: #A83248;
+}
+.catalog-intro__navigation-block {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 8rem 0 22.5rem;
+}
+.catalog-intro__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 6rem;
+}
+.catalog-intro__info-img-box {
+  width: 14.5rem;
+  height: 19.8rem;
+  margin-right: 4rem;
+  border-radius: 100rem;
+  overflow: hidden;
+}
+.catalog-intro__info-img-box > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.catalog-intro__info-text-block {
+  width: 22.6rem;
+}
+.catalog-intro__info-title {
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  text-transform: uppercase;
+}
+.catalog-intro__info-text {
+  font-family: "Raleway";
+  font-size: 1.7rem;
+  line-height: 2.9rem;
+  color: #89767D;
+}
+.catalog-intro__slider {
+  padding: 5rem 0;
+}
+.catalog-intro__img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  height: 56rem;
+  margin: 0 auto 3rem auto;
+}
+.catalog-intro__img-box > img {
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  border: 8rem solid #FCF7F7;
+  -o-border-image: url("../../img/img-border1.png") 107 104 95 107 round;
+     border-image: url("../../img/img-border1.png") 107 104 95 107 round;
+}
+.catalog-intro__slide-text-block {
+  text-align: center;
+}
+.catalog-intro__slide-title {
+  font-weight: bold;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+}
+.catalog-intro__slide-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "FoglihtenNo06";
+  font-size: 3rem;
+  color: #A83248;
+}
+.catalog-intro__slide-price:before {
+  content: "$";
+  margin-right: 0.5rem;
+  font-size: 1.9rem;
+}
+.catalog-intro__pagination-fraction {
+  position: absolute;
+  left: 65rem;
+  top: 8rem;
+  height: 100%;
+}
+.catalog-intro__pagination-fraction:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -8rem;
+  z-index: -1;
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(184, 172, 176, 0.7);
+}
+.catalog-intro__pagination-fraction .slider-nav__pagination-block {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  border: 1px solid rgb(199, 189, 192);
+  background-color: #EBE6E6;
+}
+
 body.lock {
   overflow: hidden;
 }
