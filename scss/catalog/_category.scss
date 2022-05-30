@@ -1,0 +1,66 @@
+@import "../param";
+
+.category {
+  margin-bottom: 14rem;
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33rem;
+    min-height: 15rem;
+    padding: 3rem;
+    margin-right: 4.7rem;
+    background-color: $pale-pink;
+
+    &:nth-child(4n + 4) {
+      margin-right: 0;
+    }
+
+    &:nth-child(n + 5) {
+      margin-top: 4.7rem;
+    }
+  }
+
+  &__img-box {
+    flex: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8.8rem;
+    height: 9.1rem;
+    margin-right: 2.5rem;
+  }
+
+  &__img {
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 2px 2px 0.6rem 0 rgba(0, 0, 0, 0.54) inset;
+  }
+
+  &__img-border {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__item-title {
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    text-transform: uppercase;
+  }
+}
