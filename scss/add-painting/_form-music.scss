@@ -1,0 +1,211 @@
+@import "../param";
+
+.form-music {
+  padding: 5.5rem 5rem 6.6rem 5rem;
+  background-color: $pale-pink;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4.5rem;
+
+    > span {
+      margin-top: 0.6rem;
+      font-weight: bold;
+      font-size: 2.6rem;
+      text-transform: uppercase;
+    }
+  }
+
+  &__title-icon {
+    width: 3.4rem;
+    height: 2.8rem;
+    margin-right: 2rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__content {
+  }
+
+  &__add-block {
+    display: flex;
+    align-items: center;
+  }
+
+  &__add-btn {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 17.7rem;
+    height: 18.2rem;
+    margin-right: 4rem;
+    background-color: #EBE6E6;
+  }
+
+  &__add-btn-icon {
+    width: 5.2rem;
+    height: 5.2rem;
+    margin-bottom: 1rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__add-btn-text {
+    font-family: $font-raleway;
+    font-weight: bold;
+    font-size: 1.7rem;
+  }
+
+  &__add-text {
+    width: 62.2rem;
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    line-height: 2.9rem;
+  }
+
+  &__complete-block {
+    display: none;
+    align-items: center;
+  }
+
+  &__img-box {
+    width: 17.7rem;
+    height: 18.2rem;
+    margin-right: 4rem;
+    border: 0.9rem solid #EBE6E6;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__complete-info-block {
+    flex: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__complete-text-block {
+  }
+
+  &__complete-title-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  &__author {
+    margin-top: 0.4rem;
+    margin-right: 1.4rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    text-transform: uppercase;
+  }
+
+  &__track-name {
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    line-height: 2.9rem;
+  }
+
+  &__track-name-separator {
+    margin-right: 1.4rem;
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    line-height: 2.9rem;
+  }
+
+  &__audio-block {
+    display: flex;
+    align-items: center;
+  }
+
+  &__play-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    margin-right: 2rem;
+    border-radius: 100%;
+    border: 1px solid rgba(199, 189, 192, 1);
+
+    > svg {
+      width: 0.9rem;
+      height: 1.6rem;
+      margin-left: 2px;
+
+      path {
+        fill: $default-color;
+      }
+    }
+
+    &.play {
+      > svg {
+        display: none;
+      }
+
+      &:before {
+        content: '';
+        display: block;
+        width: 3px;
+        height: 1.6rem;
+        margin-right: 0.5rem;
+        background-color: $default-color;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        width: 3px;
+        height: 1.6rem;
+        background-color: $default-color;
+      }
+    }
+  }
+
+  &__audio-line {
+    width: 26.6rem;
+    height: 2.9rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6.2rem;
+    height: 6.2rem;
+    border-radius: 100%;
+    background-color: #C3B2B2;
+
+    > svg {
+      width: 3.5rem;
+      height: 3.5rem;
+
+      path {
+        stroke: $white;
+      }
+    }
+  }
+}

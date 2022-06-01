@@ -1,0 +1,307 @@
+@import "../param";
+
+.form {
+  padding: 5.5rem 5rem 6.6rem 5rem;
+  background-color: $pale-pink;
+
+  &__title {
+    margin-bottom: 4.5rem;
+    font-weight: bold;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+  }
+
+  &__content {
+  }
+
+  &__row {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 6rem;
+    }
+  }
+
+  &__item {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-right: 2.5rem;
+    }
+
+    &--priority {
+      flex: 200%;
+    }
+
+    &--photo {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &--flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      input {
+        width: 23%;
+        padding: 0 1rem;
+        text-align: center;
+      }
+    }
+  }
+
+  &__item-name {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+  }
+
+  &__input {
+    width: 100%;
+    height: 5.4rem;
+    padding: 0 2rem;
+    background-color: #EBE6E6;
+
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    line-height: 3.1rem;
+  }
+
+  &__select {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5.4rem;
+    background-color: #EBE6E6;
+    cursor: pointer;
+
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    line-height: 3.1rem;
+
+    > select {
+      display: none;
+    }
+
+    > svg {
+      position: absolute;
+      right: 1.7rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 2.4rem;
+      height: 2.4rem;
+
+      path {
+        stroke: $default-color;
+      }
+    }
+  }
+
+  &__current-select {
+    display: block;
+    width: 100%;
+    padding: 0 5rem 0 2rem;
+  }
+
+  &__select-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 1.5rem);
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    padding: 2rem;
+    background-color: #EBE6E6;
+
+    > li {
+      cursor: pointer;
+
+      &:hover {
+        font-weight: bold;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 0.6rem;
+      }
+
+      &.active {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__photo {
+    position: relative;
+    width: 17.7rem;
+    height: 18.2rem;
+    margin-right: 2.5rem;
+
+    &:nth-child(5n + 6) {
+      margin-right: 0;
+    }
+
+    &:nth-child(n + 7) {
+      margin-top: 2.5rem;
+    }
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:hover {
+      .form__photo-delete {
+        display: flex;
+      }
+    }
+  }
+
+  &__photo-delete {
+    display: none;
+    position: absolute;
+    top: -2.2rem;
+    right: -1.7rem;
+    align-items: center;
+    justify-content: center;
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 100%;
+    border: 2px solid $pale-pink;
+    background-color: #C6B5B5;
+    cursor: pointer;
+
+    > svg {
+      width: 2.5rem;
+      height: 2.5rem;
+
+      path {
+        stroke: $white;
+      }
+    }
+  }
+
+  &__add-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17.7rem;
+    height: 18.2rem;
+    background-color: #EBE6E6;
+    cursor: pointer;
+
+    &:nth-child(n + 7) {
+      margin-top: 2.5rem;
+    }
+
+    > svg {
+      width: 5.1rem;
+      height: 5.2rem;
+
+      path {
+        stroke: #BAB1B3;
+      }
+    }
+
+    > input {
+      display: none;
+    }
+  }
+
+  &__materials {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 5.4rem;
+    padding: 1rem 1rem 0 1rem;
+    margin-bottom: 1.5rem;
+    background-color: #EBE6E6;
+    user-select: none;
+
+    input {
+      display: none;
+    }
+
+    label {
+      display: none;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      min-width: 11.2rem;
+      height: 3.4rem;
+      padding: 0 3.6rem 0 1.8rem;
+      margin-bottom: 1rem;
+      background-color: #D5CBCB;
+      font-family: $font-raleway;
+      font-size: 1.7rem;
+      cursor: pointer;
+
+      &:not(:last-child) {
+        margin-right: 1.3rem;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        right: 1.8rem;
+        top: 50%;
+        display: block;
+        width: 1rem;
+        height: 1px;
+        transform: rotate(-45deg);
+        background-color: $default-color;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        right: 1.8rem;
+        top: 50%;
+        display: block;
+        width: 1rem;
+        height: 1px;
+        transform: rotate(45deg);
+        background-color: $default-color;
+      }
+    }
+  }
+
+  &__materials-add {
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    user-select: none;
+
+    label {
+      cursor: pointer;
+      color: $red;
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+
+        &:after {
+          content: ',';
+        }
+      }
+    }
+  }
+
+  &__materials-add-text {
+    margin-right: 2rem;
+  }
+
+  &__textarea {
+    width: 100%;
+    height: 17.6rem;
+    padding: 3.8rem 6.9rem 3.8rem 3.3rem;
+    background-color: #EBE6E6;
+    resize: none;
+
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    line-height: 2.9rem;
+  }
+}

@@ -2,6 +2,9 @@
 
 $(document).ready(function () {
 
+    // Masked input
+    $('.input-phone').mask('+7 999 999 - 99 - 99');
+
     // Like in product
     $('.like').click(function () {
         $(this).toggleClass('active');
@@ -13,7 +16,7 @@ $(document).ready(function () {
     });
 
     // Player
-    $('.prod-intro__audio-play').click(function () {
+    $('.audio-play').click(function () {
         if ($(this).hasClass('play')) {
             $(this).removeClass('play').parent().find('audio')[0].pause();
         } else {
@@ -40,4 +43,47 @@ $(document).ready(function () {
         }
     });
 
+    // Form select
+    $('.form__select-dropdown').each(function () {
+        let i = 1,
+            dropdown = $(this);
+        $(this).parent().find('option').each(function () {
+            dropdown.append($('<li>', {
+                num: i,
+                text: $(this).text()
+            }));
+            i++;
+        });
+        dropdown.find('li:first-child').addClass('active');
+        dropdown.parent().find('.form__current-select').text(dropdown.parent().find('option:selected').text());
+    });
+    $('.form__select').click(function (e) {
+        e.preventDefault();
+        $(this).find('.form__select-dropdown').slideToggle();
+    });
+    $('.form__select-dropdown li').click(function () {
+        let num = $(this).attr('num'),
+            select = $(this).parent().parent();
+        $(this).parent().find('li').removeClass('active');
+        $(this).addClass('active');
+        select.find('option:nth-child(' + num + ')').prop('selected', 'selected');
+        select.find('.form__current-select').text(select.find('option:selected').text());
+    });
+
+    // Form materials
+    $('.form__materials input').change(function () {
+        if ($(this).prop('checked')) {
+            $(this).parent().css('display', 'flex');
+            $(this).parent().parent().parent().find('label[for="' + $(this).attr('id') + '"]').hide();
+        } else {
+            $(this).parent().css('display', 'none');
+            $(this).parent().parent().parent().find('label[for="' + $(this).attr('id') + '"]').show();
+        }
+    });
+
+    // Form music
+    $('.form-music__delete').click(function () {
+        $('.form-music__complete-block').hide();
+        $('.form-music__add-block').css('display', 'flex');
+    });
 });

@@ -3221,6 +3221,9 @@ input[type=number] {
 }
 .add-paint__status-block-bg {
   width: 33.1rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   padding: 1.5rem;
   border-radius: 100rem 100rem 0 0;
   background-color: #C3B2B2;
@@ -3359,8 +3362,535 @@ input[type=number] {
   font-size: 4rem;
   text-transform: uppercase;
 }
+.add-paint__block:not(:last-child) {
+  margin-bottom: 7rem;
+}
 .add-paint__publish-btn.disabled {
   opacity: 0.5;
+}
+
+.form {
+  padding: 5.5rem 5rem 6.6rem 5rem;
+  background-color: #FCF7F7;
+}
+.form__title {
+  margin-bottom: 4.5rem;
+  font-weight: bold;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+}
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.form__row:not(:last-child) {
+  margin-bottom: 6rem;
+}
+.form__item {
+  width: 100%;
+}
+.form__item:not(:last-child) {
+  margin-right: 2.5rem;
+}
+.form__item--priority {
+  -webkit-box-flex: 200%;
+      -ms-flex: 200%;
+          flex: 200%;
+}
+.form__item--photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.form__item--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.form__item--flex input {
+  width: 23%;
+  padding: 0 1rem;
+  text-align: center;
+}
+.form__item-name {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+.form__input {
+  width: 100%;
+  height: 5.4rem;
+  padding: 0 2rem;
+  background-color: #EBE6E6;
+  font-family: "Raleway";
+  font-size: 1.7rem;
+  line-height: 3.1rem;
+}
+.form__select {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 5.4rem;
+  background-color: #EBE6E6;
+  cursor: pointer;
+  font-family: "Raleway";
+  font-size: 1.7rem;
+  line-height: 3.1rem;
+}
+.form__select > select {
+  display: none;
+}
+.form__select > svg {
+  position: absolute;
+  right: 1.7rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.form__select > svg path {
+  stroke: #503C3C;
+}
+.form__current-select {
+  display: block;
+  width: 100%;
+  padding: 0 5rem 0 2rem;
+}
+.form__select-dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 1.5rem);
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  padding: 2rem;
+  background-color: #EBE6E6;
+}
+.form__select-dropdown > li {
+  cursor: pointer;
+}
+.form__select-dropdown > li:hover {
+  font-weight: bold;
+}
+.form__select-dropdown > li:not(:last-child) {
+  margin-bottom: 0.6rem;
+}
+.form__select-dropdown > li.active {
+  font-weight: bold;
+}
+.form__photo {
+  position: relative;
+  width: 17.7rem;
+  height: 18.2rem;
+  margin-right: 2.5rem;
+}
+.form__photo:nth-child(5n+6) {
+  margin-right: 0;
+}
+.form__photo:nth-child(n+7) {
+  margin-top: 2.5rem;
+}
+.form__photo > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.form__photo:hover .form__photo-delete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.form__photo-delete {
+  display: none;
+  position: absolute;
+  top: -2.2rem;
+  right: -1.7rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 100%;
+  border: 2px solid #FCF7F7;
+  background-color: #C6B5B5;
+  cursor: pointer;
+}
+.form__photo-delete > svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.form__photo-delete > svg path {
+  stroke: #fff;
+}
+.form__add-photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 17.7rem;
+  height: 18.2rem;
+  background-color: #EBE6E6;
+  cursor: pointer;
+}
+.form__add-photo:nth-child(n+7) {
+  margin-top: 2.5rem;
+}
+.form__add-photo > svg {
+  width: 5.1rem;
+  height: 5.2rem;
+}
+.form__add-photo > svg path {
+  stroke: #BAB1B3;
+}
+.form__add-photo > input {
+  display: none;
+}
+.form__materials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 5.4rem;
+  padding: 1rem 1rem 0 1rem;
+  margin-bottom: 1.5rem;
+  background-color: #EBE6E6;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.form__materials input {
+  display: none;
+}
+.form__materials label {
+  display: none;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 11.2rem;
+  height: 3.4rem;
+  padding: 0 3.6rem 0 1.8rem;
+  margin-bottom: 1rem;
+  background-color: #D5CBCB;
+  font-family: "Raleway";
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+.form__materials label:not(:last-child) {
+  margin-right: 1.3rem;
+}
+.form__materials label:before {
+  content: "";
+  position: absolute;
+  right: 1.8rem;
+  top: 50%;
+  display: block;
+  width: 1rem;
+  height: 1px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: #503C3C;
+}
+.form__materials label:after {
+  content: "";
+  position: absolute;
+  right: 1.8rem;
+  top: 50%;
+  display: block;
+  width: 1rem;
+  height: 1px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #503C3C;
+}
+.form__materials-add {
+  font-family: "Raleway";
+  font-size: 1.7rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.form__materials-add label {
+  cursor: pointer;
+  color: #A83248;
+}
+.form__materials-add label:not(:last-child) {
+  margin-right: 1rem;
+}
+.form__materials-add label:not(:last-child):after {
+  content: ",";
+}
+.form__materials-add-text {
+  margin-right: 2rem;
+}
+.form__textarea {
+  width: 100%;
+  height: 17.6rem;
+  padding: 3.8rem 6.9rem 3.8rem 3.3rem;
+  background-color: #EBE6E6;
+  resize: none;
+  font-family: "Raleway";
+  font-size: 1.7rem;
+  line-height: 2.9rem;
+}
+
+.form-music {
+  padding: 5.5rem 5rem 6.6rem 5rem;
+  background-color: #FCF7F7;
+}
+.form-music__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4.5rem;
+}
+.form-music__title > span {
+  margin-top: 0.6rem;
+  font-weight: bold;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+}
+.form-music__title-icon {
+  width: 3.4rem;
+  height: 2.8rem;
+  margin-right: 2rem;
+}
+.form-music__title-icon > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.form-music__add-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.form-music__add-btn {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 17.7rem;
+  height: 18.2rem;
+  margin-right: 4rem;
+  background-color: #EBE6E6;
+}
+.form-music__add-btn-icon {
+  width: 5.2rem;
+  height: 5.2rem;
+  margin-bottom: 1rem;
+}
+.form-music__add-btn-icon > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.form-music__add-btn-text {
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+.form-music__add-text {
+  width: 62.2rem;
+  font-family: "Raleway";
+  font-size: 1.7rem;
+  line-height: 2.9rem;
+}
+.form-music__complete-block {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.form-music__img-box {
+  width: 17.7rem;
+  height: 18.2rem;
+  margin-right: 4rem;
+  border: 0.9rem solid #EBE6E6;
+}
+.form-music__img-box > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.form-music__complete-info-block {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.form-music__complete-title-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5rem;
+}
+.form-music__author {
+  margin-top: 0.4rem;
+  margin-right: 1.4rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  text-transform: uppercase;
+}
+.form-music__track-name {
+  font-family: "Raleway";
+  font-size: 1.7rem;
+  line-height: 2.9rem;
+}
+.form-music__track-name-separator {
+  margin-right: 1.4rem;
+  font-family: "Raleway";
+  font-size: 1.7rem;
+  line-height: 2.9rem;
+}
+.form-music__audio-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.form-music__play-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  margin-right: 2rem;
+  border-radius: 100%;
+  border: 1px solid rgb(199, 189, 192);
+}
+.form-music__play-btn > svg {
+  width: 0.9rem;
+  height: 1.6rem;
+  margin-left: 2px;
+}
+.form-music__play-btn > svg path {
+  fill: #503C3C;
+}
+.form-music__play-btn.play > svg {
+  display: none;
+}
+.form-music__play-btn.play:before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 1.6rem;
+  margin-right: 0.5rem;
+  background-color: #503C3C;
+}
+.form-music__play-btn.play:after {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 1.6rem;
+  background-color: #503C3C;
+}
+.form-music__audio-line {
+  width: 26.6rem;
+  height: 2.9rem;
+}
+.form-music__audio-line > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.form-music__delete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 6.2rem;
+  height: 6.2rem;
+  border-radius: 100%;
+  background-color: #C3B2B2;
+}
+.form-music__delete > svg {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.form-music__delete > svg path {
+  stroke: #fff;
 }
 
 body.lock {

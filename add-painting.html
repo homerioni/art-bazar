@@ -83,7 +83,7 @@
                         <img src="img/add-paint-title-bg.svg" alt="">
                     </h2>
                     <ul class="add-paint__list">
-                        <li class="add-paint__item">
+                        <li class="add-paint__item active">
                             <div class="add-paint__item-icon">
                                 <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10.4987 25.6668H17.4987C23.332 25.6668 25.6654 23.3335 25.6654 17.5002V10.5002C25.6654 4.66683 23.332 2.3335 17.4987 2.3335H10.4987C4.66536 2.3335 2.33203 4.66683 2.33203 10.5002V17.5002C2.33203 23.3335 4.66536 25.6668 10.4987 25.6668Z" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.4993 11.6667C11.788 11.6667 12.8327 10.622 12.8327 9.33333C12.8327 8.04467 11.788 7 10.4993 7C9.21068 7 8.16602 8.04467 8.16602 9.33333C8.16602 10.622 9.21068 11.6667 10.4993 11.6667Z" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.11328 22.1083L8.86495 18.2467C9.78661 17.6283 11.1166 17.6983 11.9449 18.41L12.3299 18.7483C13.2399 19.53 14.7099 19.53 15.6199 18.7483L20.4733 14.5833C21.3833 13.8017 22.8533 13.8017 23.7633 14.5833L25.6649 16.2167" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -91,7 +91,7 @@
                             </div>
                             <div class="add-paint__item-text">Basic information</div>
                         </li>
-                        <li class="add-paint__item">
+                        <li class="add-paint__item active">
                             <div class="add-paint__item-icon">
                                 <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12.832 22.75H24.4987" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.832 14.5835H24.4987" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.832 6.4165H24.4987" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.5 6.41683L4.66667 7.5835L8.16667 4.0835" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.5 14.5833L4.66667 15.75L8.16667 12.25" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.5 22.7498L4.66667 23.9165L8.16667 20.4165" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -128,7 +128,277 @@
                 </div>
             </div>
             <div class="add-paint__content">
-                <div class="add-paint__title">add new painting</div>
+                <h1 class="add-paint__title">add new painting</h1>
+                <div class="add-paint__block form">
+                    <h2 class="form__title">Basic information</h2>
+                    <form class="form__content">
+                        <div class="form__row">
+                            <label class="form__item form__item--priority">
+                                <span class="form__item-name">name</span>
+                                <input type="text" class="form__input">
+                            </label>
+                            <label class="form__item">
+                                <span class="form__item-name">orientation</span>
+                                <div class="form__select">
+                                    <select>
+                                        <option value="">Vertical</option>
+                                        <option value="">Horizontal</option>
+                                        <option value="">Square</option>
+                                    </select>
+                                    <span class="form__current-select"></span>
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.83984 9L11.6796 15L17.5194 9" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <ul class="form__select-dropdown"></ul>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__item form__item--photo">
+                                <div class="form__item-name">photo</div>
+                                <div class="form__photo">
+                                    <img src="img/form-img1.jpeg" alt="">
+                                    <button type="button" class="form__photo-delete">
+                                        <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18.4785 6.47852L6.47852 18.4785" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.47852 6.47852L18.4785 18.4785" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="form__photo">
+                                    <img src="img/form-img2.jpeg" alt="">
+                                    <button type="button" class="form__photo-delete">
+                                        <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18.4785 6.47852L6.47852 18.4785" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.47852 6.47852L18.4785 18.4785" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="form__photo">
+                                    <img src="img/form-img3.jpeg" alt="">
+                                    <button type="button" class="form__photo-delete">
+                                        <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18.4785 6.47852L6.47852 18.4785" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.47852 6.47852L18.4785 18.4785" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="form__photo">
+                                    <img src="img/form-img4.jpeg" alt="">
+                                    <button type="button" class="form__photo-delete">
+                                        <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18.4785 6.47852L6.47852 18.4785" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.47852 6.47852L18.4785 18.4785" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <label class="form__add-photo">
+                                    <input type="file">
+                                    <svg viewBox="0 0 51 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.0516 47.2725H37.9487C44.5056 47.2725 47.1188 43.6774 47.4277 39.2952L48.663 21.724C48.9956 17.1291 44.9095 13.2361 39.7542 13.2361C38.3051 13.2361 36.9747 12.4916 36.3095 11.3429L34.599 8.25832C33.5062 6.32251 30.6554 4.72705 28.2322 4.72705H22.7919C20.345 4.72705 17.4941 6.32251 16.4013 8.25832L14.6908 11.3429C14.0257 12.4916 12.6953 13.2361 11.2461 13.2361C6.09089 13.2361 2.00472 17.1291 2.33732 21.724L3.57267 39.2952C3.85775 43.6774 6.49475 47.2725 13.0516 47.2725Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22.7109 11.8184H29.0859" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M25.6848 39.0002C30.5993 39.0002 34.6078 35.0184 34.6078 30.1366C34.6078 25.2548 30.5993 21.2729 25.6848 21.2729C20.7702 21.2729 16.7617 25.2548 16.7617 30.1366C16.7617 35.0184 20.7702 39.0002 25.6848 39.0002Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="add-paint__block form">
+                    <h2 class="form__title">all details</h2>
+                    <form class="form__content">
+                        <div class="form__row">
+                            <label class="form__item">
+                                <span class="form__item-name">price</span>
+                                <input type="text" class="form__input">
+                            </label>
+                            <label class="form__item">
+                                <span class="form__item-name">Creation Year</span>
+                                <input type="text" class="form__input">
+                            </label>
+                            <label class="form__item">
+                                <span class="form__item-name">Condition</span>
+                                <div class="form__select">
+                                    <select>
+                                        <option value="">New</option>
+                                        <option value="">Excellent</option>
+                                        <option value="">Good</option>
+                                        <option value="">Fair</option>
+                                        <option value="">Distressed</option>
+                                    </select>
+                                    <span class="form__current-select"></span>
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.83984 9L11.6796 15L17.5194 9" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <ul class="form__select-dropdown"></ul>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="form__row">
+                            <label class="form__item">
+                                <span class="form__item-name">category</span>
+                                <div class="form__select">
+                                    <select>
+                                        <option value="">Abstract paintings</option>
+                                        <option value="">Excellent</option>
+                                        <option value="">Good</option>
+                                        <option value="">Fair</option>
+                                        <option value="">Distressed</option>
+                                    </select>
+                                    <span class="form__current-select"></span>
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.83984 9L11.6796 15L17.5194 9" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <ul class="form__select-dropdown"></ul>
+                                </div>
+                            </label>
+                            <label class="form__item">
+                                <span class="form__item-name">style</span>
+                                <div class="form__select">
+                                    <select>
+                                        <option value="">Contemporary Art</option>
+                                        <option value="">Excellent</option>
+                                        <option value="">Good</option>
+                                        <option value="">Fair</option>
+                                        <option value="">Distressed</option>
+                                    </select>
+                                    <span class="form__current-select"></span>
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.83984 9L11.6796 15L17.5194 9" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <ul class="form__select-dropdown"></ul>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__item">
+                                <span class="form__item-name">Medium</span>
+                                <span class="form__materials">
+                                    <label>
+                                        <input id="Acrilyc" type="checkbox">
+                                        <span>Acrilyc</span>
+                                    </label>
+                                    <label>
+                                        <input id="Canvas" type="checkbox">
+                                        <span>Canvas</span>
+                                    </label>
+                                    <label>
+                                        <input id="Oil" type="checkbox">
+                                        <span>Oil</span>
+                                    </label>
+                                    <label>
+                                        <input id="Paint" type="checkbox">
+                                        <span>Paint</span>
+                                    </label>
+                                    <label>
+                                        <input id="Wood" type="checkbox">
+                                        <span>Wood</span>
+                                    </label>
+                                    <label>
+                                        <input id="SyntheticResinPaint" type="checkbox">
+                                        <span>Synthetic Resin Paint</span>
+                                    </label>
+                                    <label>
+                                        <input id="GoldLeaf" type="checkbox">
+                                        <span>Gold leaf</span>
+                                    </label>
+                                </span>
+                                <span class="form__materials-add">
+                                    <span class="form__materials-add-text">Suggestet:</span>
+                                    <label for="Acrilyc">Acrilyc</label>
+                                    <label for="Canvas">Canvas</label>
+                                    <label for="Oil">Oil</label>
+                                    <label for="Paint">Paint</label>
+                                    <label for="Wood">Wood</label>
+                                    <label for="SyntheticResinPaint">Synthetic Resin Paint</label>
+                                    <label for="GoldLeaf">Gold leaf</label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <label class="form__item form__item--flex">
+                                <span class="form__item-name">Dimensions canvas only</span>
+                                <input type="number" placeholder="Height cm" class="form__input">
+                                <input type="number" placeholder="Width cm" class="form__input">
+                                <input type="number" placeholder="Height inch" class="form__input">
+                                <input type="number" placeholder="Width inch" class="form__input">
+                            </label>
+                            <label class="form__item form__item--flex">
+                                <span class="form__item-name">Dimensions framed</span>
+                                <input type="number" placeholder="Height cm" class="form__input">
+                                <input type="number" placeholder="Width cm" class="form__input">
+                                <input type="number" placeholder="Height inch" class="form__input">
+                                <input type="number" placeholder="Width inch" class="form__input">
+                            </label>
+                        </div>
+                        <div class="form__row">
+                            <label class="form__item">
+                                <span class="form__item-name">About</span>
+                                <textarea class="form__textarea"></textarea>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="add-paint__block form-music">
+                    <div class="form-music__title">
+                        <div class="form-music__title-icon">
+                            <img src="img/audio-icon.svg" alt="">
+                        </div>
+                        <span>music</span>
+                    </div>
+                    <div class="form-music__content">
+                        <div class="form-music__add-block">
+                            <button class="form-music__add-btn">
+                                <span class="form-music__add-btn-icon">
+                                    <img src="img/form-music-add-icon.svg" alt="">
+                                </span>
+                                <span class="form-music__add-btn-text">Add track</span>
+                            </button>
+                            <div class="form-music__add-text">
+                                You can attach your favorite music from our library, which, in your opinion, conveys the mood of the picture or just like you personally
+                            </div>
+                        </div>
+                        <div class="form-music__complete-block">
+                            <div class="form-music__img-box">
+                                <img src="img/form-music-img1.jpeg" alt="">
+                            </div>
+                            <div class="form-music__complete-info-block">
+                                <div class="form-music__complete-text-block">
+                                    <div class="form-music__complete-title-block">
+                                        <div class="form-music__author">Heavenly Creatures</div>
+                                        <span class="form-music__track-name-separator">-</span>
+                                        <div class="form-music__track-name">Wolf Alice</div>
+                                    </div>
+                                    <div class="form-music__audio-block">
+                                        <audio src="music.mp3"></audio>
+                                        <button class="form-music__play-btn audio-play">
+                                            <svg viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 8L0.749999 15.7942L0.75 0.205771L9 8Z"/>
+                                            </svg>
+                                        </button>
+                                        <div class="form-music__audio-line">
+                                            <img src="img/form-music-audio-line.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="form-music__delete">
+                                    <svg viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26.1298 9.21973L9.2207 26.1288" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.2207 9.21973L26.1298 26.1288" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-paint__block form">
+                    <h2 class="form__title">contacts</h2>
+                    <form class="form__content">
+                        <div class="form__row">
+                            <label class="form__item">
+                                <span class="form__item-name">email</span>
+                                <input type="email" class="form__input">
+                            </label>
+                            <label class="form__item">
+                                <span class="form__item-name">phone</span>
+                                <input type="text" class="form__input input-phone">
+                            </label>
+                        </div>
+                    </form>
+                </div>
                 <button class="add-paint__publish-btn button button--medium disabled" disabled>
                     <span class="button__content">
                         <span class="button__text">publish</span>
@@ -145,6 +415,7 @@
 
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/swiper.js"></script>
 <script src="js/main.js"></script>
 </body>
