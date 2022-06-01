@@ -2,6 +2,8 @@
 @import "components";
 @import "header";
 
+@import "modal/modal-music";
+
 @import "main/main-intro";
 @import "main/popular";
 @import "main/category-paint";
@@ -27,6 +29,11 @@
 
 body.lock {
   overflow: hidden;
+}
+
+main,
+header {
+  transition: filter 0.25s ease;
 }
 
 @media (min-width: 48.01em) {

@@ -86,4 +86,26 @@ $(document).ready(function () {
         $('.form-music__complete-block').hide();
         $('.form-music__add-block').css('display', 'flex');
     });
+
+    // Modal music
+    $('.form-music__add-btn').click(function () {
+        $('body').addClass('lock');
+        $('main').css('filter', 'blur(20px)');
+        $('header').css('filter', 'blur(20px)');
+        $('.music-modal').css('display', 'flex').hide().fadeIn();
+    });
+    function musicModalClose () {
+        $('body').removeClass('lock');
+        $('main').css('filter', '');
+        $('header').css('filter', '');
+        $('.music-modal').fadeOut();
+    }
+    $('.music-modal__choose-btn').click(function () {
+        $('.form-music__add-block').hide();
+        $('.form-music__complete-block').css('display', 'flex');
+        musicModalClose();
+    });
+    $('.music-modal__close').click(musicModalClose);
+    $('.music-modal__bg').click(musicModalClose);
+
 });

@@ -1269,6 +1269,159 @@ input[type=number] {
     height: 5.4rem;
   }
 }
+.music-modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.music-modal__bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(144, 93, 103, 0.1);
+}
+.music-modal__container {
+  position: relative;
+  width: 128.6rem;
+  max-height: 90%;
+  padding: 11rem 14.5rem 12.5rem 14.5rem;
+  background-color: #FCF7F7;
+  overflow-y: scroll;
+}
+.music-modal__close {
+  position: absolute;
+  right: 3.7rem;
+  top: 4.3rem;
+  width: 5.1rem;
+  height: 5.1rem;
+}
+.music-modal__close path {
+  stroke: #503C3C;
+}
+.music-modal__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 8rem;
+}
+.music-modal__title > span {
+  margin-top: 0.6rem;
+  font-weight: bold;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+.music-modal__title-icon {
+  width: 4.7rem;
+  height: 4rem;
+  margin-right: 2.6rem;
+}
+.music-modal__title-icon > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.music-modal__search-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 4rem;
+  margin-bottom: 10rem;
+  border-bottom: 1px solid rgba(184, 172, 176, 0.7);
+}
+.music-modal__search-label > svg {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1.5rem;
+}
+.music-modal__search-label > svg path {
+  fill: #503C3C;
+}
+.music-modal__search {
+  width: 100%;
+  height: 100%;
+  font-family: "Raleway";
+  font-size: 1.7rem;
+}
+.music-modal__filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 7rem;
+}
+.music-modal__filter-btn {
+  font-weight: bold;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  color: #89767D;
+}
+.music-modal__filter-btn:not(:last-child) {
+  margin-right: 8rem;
+}
+.music-modal__filter-btn.active {
+  border-bottom: 1px solid #503C3C;
+  color: #503C3C;
+}
+.music-modal__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.music-modal__item:not(:last-child) {
+  margin-bottom: 5.5rem;
+}
+.music-modal__choose-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.music-modal__choose-btn > span {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+.music-modal__choose-btn > svg {
+  width: 6.5rem;
+  height: 1.1rem;
+  margin-left: 2.5rem;
+}
+.music-modal__choose-btn > svg path {
+  fill: #503C3C;
+}
+
 .main-intro {
   margin: 5rem 0 10rem 0;
 }
@@ -3895,6 +4048,14 @@ input[type=number] {
 
 body.lock {
   overflow: hidden;
+}
+
+main,
+header {
+  -webkit-transition: -webkit-filter 0.25s ease;
+  transition: -webkit-filter 0.25s ease;
+  transition: filter 0.25s ease;
+  transition: filter 0.25s ease, -webkit-filter 0.25s ease;
 }
 
 @media (min-width: 48.01em) {
