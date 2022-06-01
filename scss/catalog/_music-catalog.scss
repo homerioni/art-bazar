@@ -1,0 +1,63 @@
+@import "../param";
+
+.music-catalog {
+  margin-bottom: 13rem;
+
+  &--title {
+    margin-bottom: 5rem;
+    padding-bottom: 6rem;
+    border-bottom: 1px solid rgba(184, 172, 176, 0.7);
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 5.2rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__upload {
+    margin: 0 auto;
+  }
+
+  &__title-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+  }
+
+  &__category-block {
+  }
+
+  &__category {
+    font-weight: bold;
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+
+  &__category-text {
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    color: $default-color-light;
+  }
+
+  &__more-link {
+  }
+
+  &__slider {
+    padding-top: 3rem;
+    margin-bottom: 6rem;
+  }
+
+  &__slide {
+  }
+
+  &__slider-nav {
+    .swiper-pagination-current,
+    .swiper-pagination-total {
+      color: $default-color;
+    }
+  }
+}

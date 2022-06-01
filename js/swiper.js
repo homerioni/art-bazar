@@ -1,25 +1,3 @@
-/*
-const reviews_slider = new Swiper('.reviews__slider', {
-    direction: 'horizontal',
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 50,
-    breakpoints: {
-        0: {},
-    },
-    pagination: {
-        el: '',
-        type: '',
-    },
-    navigation: {
-        nextEl: '',
-        prevEl: '',
-    },
-    autoplay: {
-    },
-});
-*/
-
 // Пересчет rem в px для swiper
 const rem = function (rem) {
     if ($(window).width() > 768) {
@@ -206,43 +184,45 @@ const prod_intro_slider = new Swiper(".prod-intro__slider", {
     },
 });
 
-const catalog_intro_slider = new Swiper(".catalog-intro__slider", {
-    direction: "horizontal",
-    slidesPerView: 1.73,
-    loop: true,
-    spaceBetween: rem(5),
+document.querySelectorAll('.music-catalog').forEach(n => {
+    const music_catalog_slider = new Swiper(n.querySelector('.music-catalog__slider'), {
+        direction: "horizontal",
+        slidesPerView: 5,
+        spaceBetween: rem(5),
 
-    pagination: {
-        el: '.catalog-intro__pagination-bullet',
-        type: 'bullets',
-    },
-
-    navigation: {
-        nextEl: '.catalog-intro .next',
-        prevEl: '.catalog-intro .prev',
-    },
-
-    autoplay: {
-        delay: 6000,
-    },
-
-    on: {
-        beforeInit: function () {
-            let total = $('.catalog-intro__slide').length;
-            if (total < 10) {
-                total = '0' + total;
-            }
-            $('.catalog-intro .slider-nav__total').text(total);
-            $('.catalog-intro .slider-nav__current').text('01');
-            $('.catalog-intro__slider-nav').height($('.prod-intro__container').height());
+        navigation: {
+            nextEl: n.querySelector('.next'),
+            prevEl: n.querySelector('.prev'),
         },
 
-        slideChange: function (slider) {
-            let current = slider.realIndex + 1;
-            if (current < 10) {
-                current = '0' + current;
-            }
-            $('.catalog-intro .slider-nav__current').text(current);
+        pagination: {
+            el: n.querySelector('.slider-nav__pagination-block'),
+            type: 'fraction',
+            renderFraction: function (currentClass, totalClass, index, total) {
+                return '<div class="' + currentClass + '">'+ index +'</div>' +
+                    '<div class="slider-nav__pagination-separator"></div>' +
+                    '<div class="' + totalClass + '">'+ total +'</div>';
+            },
+            formatFractionCurrent: function (number) {
+                if (number < 10) {
+                    return '0' + number;
+                } else {
+                    return number;
+                }
+            },
+            formatFractionTotal: function (number) {
+                if (number < 10) {
+                    return '0' + number;
+                } else {
+                    return number;
+                }
+            },
         },
-    },
+
+        autoplay: {
+            delay: 6000,
+        },
+    });
+
+    music_catalog_slider.controller.control = music_catalog_slider;
 });

@@ -3548,6 +3548,55 @@ input[type=number] {
      object-fit: contain;
 }
 
+.music-catalog {
+  margin-bottom: 13rem;
+}
+.music-catalog--title {
+  margin-bottom: 5rem;
+  padding-bottom: 6rem;
+  border-bottom: 1px solid rgba(184, 172, 176, 0.7);
+}
+.music-catalog__title {
+  margin-bottom: 2rem;
+  font-weight: bold;
+  font-size: 5.2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.music-catalog__upload {
+  margin: 0 auto;
+}
+.music-catalog__title-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+.music-catalog__category {
+  font-weight: bold;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+.music-catalog__category-text {
+  font-family: "Raleway";
+  font-size: 1.7rem;
+  color: #89767D;
+}
+.music-catalog__slider {
+  padding-top: 3rem;
+  margin-bottom: 6rem;
+}
+.music-catalog__slider-nav .swiper-pagination-current,
+.music-catalog__slider-nav .swiper-pagination-total {
+  color: #503C3C;
+}
+
 .add-paint {
   margin-top: 6rem;
   margin-bottom: 16rem;
