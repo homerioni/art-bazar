@@ -59,7 +59,7 @@ $(document).ready(function () {
     });
     $('.form__select').click(function (e) {
         e.preventDefault();
-        $(this).find('.form__select-dropdown').slideToggle();
+        $(this).find('.form__select-dropdown').slideToggle(200);
     });
     $('.form__select-dropdown li').click(function () {
         let num = $(this).attr('num'),
@@ -88,7 +88,7 @@ $(document).ready(function () {
     });
 
     // Modal music
-    $('.form-music__add-btn').click(function () {
+    $('.music-add').click(function () {
         $('body').addClass('lock');
         $('main').css('filter', 'blur(20px)');
         $('header').css('filter', 'blur(20px)');

@@ -49,6 +49,52 @@ const main_intro_slider = new Swiper('.main-intro__slider', {
     },
 });
 
+const catalog_intro_slider = new Swiper('.catalog-intro__slider', {
+    direction: 'horizontal',
+    loop: true,
+
+    breakpoints: {
+        769: {
+            slidesPerView: 1.7,
+        },
+        0: {
+            slidesPerView: 1,
+        },
+    },
+
+    pagination: {
+        el: '.catalog-intro__pagination-bullet',
+        type: 'bullets',
+    },
+
+    navigation: {
+        nextEl: '.catalog-intro .next',
+        prevEl: '.catalog-intro .prev',
+    },
+
+    autoplay: {
+        delay: 7500,
+    },
+
+    on: {
+        beforeInit: function () {
+            let total = $('.catalog-intro__slide').length;
+            if (total < 10) {
+                total = '0' + total;
+            }
+            $('.catalog-intro .slider-nav__total').text(total);
+        },
+
+        slideChange: function (slider) {
+            let current = slider.realIndex + 1;
+            if (current < 10) {
+                current = '0' + current;
+            }
+            $('.catalog-intro .slider-nav__current').text(current);
+        },
+    },
+});
+
 const popular_slider = new Swiper('.popular__slider', {
     direction: 'horizontal',
     loop: true,
