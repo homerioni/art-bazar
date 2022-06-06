@@ -4663,6 +4663,114 @@ input[type=number] {
 .top-creators__country > svg path {
   stroke: #89767D;
 }
+.creators {
+  position: relative;
+  margin-bottom: 15rem;
+}
+.creators:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -36rem;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: calc(100% + 51rem);
+  border-radius: 7rem 7rem 0 0;
+  background-color: #343131;
+}
+.creators__title {
+  margin-bottom: 6rem;
+  font-weight: bold;
+  font-size: 5.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+.creators__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 0;
+  border-top: 1px solid rgb(95, 93, 93);
+  border-bottom: 1px solid rgb(95, 93, 93);
+}
+.creators__filter-box {
+  cursor: pointer;
+}
+.creators__filter-box:first-child .creators__filter-item, .creators__filter-box:last-child .creators__filter-item {
+  padding: 0;
+}
+.creators__filter-item {
+  font-family: "Raleway";
+  font-size: 1.7rem;
+  padding: 0 1.5rem;
+  color: white;
+}
+.creators__filter-item:hover {
+  color: #a8a8a8;
+}
+.creators__block {
+  margin-top: 12rem;
+}
+.creators__block-name {
+  margin-bottom: 2rem;
+  font-weight: bold;
+  font-size: 5.2rem;
+  text-transform: uppercase;
+  color: white;
+}
+.creators__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.creators__item {
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+}
+.creators__item > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.creators__item:not(:nth-child(3n)) {
+  margin-right: 3rem;
+}
+.creators__item:nth-child(n+4) {
+  margin-top: 4rem;
+}
+.creators__img-box {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 10rem;
+  height: 10rem;
+  margin-right: 2.5rem;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.creators__name {
+  font-weight: bold;
+  font-size: 2.6rem;
+  line-height: 3.6rem;
+  text-transform: uppercase;
+  color: white;
+}
+
 body.lock {
   overflow: hidden;
 }
