@@ -1,0 +1,135 @@
+@import "../param";
+
+.creators-intro {
+  margin-top: 10rem;
+  margin-bottom: 16rem;
+
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__img-box {
+    position: relative;
+    flex: none;
+    width: 50rem;
+    height: 65rem;
+    margin-right: 8rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      right: 5%;
+      bottom: 5%;
+      z-index: -1;
+      display: block;
+      width: 80%;
+      height: 80%;
+      box-shadow: 4rem 4rem 8rem 1rem rgba(158, 138, 142, 0.7);
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 10rem;
+      top: 10rem;
+      z-index: 1;
+      display: block;
+      width: calc(100% - 20rem);
+      height: calc(100% - 20rem);
+      box-shadow: 0 0 2rem 3px rgba(34, 60, 80, 0.3) inset;
+    }
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 10rem solid $pale-pink;
+      border-image: url("../../img/creators-intro-border.png") 142 140 147 144 round;
+    }
+  }
+
+  &__info-block {
+    flex: auto;
+  }
+
+  &__title-img-bg {
+    position: absolute;
+    right: 0;
+    top: -4rem;
+    width: 25rem;
+    height: 17.5rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__title {
+    margin-bottom: 11rem;
+    font-weight: bold;
+    font-size: 5.2rem;
+    line-height: 8.5rem;
+    text-transform: uppercase;
+
+    > div {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__title-line {
+    width: 13.3rem;
+    height: 1px;
+    margin-right: 4rem;
+    margin-bottom: 1rem;
+    background-color: rgba(184, 172, 176, 0.7);
+  }
+
+  &__desc-block {
+    display: flex;
+  }
+
+  &__sign-in-block {
+    flex: auto;
+  }
+
+  &__text {
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    line-height: 2.9rem;
+    color: $default-color-light;
+  }
+
+  &__number {
+    margin-top: 0.8rem;
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+  }
+
+  &__btn {
+    margin-top: 6rem;
+  }
+
+  &__desc {
+    width: 36.5rem;
+  }
+
+  &__desc-title {
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 1.7rem;
+    line-height: 2.8rem;
+    text-transform: uppercase;
+  }
+
+  &__desc-separator {
+    width: 100%;
+    height: 1px;
+    margin-bottom: 2rem;
+    background-color: rgba(184, 172, 176, 0.7);
+  }
+}
