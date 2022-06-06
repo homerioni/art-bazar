@@ -4573,6 +4573,96 @@ input[type=number] {
   background-color: rgba(184, 172, 176, 0.7);
 }
 
+.top-creators {
+  margin-bottom: 19rem;
+}
+.top-creators__title {
+  font-weight: bold;
+  font-size: 5.2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.top-creators__sub-title {
+  margin-bottom: 7rem;
+  font-family: "antarcticregular";
+  font-size: 5.9rem;
+  line-height: 3rem;
+  text-align: center;
+  text-transform: lowercase;
+  color: #A83248;
+}
+.top-creators__slider {
+  margin-bottom: 7rem;
+}
+.top-creators__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: auto;
+  padding: 3rem 3rem 2rem 3rem;
+  border-radius: 100rem 100rem 0 0;
+  background-color: #FCF7F7;
+}
+.top-creators__img-box {
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto 2.5rem auto;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.top-creators__img-box > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.top-creators__name {
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  font-size: 2.6rem;
+  line-height: 3.6rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.top-creators__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(184, 172, 176, 0.6);
+  font-family: "Raleway";
+  font-size: 1.7rem;
+  color: #89767D;
+}
+.top-creators__country {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.top-creators__country > svg {
+  width: 2.2rem;
+  height: 2.2rem;
+  margin-right: 0.4rem;
+}
+.top-creators__country > svg path {
+  stroke: #89767D;
+}
 body.lock {
   overflow: hidden;
 }

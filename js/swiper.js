@@ -272,3 +272,52 @@ document.querySelectorAll('.music-catalog').forEach(n => {
 
     music_catalog_slider.controller.control = music_catalog_slider;
 });
+
+const top_creators_slider = new Swiper('.top-creators__slider', {
+    direction: 'horizontal',
+    loop: true,
+
+    breakpoints: {
+        769: {
+            slidesPerView: 4,
+            spaceBetween: rem(5),
+        },
+        0: {
+            slidesPerView: 1.3,
+            spaceBetween: rem(2),
+        },
+    },
+
+    pagination: {
+        el: '.top-creators .slider-nav__pagination-block',
+        type: 'fraction',
+        renderFraction: function (currentClass, totalClass, index, total) {
+            return '<div class="' + currentClass + '">'+ index +'</div>' +
+                '<div class="slider-nav__pagination-separator"></div>' +
+                '<div class="' + totalClass + '">'+ total +'</div>';
+        },
+        formatFractionCurrent: function (number) {
+            if (number < 10) {
+                return '0' + number;
+            } else {
+                return number;
+            }
+        },
+        formatFractionTotal: function (number) {
+            if (number < 10) {
+                return '0' + number;
+            } else {
+                return number;
+            }
+        },
+    },
+
+    navigation: {
+        nextEl: '.top-creators .next',
+        prevEl: '.top-creators .prev',
+    },
+
+    autoplay: {
+        delay: 5000,
+    },
+});
