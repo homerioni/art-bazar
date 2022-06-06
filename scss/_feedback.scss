@@ -1,0 +1,120 @@
+@import "param";
+
+.feedback {
+  margin-top: 12rem;
+  margin-bottom: 15rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__socials-content {
+    position: relative;
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 62.3rem;
+    height: fit-content;
+    min-height: 78rem;
+    padding: 7.6rem 6.8rem;
+    background: url("../img/feedback-socials-bg.svg") no-repeat #343131;
+    background-size: cover;
+  }
+
+  &__social-title {
+    width: 100%;
+    margin-bottom: 5rem;
+    font-weight: bold;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  &__socials {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+  }
+
+  &__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12.4rem;
+    height: 12.4rem;
+    border-radius: 100%;
+    background-color: white;
+    transition: background-color 0.2s ease;
+
+    > svg {
+      width: 4rem;
+      height: 4rem;
+
+      path {
+        fill: #353232;
+        transition: fill 0.2s ease;
+      }
+    }
+
+    &:not(:nth-child(3n + 4)) {
+      margin-right: 3.3rem;
+    }
+
+    &:nth-child(n + 5) {
+      margin-top: 3.3rem;
+    }
+
+    &:hover {
+      background-color: $red;
+
+      > svg path {
+        fill: white;
+      }
+    }
+  }
+
+  &__contacts {
+    margin-top: auto;
+    font-family: $font-raleway;
+    font-size: 2rem;
+    color: #EBE6E6;
+
+    & > *:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__form {
+    align-self: flex-end;
+    width: 72rem;
+    padding: 0;
+    background-color: transparent;
+
+    .form__item {
+      input,
+      textarea,
+      .form__select,
+      .form__materials {
+        background-color: $pale-pink;
+      }
+    }
+
+    textarea {
+      padding: 2rem;
+      height: 12rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 6rem;
+    font-weight: bold;
+    font-size: 5.2rem;
+    text-transform: uppercase;
+  }
+
+  &__btn {
+    margin-top: 7rem;
+  }
+}

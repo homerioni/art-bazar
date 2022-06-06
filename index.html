@@ -53,7 +53,8 @@
             right: -10%;
         }
 
-        li a {
+        li a,
+        li span {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -251,7 +252,320 @@
     <li>
         <a href="add-music.html" target="_blank">Добавить трек</a>
     </li>
+    <li>
+        <a href="contacts.html" target="_blank">Контакты</a>
+    </li>
 </ul>
+
+<section class="music-modal">
+    <div class="music-modal__bg"></div>
+    <div class="music-modal__container">
+        <button type="button" class="music-modal__close">
+            <svg viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M38.25 12.75L12.75 38.25" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.75 12.75L38.25 38.25" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="music-modal__title">
+            <div class="music-modal__title-icon">
+                <img src="img/audio-icon.svg" alt="">
+            </div>
+            <span>choose music</span>
+        </div>
+        <label class="music-modal__search-label">
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.31573 11.7811L1.89987 11.644L1.31573 11.7811ZM1.31573 6.324L1.89987 6.46102L1.31573 6.324ZM16.7893 6.324L17.3735 6.18698L16.7893 6.324ZM16.7893 11.781L16.2052 11.644L16.7893 11.781ZM11.781 16.7893L11.644 16.2052L11.781 16.7893ZM6.324 16.7893L6.18698 17.3735L6.324 16.7893ZM6.324 1.31573L6.18698 0.731583L6.324 1.31573ZM11.781 1.31573L11.9181 0.731583L11.781 1.31573ZM18.5757 19.4243C18.8101 19.6586 19.1899 19.6586 19.4243 19.4243C19.6586 19.1899 19.6586 18.8101 19.4243 18.5757L18.5757 19.4243ZM1.89987 11.644C1.50004 9.93949 1.50004 8.16556 1.89987 6.46102L0.731584 6.18698C0.289472 8.07176 0.289472 10.0333 0.731584 11.9181L1.89987 11.644ZM16.2052 6.46102C16.605 8.16556 16.605 9.93949 16.2052 11.644L17.3735 11.9181C17.8156 10.0333 17.8156 8.07176 17.3735 6.18698L16.2052 6.46102ZM11.644 16.2052C9.93949 16.605 8.16556 16.605 6.46102 16.2052L6.18698 17.3735C8.07176 17.8156 10.0333 17.8156 11.9181 17.3735L11.644 16.2052ZM6.46102 1.89987C8.16556 1.50004 9.93949 1.50004 11.644 1.89987L11.9181 0.731583C10.0333 0.289472 8.07176 0.289473 6.18698 0.731583L6.46102 1.89987ZM6.46102 16.2052C4.19785 15.6743 2.43074 13.9072 1.89987 11.644L0.731584 11.9181C1.36653 14.625 3.48009 16.7385 6.18698 17.3735L6.46102 16.2052ZM11.9181 17.3735C14.625 16.7385 16.7385 14.625 17.3735 11.9181L16.2052 11.644C15.6743 13.9072 13.9072 15.6743 11.644 16.2052L11.9181 17.3735ZM11.644 1.89987C13.9072 2.43074 15.6743 4.19785 16.2052 6.46102L17.3735 6.18698C16.7385 3.48009 14.625 1.36653 11.9181 0.731583L11.644 1.89987ZM6.18698 0.731583C3.48009 1.36653 1.36653 3.48009 0.731584 6.18698L1.89987 6.46102C2.43074 4.19785 4.19785 2.43074 6.46102 1.89987L6.18698 0.731583ZM14.9109 15.7594L18.5757 19.4243L19.4243 18.5757L15.7594 14.9109L14.9109 15.7594Z"/>
+            </svg>
+            <input type="text" placeholder="Search..." class="music-modal__search">
+        </label>
+        <div class="music-modal__content">
+            <div class="music-modal__filters">
+                <button class="music-modal__filter-btn active">All tracks</button>
+                <button class="music-modal__filter-btn">you saved</button>
+            </div>
+            <ul class="music-modal__list">
+                <li class="music-modal__item">
+                    <div class="form-music__img-box">
+                        <img src="img/form-music-img1.jpeg" alt="">
+                    </div>
+                    <div class="form-music__complete-info-block">
+                        <div class="form-music__complete-text-block">
+                            <div class="form-music__complete-title-block">
+                                <div class="form-music__author">Heavenly Creatures</div>
+                                <span class="form-music__track-name-separator">-</span>
+                                <div class="form-music__track-name">Wolf Alice</div>
+                            </div>
+                            <div class="form-music__audio-block">
+                                <audio src="music.mp3"></audio>
+                                <button class="form-music__play-btn audio-play">
+                                    <svg viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 8L0.749999 15.7942L0.75 0.205771L9 8Z"/>
+                                    </svg>
+                                </button>
+                                <div class="form-music__audio-line">
+                                    <img src="img/form-music-audio-line.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="music-modal__choose-btn">
+                            <span>choose</span>
+                            <svg viewBox="0 0 65 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M64.4596 6.19009C64.7135 5.93625 64.7135 5.52469 64.4596 5.27085L60.323 1.13427C60.0692 0.880434 59.6576 0.880434 59.4038 1.13427C59.15 1.38812 59.15 1.79967 59.4038 2.05351L63.0808 5.73047L59.4038 9.40742C59.15 9.66126 59.15 10.0728 59.4038 10.3267C59.6576 10.5805 60.0692 10.5805 60.323 10.3267L64.4596 6.19009ZM0 6.38047H64V5.08047H0V6.38047Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+                <li class="music-modal__item">
+                    <div class="form-music__img-box">
+                        <img src="img/music-modal-img1.jpeg" alt="">
+                    </div>
+                    <div class="form-music__complete-info-block">
+                        <div class="form-music__complete-text-block">
+                            <div class="form-music__complete-title-block">
+                                <div class="form-music__author">The Neighbourhood</div>
+                                <span class="form-music__track-name-separator">-</span>
+                                <div class="form-music__track-name">R.I.P. 2 My Youth</div>
+                            </div>
+                            <div class="form-music__audio-block">
+                                <audio src="music.mp3"></audio>
+                                <button class="form-music__play-btn audio-play">
+                                    <svg viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 8L0.749999 15.7942L0.75 0.205771L9 8Z"/>
+                                    </svg>
+                                </button>
+                                <div class="form-music__audio-line">
+                                    <img src="img/form-music-audio-line.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="music-modal__choose-btn">
+                            <span>choose</span>
+                            <svg viewBox="0 0 65 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M64.4596 6.19009C64.7135 5.93625 64.7135 5.52469 64.4596 5.27085L60.323 1.13427C60.0692 0.880434 59.6576 0.880434 59.4038 1.13427C59.15 1.38812 59.15 1.79967 59.4038 2.05351L63.0808 5.73047L59.4038 9.40742C59.15 9.66126 59.15 10.0728 59.4038 10.3267C59.6576 10.5805 60.0692 10.5805 60.323 10.3267L64.4596 6.19009ZM0 6.38047H64V5.08047H0V6.38047Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+                <li class="music-modal__item">
+                    <div class="form-music__img-box">
+                        <img src="img/music-modal-img2.jpeg" alt="">
+                    </div>
+                    <div class="form-music__complete-info-block">
+                        <div class="form-music__complete-text-block">
+                            <div class="form-music__complete-title-block">
+                                <div class="form-music__author">Grae</div>
+                                <span class="form-music__track-name-separator">-</span>
+                                <div class="form-music__track-name">Boxes</div>
+                            </div>
+                            <div class="form-music__audio-block">
+                                <audio src="music.mp3"></audio>
+                                <button class="form-music__play-btn audio-play">
+                                    <svg viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 8L0.749999 15.7942L0.75 0.205771L9 8Z"/>
+                                    </svg>
+                                </button>
+                                <div class="form-music__audio-line">
+                                    <img src="img/form-music-audio-line.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="music-modal__choose-btn">
+                            <span>choose</span>
+                            <svg viewBox="0 0 65 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M64.4596 6.19009C64.7135 5.93625 64.7135 5.52469 64.4596 5.27085L60.323 1.13427C60.0692 0.880434 59.6576 0.880434 59.4038 1.13427C59.15 1.38812 59.15 1.79967 59.4038 2.05351L63.0808 5.73047L59.4038 9.40742C59.15 9.66126 59.15 10.0728 59.4038 10.3267C59.6576 10.5805 60.0692 10.5805 60.323 10.3267L64.4596 6.19009ZM0 6.38047H64V5.08047H0V6.38047Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+                <li class="music-modal__item">
+                    <div class="form-music__img-box">
+                        <img src="img/form-music-img1.jpeg" alt="">
+                    </div>
+                    <div class="form-music__complete-info-block">
+                        <div class="form-music__complete-text-block">
+                            <div class="form-music__complete-title-block">
+                                <div class="form-music__author">Heavenly Creatures</div>
+                                <span class="form-music__track-name-separator">-</span>
+                                <div class="form-music__track-name">Wolf Alice</div>
+                            </div>
+                            <div class="form-music__audio-block">
+                                <audio src="music.mp3"></audio>
+                                <button class="form-music__play-btn audio-play">
+                                    <svg viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 8L0.749999 15.7942L0.75 0.205771L9 8Z"/>
+                                    </svg>
+                                </button>
+                                <div class="form-music__audio-line">
+                                    <img src="img/form-music-audio-line.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="music-modal__choose-btn">
+                            <span>choose</span>
+                            <svg viewBox="0 0 65 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M64.4596 6.19009C64.7135 5.93625 64.7135 5.52469 64.4596 5.27085L60.323 1.13427C60.0692 0.880434 59.6576 0.880434 59.4038 1.13427C59.15 1.38812 59.15 1.79967 59.4038 2.05351L63.0808 5.73047L59.4038 9.40742C59.15 9.66126 59.15 10.0728 59.4038 10.3267C59.6576 10.5805 60.0692 10.5805 60.323 10.3267L64.4596 6.19009ZM0 6.38047H64V5.08047H0V6.38047Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+                <li class="music-modal__item">
+                    <div class="form-music__img-box">
+                        <img src="img/music-modal-img1.jpeg" alt="">
+                    </div>
+                    <div class="form-music__complete-info-block">
+                        <div class="form-music__complete-text-block">
+                            <div class="form-music__complete-title-block">
+                                <div class="form-music__author">The Neighbourhood</div>
+                                <span class="form-music__track-name-separator">-</span>
+                                <div class="form-music__track-name">R.I.P. 2 My Youth</div>
+                            </div>
+                            <div class="form-music__audio-block">
+                                <audio src="music.mp3"></audio>
+                                <button class="form-music__play-btn audio-play">
+                                    <svg viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 8L0.749999 15.7942L0.75 0.205771L9 8Z"/>
+                                    </svg>
+                                </button>
+                                <div class="form-music__audio-line">
+                                    <img src="img/form-music-audio-line.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="music-modal__choose-btn">
+                            <span>choose</span>
+                            <svg viewBox="0 0 65 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M64.4596 6.19009C64.7135 5.93625 64.7135 5.52469 64.4596 5.27085L60.323 1.13427C60.0692 0.880434 59.6576 0.880434 59.4038 1.13427C59.15 1.38812 59.15 1.79967 59.4038 2.05351L63.0808 5.73047L59.4038 9.40742C59.15 9.66126 59.15 10.0728 59.4038 10.3267C59.6576 10.5805 60.0692 10.5805 60.323 10.3267L64.4596 6.19009ZM0 6.38047H64V5.08047H0V6.38047Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+                <li class="music-modal__item">
+                    <div class="form-music__img-box">
+                        <img src="img/music-modal-img2.jpeg" alt="">
+                    </div>
+                    <div class="form-music__complete-info-block">
+                        <div class="form-music__complete-text-block">
+                            <div class="form-music__complete-title-block">
+                                <div class="form-music__author">Grae</div>
+                                <span class="form-music__track-name-separator">-</span>
+                                <div class="form-music__track-name">Boxes</div>
+                            </div>
+                            <div class="form-music__audio-block">
+                                <audio src="music.mp3"></audio>
+                                <button class="form-music__play-btn audio-play">
+                                    <svg viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 8L0.749999 15.7942L0.75 0.205771L9 8Z"/>
+                                    </svg>
+                                </button>
+                                <div class="form-music__audio-line">
+                                    <img src="img/form-music-audio-line.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="music-modal__choose-btn">
+                            <span>choose</span>
+                            <svg viewBox="0 0 65 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M64.4596 6.19009C64.7135 5.93625 64.7135 5.52469 64.4596 5.27085L60.323 1.13427C60.0692 0.880434 59.6576 0.880434 59.4038 1.13427C59.15 1.38812 59.15 1.79967 59.4038 2.05351L63.0808 5.73047L59.4038 9.40742C59.15 9.66126 59.15 10.0728 59.4038 10.3267C59.6576 10.5805 60.0692 10.5805 60.323 10.3267L64.4596 6.19009ZM0 6.38047H64V5.08047H0V6.38047Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+                <li class="music-modal__item">
+                    <div class="form-music__img-box">
+                        <img src="img/form-music-img1.jpeg" alt="">
+                    </div>
+                    <div class="form-music__complete-info-block">
+                        <div class="form-music__complete-text-block">
+                            <div class="form-music__complete-title-block">
+                                <div class="form-music__author">Heavenly Creatures</div>
+                                <span class="form-music__track-name-separator">-</span>
+                                <div class="form-music__track-name">Wolf Alice</div>
+                            </div>
+                            <div class="form-music__audio-block">
+                                <audio src="music.mp3"></audio>
+                                <button class="form-music__play-btn audio-play">
+                                    <svg viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 8L0.749999 15.7942L0.75 0.205771L9 8Z"/>
+                                    </svg>
+                                </button>
+                                <div class="form-music__audio-line">
+                                    <img src="img/form-music-audio-line.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="music-modal__choose-btn">
+                            <span>choose</span>
+                            <svg viewBox="0 0 65 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M64.4596 6.19009C64.7135 5.93625 64.7135 5.52469 64.4596 5.27085L60.323 1.13427C60.0692 0.880434 59.6576 0.880434 59.4038 1.13427C59.15 1.38812 59.15 1.79967 59.4038 2.05351L63.0808 5.73047L59.4038 9.40742C59.15 9.66126 59.15 10.0728 59.4038 10.3267C59.6576 10.5805 60.0692 10.5805 60.323 10.3267L64.4596 6.19009ZM0 6.38047H64V5.08047H0V6.38047Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+                <li class="music-modal__item">
+                    <div class="form-music__img-box">
+                        <img src="img/music-modal-img1.jpeg" alt="">
+                    </div>
+                    <div class="form-music__complete-info-block">
+                        <div class="form-music__complete-text-block">
+                            <div class="form-music__complete-title-block">
+                                <div class="form-music__author">The Neighbourhood</div>
+                                <span class="form-music__track-name-separator">-</span>
+                                <div class="form-music__track-name">R.I.P. 2 My Youth</div>
+                            </div>
+                            <div class="form-music__audio-block">
+                                <audio src="music.mp3"></audio>
+                                <button class="form-music__play-btn audio-play">
+                                    <svg viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 8L0.749999 15.7942L0.75 0.205771L9 8Z"/>
+                                    </svg>
+                                </button>
+                                <div class="form-music__audio-line">
+                                    <img src="img/form-music-audio-line.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="music-modal__choose-btn">
+                            <span>choose</span>
+                            <svg viewBox="0 0 65 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M64.4596 6.19009C64.7135 5.93625 64.7135 5.52469 64.4596 5.27085L60.323 1.13427C60.0692 0.880434 59.6576 0.880434 59.4038 1.13427C59.15 1.38812 59.15 1.79967 59.4038 2.05351L63.0808 5.73047L59.4038 9.40742C59.15 9.66126 59.15 10.0728 59.4038 10.3267C59.6576 10.5805 60.0692 10.5805 60.323 10.3267L64.4596 6.19009ZM0 6.38047H64V5.08047H0V6.38047Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+                <li class="music-modal__item">
+                    <div class="form-music__img-box">
+                        <img src="img/music-modal-img2.jpeg" alt="">
+                    </div>
+                    <div class="form-music__complete-info-block">
+                        <div class="form-music__complete-text-block">
+                            <div class="form-music__complete-title-block">
+                                <div class="form-music__author">Grae</div>
+                                <span class="form-music__track-name-separator">-</span>
+                                <div class="form-music__track-name">Boxes</div>
+                            </div>
+                            <div class="form-music__audio-block">
+                                <audio src="music.mp3"></audio>
+                                <button class="form-music__play-btn audio-play">
+                                    <svg viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 8L0.749999 15.7942L0.75 0.205771L9 8Z"/>
+                                    </svg>
+                                </button>
+                                <div class="form-music__audio-line">
+                                    <img src="img/form-music-audio-line.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="music-modal__choose-btn">
+                            <span>choose</span>
+                            <svg viewBox="0 0 65 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M64.4596 6.19009C64.7135 5.93625 64.7135 5.52469 64.4596 5.27085L60.323 1.13427C60.0692 0.880434 59.6576 0.880434 59.4038 1.13427C59.15 1.38812 59.15 1.79967 59.4038 2.05351L63.0808 5.73047L59.4038 9.40742C59.15 9.66126 59.15 10.0728 59.4038 10.3267C59.6576 10.5805 60.0692 10.5805 60.323 10.3267L64.4596 6.19009ZM0 6.38047H64V5.08047H0V6.38047Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
 
 
 <script src="js/jquery-3.6.0.min.js"></script>

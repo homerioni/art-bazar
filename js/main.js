@@ -107,5 +107,9 @@ $(document).ready(function () {
     });
     $('.music-modal__close').click(musicModalClose);
     $('.music-modal__bg').click(musicModalClose);
+    $('.music-modal__filter-btn').click(function () {
+        $('.music-modal__filter-btn').removeClass('active');
+        $(this).addClass('active');
+    });
 
 });
