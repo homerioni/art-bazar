@@ -1,0 +1,190 @@
+@import "param";
+
+.cart {
+  margin-top: 12rem;
+  margin-bottom: 16rem;
+
+  &__title-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 5.2rem;
+    text-transform: uppercase;
+  }
+
+  &__sub-title {
+    font-family: $font-antarctic;
+    font-size: 5.9rem;
+    line-height: 3rem;
+    color: $red;
+  }
+
+  &__list {
+  }
+
+  &__item {
+    display: flex;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 8rem;
+    }
+  }
+
+  &__info-block {
+    flex: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 99.3rem;
+    padding: 3rem;
+    background-color: $pale-pink;
+  }
+
+  &__delete {
+    position: absolute;
+    top: -2.2rem;
+    right: 3.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6.8rem;
+    height: 6.8rem;
+    border-radius: 100%;
+    background-color: #C6B5B5;
+
+    > svg {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  &__like {
+    position: absolute;
+    top: -2.2rem;
+    right: 12.2rem;
+  }
+
+  &__image-block {
+    flex: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 30rem;
+    margin-right: 5rem;
+  }
+
+  &__img-box {
+    width: 9.1rem;
+    height: 6.2rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:not(:nth-child(3n + 4), :first-child) {
+      margin-right: 1.2rem;
+    }
+
+    &:first-child {
+      width: 100%;
+      height: 19rem;
+      border-radius: 100rem 100rem 0 0;
+      overflow: hidden;
+    }
+
+    &:nth-child(n + 2) {
+      margin-top: 1.2rem;
+    }
+  }
+
+  &__text-block {
+    width: 46rem;
+  }
+
+  &__author {
+    margin-bottom: 2.4rem;
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    line-height: 2.9rem;
+    color: $default-color-light;
+  }
+
+  &__item-title {
+    margin-bottom: 5rem;
+    font-weight: bold;
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+    text-transform: uppercase;
+  }
+
+  &__price {
+    display: flex;
+    align-items: flex-start;
+    font-family: $font-fogli;
+    font-size: 3.1rem;
+    color: $red;
+
+    &:before {
+      content: '$';
+      font-size: 1.9rem;
+      margin-right: 0.7rem;
+    }
+
+    &--shipping {
+      font-size: 2.6rem;
+      color: $default-color;
+
+      &:before {
+        margin-right: 0.3rem;
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  &__price-block {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 6.8rem;
+    background-color: rgba(252, 247, 247, 0.7);
+  }
+
+  &__price-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    color: $default-color-light;
+
+    &:nth-child(n + 2) {
+      margin-top: 2rem;
+    }
+  }
+
+  &__btn {
+    margin: 4rem auto 0 auto;
+
+    .button__content {
+      margin-right: 5rem;
+
+      > svg {
+        width: 2.5rem;
+        height: 2.8rem;
+        margin-right: 1.6rem;
+
+        path {
+          fill: white;
+        }
+      }
+    }
+  }
+}
