@@ -1,0 +1,147 @@
+@import "param";
+
+.checkout {
+  margin-top: 11rem;
+  margin-bottom: 16rem;
+
+  &__title {
+    margin-bottom: 5rem;
+    font-weight: bold;
+    font-size: 5.2rem;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__order-block {
+    width: 53.4rem;
+    padding: 6rem 6rem 8rem 6rem;
+    background-color: $pale-pink;
+  }
+
+  &__order-title {
+    margin-bottom: 4rem;
+    font-weight: bold;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+  }
+
+  &__order-box {
+    &--title {
+      display: flex;
+      margin-bottom: 5rem;
+    }
+
+    &:nth-child(n + 3) {
+      padding: 3.4rem 0;
+      border-top: 1px solid rgba(184, 172, 176, 0.7);
+    }
+  }
+
+  &__img-box {
+    flex: none;
+    width: 16.7rem;
+    height: 18.3rem;
+    margin-right: 3rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__order-title-block {
+  }
+
+  &__author {
+    margin-bottom: 1.5rem;
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    line-height: 2.9rem;
+    color: $default-color-light;
+  }
+
+  &__product-title {
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 3.1rem;
+    text-transform: uppercase;
+  }
+
+  &__text-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__text {
+    font-family: $font-raleway;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: $default-color-light;
+
+    &--total {
+      font-family: 'Lovelace';
+      font-weight: bold;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+    }
+  }
+
+  &__price {
+    display: flex;
+    align-items: flex-start;
+    font-family: $font-fogli;
+    font-size: 2.6rem;
+
+    &:before {
+      content: '$';
+      margin-right: 0.3rem;
+      font-size: 1.6rem;
+    }
+
+    &--total {
+      color: $red;
+    }
+  }
+
+  &__promo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 5.4rem;
+    margin-top: 3.5rem;
+    padding: 0 2rem 0 2.5rem;
+    background-color: #EBE6E6;
+
+    > svg {
+      flex: none;
+      width: 4.5rem;
+      height: 1rem;
+      margin-left: 1rem;
+
+      path {
+        fill: #CCC3C5;
+      }
+    }
+
+    > input {
+      width: 100%;
+      font-family: $font-raleway;
+      font-size: 1.7rem;
+    }
+  }
+
+  &__user-info-block {
+    width: 88rem;
+  }
+}

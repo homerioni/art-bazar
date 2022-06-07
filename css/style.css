@@ -4973,6 +4973,152 @@ input[type=number] {
   fill: white;
 }
 
+.checkout {
+  margin-top: 11rem;
+  margin-bottom: 16rem;
+}
+.checkout__title {
+  margin-bottom: 5rem;
+  font-weight: bold;
+  font-size: 5.2rem;
+  text-transform: uppercase;
+}
+.checkout__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.checkout__order-block {
+  width: 53.4rem;
+  padding: 6rem 6rem 8rem 6rem;
+  background-color: #FCF7F7;
+}
+.checkout__order-title {
+  margin-bottom: 4rem;
+  font-weight: bold;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+}
+.checkout__order-box--title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5rem;
+}
+.checkout__order-box:nth-child(n+3) {
+  padding: 3.4rem 0;
+  border-top: 1px solid rgba(184, 172, 176, 0.7);
+}
+.checkout__img-box {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 16.7rem;
+  height: 18.3rem;
+  margin-right: 3rem;
+}
+.checkout__img-box > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.checkout__author {
+  margin-bottom: 1.5rem;
+  font-family: "Raleway";
+  font-size: 1.7rem;
+  line-height: 2.9rem;
+  color: #89767D;
+}
+.checkout__product-title {
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 3.1rem;
+  text-transform: uppercase;
+}
+.checkout__text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.checkout__text-box:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.checkout__text {
+  font-family: "Raleway";
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #89767D;
+}
+.checkout__text--total {
+  font-family: "Lovelace";
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.checkout__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-family: "FoglihtenNo06";
+  font-size: 2.6rem;
+}
+.checkout__price:before {
+  content: "$";
+  margin-right: 0.3rem;
+  font-size: 1.6rem;
+}
+.checkout__price--total {
+  color: #A83248;
+}
+.checkout__promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 5.4rem;
+  margin-top: 3.5rem;
+  padding: 0 2rem 0 2.5rem;
+  background-color: #EBE6E6;
+}
+.checkout__promo > svg {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 4.5rem;
+  height: 1rem;
+  margin-left: 1rem;
+}
+.checkout__promo > svg path {
+  fill: #CCC3C5;
+}
+.checkout__promo > input {
+  width: 100%;
+  font-family: "Raleway";
+  font-size: 1.7rem;
+}
+.checkout__user-info-block {
+  width: 88rem;
+}
+
 body.lock {
   overflow: hidden;
 }
