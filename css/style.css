@@ -3810,6 +3810,14 @@ input[type=number] {
   padding: 0 1rem;
   text-align: center;
 }
+.form__item--checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .form__item-name {
   display: block;
   width: 100%;
@@ -4056,6 +4064,55 @@ input[type=number] {
   font-family: "Raleway";
   font-size: 1.7rem;
   line-height: 2.9rem;
+}
+.form__checkbox-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.form__checkbox-label:not(:last-child) {
+  margin-right: 10rem;
+}
+.form__checkbox-label > input {
+  display: none;
+}
+.form__checkbox-label.active .form__checkbox {
+  background-color: #503C3C;
+}
+.form__checkbox-label.active .form__checkbox > svg {
+  display: block;
+}
+.form__checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 3.6rem;
+  height: 3.6rem;
+  margin-right: 1.4rem;
+  background-color: #EBE6E6;
+}
+.form__checkbox > svg {
+  display: none;
+  width: 1.8rem;
+  height: 1.3rem;
+}
+.form__checkbox-text {
+  font-family: "Raleway";
+  font-size: 1.7rem;
 }
 
 .form-music {
@@ -5523,6 +5580,38 @@ input[type=number] {
   font-weight: bold;
   font-size: 4rem;
   text-transform: uppercase;
+}
+.personal__block {
+  padding: 6rem 5rem 7rem 5rem;
+  background-color: #FCF7F7;
+}
+.personal__block .form__row {
+  margin-bottom: 4rem;
+}
+.personal__block .form__content:not(:last-child) {
+  margin-bottom: 10rem;
+}
+.personal__block .form__item {
+  position: relative;
+}
+.personal__block-title {
+  margin-bottom: 5rem;
+  font-weight: bold;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+}
+.personal__input-edit-btn {
+  position: absolute;
+  bottom: 1.1rem;
+  right: 2.8rem;
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 3.1rem;
+  text-transform: uppercase;
+}
+.personal__update-btn {
+  display: none;
 }
 
 body.lock {

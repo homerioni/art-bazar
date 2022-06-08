@@ -156,4 +156,43 @@
     font-size: 4rem;
     text-transform: uppercase;
   }
+
+  &__block {
+    padding: 6rem 5rem 7rem 5rem;
+    background-color: $pale-pink;
+
+    .form__row {
+      margin-bottom: 4rem;
+    }
+
+    .form__content:not(:last-child) {
+      margin-bottom: 10rem;
+    }
+
+    .form__item {
+      position: relative;
+    }
+  }
+
+  &__block-title {
+    margin-bottom: 5rem;
+    font-weight: bold;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+  }
+
+  &__input-edit-btn {
+    position: absolute;
+    bottom: 1.1rem;
+    right: 2.8rem;
+    font-family: $font-raleway;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 3.1rem;
+    text-transform: uppercase;
+  }
+
+  &__update-btn {
+    display: none;
+  }
 }

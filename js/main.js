@@ -126,4 +126,16 @@ $(document).ready(function () {
         $(this).parents('.form-info').find('.edit').hide();
     });
 
+    // Personal functions
+    $('.personal__input-edit-btn').click(function () {
+        $(this).parents('.form__content').find('.personal__input-edit-btn').hide();
+        $(this).parents('.form__content').find('.form__item input').removeAttr('disabled');
+        $(this).parents('.form__content').find('.personal__update-btn').css('display', 'flex');
+    });
+    $('.personal__update-btn').click(function () {
+        $(this).parents('.form__content').find('.personal__input-edit-btn').show();
+        $(this).parents('.form__content').find('.form__item input').attr('disabled', true);
+        $(this).hide();
+    });
+
 });
