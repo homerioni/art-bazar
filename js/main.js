@@ -4,6 +4,9 @@ $(document).ready(function () {
 
     // Masked input
     $('.input-phone').mask('+7 999 999 - 99 - 99');
+    $('.input-card').mask('9999 9999 9999 9999');
+    $('.input-date-card').mask('99/99');
+    $('.input-cvv').mask('999');
 
     // Like in product
     $('.like').click(function () {
@@ -110,6 +113,17 @@ $(document).ready(function () {
     $('.music-modal__filter-btn').click(function () {
         $('.music-modal__filter-btn').removeClass('active');
         $(this).addClass('active');
+    });
+
+    // Checkout functions
+    $('.form-info__info-edit-btn').click(function () {
+        $(this).parents('.form-info__item').find('.info').hide();
+        $(this).parents('.form-info__item').find('.edit').show();
+        $(this).parents('.form-info').find('.form-info__btn.info').hide();
+    });
+    $('.form-info__btn-cancel').click(function () {
+        $(this).parents('.form-info').find('.info').show();
+        $(this).parents('.form-info').find('.edit').hide();
     });
 
 });

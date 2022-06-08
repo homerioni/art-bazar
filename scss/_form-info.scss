@@ -1,0 +1,272 @@
+@import "param";
+
+.form-info {
+  padding: 6.3rem 11rem 7.3rem 7.5rem;
+  background-color: $pale-pink;
+
+  .edit {
+    display: none;
+  }
+
+  &__title {
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    margin-bottom: 6rem;
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    line-height: 2.9rem;
+    color: $default-color-light;
+
+    > span {
+      color: $default-color;
+    }
+  }
+
+  &__content {
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 6rem;
+    }
+
+    &.active {
+      .form-info__radio-btn {
+        &:before {
+          content: '';
+        }
+      }
+    }
+  }
+
+  &__radio-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    cursor: pointer;
+
+    &:before {
+      content: '';
+    }
+
+    > input {
+      display: none;
+    }
+  }
+
+  &__radio-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 2.6rem;
+    border-radius: 100%;
+    background-color: #EBE6E6;
+
+    &:before {
+      display: block;
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 100%;
+      background-color: $default-color;
+    }
+  }
+
+  &__item-desc {
+    margin-top: -1rem;
+    padding-left: 5rem;
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    color: $default-color-light;
+  }
+
+  &__item-title {
+    margin-top: 0.6rem;
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+  }
+
+  &__item-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5rem;
+
+    .form-info__radio-label {
+      margin-bottom: 3rem;
+    }
+
+    .form__row {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__info-box {
+  }
+
+  &__info {
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__info-name {
+    display: inline-block;
+    width: 12rem;
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    color: $default-color-light;
+  }
+
+  &__info-text {
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+  }
+
+  &__info-edit-box {
+    width: 11.5rem;
+    text-align: center;
+  }
+
+  &__info-edit-btn {
+    padding: 1.8rem 0;
+    font-family: $font-raleway;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 3.1rem;
+    text-transform: uppercase;
+  }
+
+  &__info-edit-separator {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(184, 172, 176, 0.5);
+  }
+
+  &__btn {
+    .button__content {
+      margin-right: 5rem;
+    }
+  }
+
+  &__edit-btn-block {
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+  }
+
+  &__btn-cancel {
+    margin-left: 5rem;
+    font-family: $font-raleway;
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 3.1rem;
+    text-transform: uppercase;
+  }
+
+  &__tabs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6rem;
+  }
+
+  &__tab {
+    display: block;
+    border-bottom: 1px solid transparent;
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: $default-color-light;
+
+    &:not(:last-child) {
+      margin-right: 5rem;
+    }
+
+    &.active {
+      border-bottom: 1px solid rgba(162, 49, 70, 1);
+      color: $default-color;
+    }
+  }
+
+  &__tab-content {
+    margin-bottom: 7rem;
+
+    .form-info__item {
+      display: flex;
+      align-items: center;
+    }
+
+    .form-info__radio-label {
+      margin-bottom: 0;
+    }
+
+    .form-info__item-content {
+      justify-content: normal;
+      width: 100%;
+      padding-left: 0;
+    }
+
+    .form-info__info-edit-box {
+      margin-left: auto;
+    }
+  }
+
+  &__card-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 47rem;
+    height: 25.7rem;
+    padding: 4rem 6rem 4rem 4rem;
+    background-image: url("../img/payment-bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__card-info-img {
+    width: 3.4rem;
+    height: 2rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__card {}
+
+  &__card-name {
+    margin-bottom: 1rem;
+    font-family: $font-raleway;
+    font-weight: 500;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  &__card-number-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__card-number {
+    font-family: $font-fogli;
+    font-size: 2.3rem;
+    color: white;
+  }
+
+  &__card-date {
+    font-family: $font-fogli;
+    font-size: 1.8rem;
+    color: white;
+  }
+}

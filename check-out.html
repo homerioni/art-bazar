@@ -111,7 +111,253 @@
                         </svg>
                     </label>
                 </div>
-                <div class="checkout__user-info-block"></div>
+                <div class="checkout__user-info-block">
+                    <div class="form-info">
+                        <h2 class="form-info__title">shipping address</h2>
+                        <div class="form-info__desc">
+                            Provide your address to see available shipping methods below.
+                        </div>
+                        <div class="form-info__content">
+                            <div class="form-info__item active">
+                                <label class="form-info__radio-label">
+                                    <input type="radio" name="address">
+                                    <span class="form-info__radio-btn"></span>
+                                    <span class="form-info__item-title info">saved address</span>
+                                    <span class="form-info__item-title edit">edit address</span>
+                                </label>
+                                <div class="form-info__item-content info">
+                                    <div class="form-info__info-box">
+                                        <div class="form-info__info">
+                                            <span class="form-info__info-name">Name</span>
+                                            <span class="form-info__info-text">Анастасия Вебер</span>
+                                        </div>
+                                        <div class="form-info__info">
+                                            <span class="form-info__info-name">Address</span>
+                                            <span class="form-info__info-text">улица Бориса Галушкина 9</span>
+                                        </div>
+                                        <div class="form-info__info">
+                                            <span class="form-info__info-name">City, index</span>
+                                            <span class="form-info__info-text">Москва  357703</span>
+                                        </div>
+                                        <div class="form-info__info">
+                                            <span class="form-info__info-name">Country</span>
+                                            <span class="form-info__info-text">Russian Federation</span>
+                                        </div>
+                                        <div class="form-info__info">
+                                            <span class="form-info__info-name">Number</span>
+                                            <span class="form-info__info-text">+79696760467</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-info__info-edit-box">
+                                        <button class="form-info__info-edit-btn">Edit</button>
+                                        <div class="form-info__info-edit-separator"></div>
+                                        <button class="form-info__info-edit-btn">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="form-info__item-content edit">
+                                    <form class="form__content">
+                                        <div class="form__row">
+                                            <label class="form__item">
+                                                <input placeholder="Firstname" type="text" class="form__input">
+                                            </label>
+                                            <label class="form__item">
+                                                <input placeholder="Surname" type="text" class="form__input">
+                                            </label>
+                                        </div>
+                                        <div class="form__row">
+                                            <label class="form__item">
+                                                <input placeholder="Address" type="text" class="form__input">
+                                            </label>
+                                        </div>
+                                        <div class="form__row">
+                                            <label class="form__item">
+                                                <div class="form__select">
+                                                    <select>
+                                                        <option value="">Russian Federation</option>
+                                                        <option value="">USA</option>
+                                                        <option value="">Canada</option>
+                                                    </select>
+                                                    <span class="form__current-select"></span>
+                                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.83984 9L11.6796 15L17.5194 9" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    <ul class="form__select-dropdown"></ul>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="form__row">
+                                            <label class="form__item">
+                                                <input placeholder="City" type="text" class="form__input">
+                                            </label>
+                                            <label class="form__item">
+                                                <input placeholder="City" type="text" class="form__input">
+                                            </label>
+                                        </div>
+                                        <div class="form__row">
+                                            <label class="form__item">
+                                                <input placeholder="Index" type="number" class="form__input">
+                                            </label>
+                                            <label class="form__item">
+                                                <input placeholder="Phone number" type="text" class="form__input input-phone">
+                                            </label>
+                                        </div>
+                                        <div class="form-info__edit-btn-block">
+                                            <button class="form-info__btn button button--medium">
+                                                    <span class="button__content">
+                                                        <span class="button__text">update</span>
+                                                    </span>
+                                                <svg class="button__arrow button__arrow--medium" viewBox="0 0 47 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="white" d="M46.4596 5.45962C46.7135 5.20578 46.7135 4.79422 46.4596 4.54038L42.323 0.403806C42.0692 0.149965 41.6576 0.149965 41.4038 0.403806C41.15 0.657647 41.15 1.0692 41.4038 1.32304L45.0808 5L41.4038 8.67696C41.15 8.9308 41.15 9.34235 41.4038 9.59619C41.6576 9.85003 42.0692 9.85003 42.323 9.59619L46.4596 5.45962ZM0 5.65H46V4.35H0V5.65Z"/>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="form-info__btn-cancel">cancel</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="form-info__item">
+                                <label class="form-info__radio-label">
+                                    <input type="radio" name="address">
+                                    <span class="form-info__radio-btn"></span>
+                                    <span class="form-info__item-title">Add new address</span>
+                                </label>
+                            </div>
+                            <button class="form-info__btn button button--medium info">
+                                    <span class="button__content">
+                                        <span class="button__text">continue</span>
+                                    </span>
+                                <svg class="button__arrow button__arrow--medium" viewBox="0 0 47 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="white" d="M46.4596 5.45962C46.7135 5.20578 46.7135 4.79422 46.4596 4.54038L42.323 0.403806C42.0692 0.149965 41.6576 0.149965 41.4038 0.403806C41.15 0.657647 41.15 1.0692 41.4038 1.32304L45.0808 5L41.4038 8.67696C41.15 8.9308 41.15 9.34235 41.4038 9.59619C41.6576 9.85003 42.0692 9.85003 42.323 9.59619L46.4596 5.45962ZM0 5.65H46V4.35H0V5.65Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-info">
+                        <h2 class="form-info__title">shipping method</h2>
+                        <div class="form-info__desc">
+                            Ships from: <span>Hamburg, Germany</span>
+                        </div>
+                        <div class="form-info__content">
+                            <div class="form-info__item active">
+                                <label class="form-info__radio-label">
+                                    <input type="radio" name="address">
+                                    <span class="form-info__radio-btn"></span>
+                                    <span class="form-info__item-title">Pick up in person</span>
+                                </label>
+                                <div class="form-info__item-desc">
+                                    Expect the shipping quote within 48 hours
+                                </div>
+                            </div>
+                            <div class="form-info__item">
+                                <label class="form-info__radio-label">
+                                    <input type="radio" name="address">
+                                    <span class="form-info__radio-btn"></span>
+                                    <span class="form-info__item-title">DHL shipping</span>
+                                </label>
+                                <div class="form-info__item-desc">
+                                    Expect the shipping quote within 48 hours
+                                </div>
+                            </div>
+                            <button class="form-info__btn button button--medium">
+                                    <span class="button__content">
+                                        <span class="button__text">continue</span>
+                                    </span>
+                                <svg class="button__arrow button__arrow--medium" viewBox="0 0 47 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="white" d="M46.4596 5.45962C46.7135 5.20578 46.7135 4.79422 46.4596 4.54038L42.323 0.403806C42.0692 0.149965 41.6576 0.149965 41.4038 0.403806C41.15 0.657647 41.15 1.0692 41.4038 1.32304L45.0808 5L41.4038 8.67696C41.15 8.9308 41.15 9.34235 41.4038 9.59619C41.6576 9.85003 42.0692 9.85003 42.323 9.59619L46.4596 5.45962ZM0 5.65H46V4.35H0V5.65Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-info">
+                        <h2 class="form-info__title">payment method</h2>
+                        <div class="form-info__desc">
+                            Your payment is secure
+                        </div>
+                        <div class="form-info__content">
+                            <div class="form-info__tabs">
+                                <button class="form-info__tab active">credit card</button>
+                                <button class="form-info__tab">paypal</button>
+                            </div>
+                            <div class="form-info__info-content">
+                                <div class="form-info__tab-content">
+                                    <div class="form-info__item active">
+                                        <div class="form-info__item-content info">
+                                            <label class="form-info__radio-label">
+                                                <input type="radio" name="address">
+                                                <span class="form-info__radio-btn"></span>
+                                            </label>
+                                            <div class="form-info__card-block">
+                                                <div class="form-info__card-info-img">
+                                                    <img src="img/mastercard.svg" alt="">
+                                                </div>
+                                                <div class="form-info__card">
+                                                    <div class="form-info__card-name">anastasia weber</div>
+                                                    <div class="form-info__card-number-block">
+                                                        <div class="form-info__card-number">4859 **** **** ****</div>
+                                                        <div class="form-info__card-date">04/22</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-info__info-edit-box">
+                                                <button class="form-info__info-edit-btn">Edit</button>
+                                                <div class="form-info__info-edit-separator"></div>
+                                                <button class="form-info__info-edit-btn">Delete</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-info__item-content edit">
+                                            <form class="form__content">
+                                                <div class="form__row">
+                                                    <label class="form__item">
+                                                        <input placeholder="Card Number" type="text" class="form__input input-card">
+                                                    </label>
+                                                </div>
+                                                <div class="form__row">
+                                                    <label class="form__item">
+                                                        <input placeholder="Name on Card" type="text" class="form__input">
+                                                    </label>
+                                                </div>
+                                                <div class="form__row">
+                                                    <label class="form__item">
+                                                        <input placeholder="Exp (MM/YY)" type="text" class="form__input input-date-card">
+                                                    </label>
+                                                    <label class="form__item">
+                                                        <input placeholder="Secure Code" type="text" class="form__input input-cvv">
+                                                    </label>
+                                                </div>
+                                                <div class="form-info__edit-btn-block">
+                                                    <button class="form-info__btn button button--medium">
+                                                    <span class="button__content">
+                                                        <span class="button__text">update</span>
+                                                    </span>
+                                                        <svg class="button__arrow button__arrow--medium" viewBox="0 0 47 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill="white" d="M46.4596 5.45962C46.7135 5.20578 46.7135 4.79422 46.4596 4.54038L42.323 0.403806C42.0692 0.149965 41.6576 0.149965 41.4038 0.403806C41.15 0.657647 41.15 1.0692 41.4038 1.32304L45.0808 5L41.4038 8.67696C41.15 8.9308 41.15 9.34235 41.4038 9.59619C41.6576 9.85003 42.0692 9.85003 42.323 9.59619L46.4596 5.45962ZM0 5.65H46V4.35H0V5.65Z"/>
+                                                        </svg>
+                                                    </button>
+                                                    <button type="button" class="form-info__btn-cancel">cancel</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="form-info__item">
+                                        <label class="form-info__radio-label">
+                                            <input type="radio" name="address">
+                                            <span class="form-info__radio-btn"></span>
+                                            <span class="form-info__item-title">Add new card</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button class="form-info__btn button button--medium info">
+                                    <span class="button__content">
+                                        <span class="button__text">order</span>
+                                    </span>
+                                    <svg class="button__arrow button__arrow--medium" viewBox="0 0 47 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="white" d="M46.4596 5.45962C46.7135 5.20578 46.7135 4.79422 46.4596 4.54038L42.323 0.403806C42.0692 0.149965 41.6576 0.149965 41.4038 0.403806C41.15 0.657647 41.15 1.0692 41.4038 1.32304L45.0808 5L41.4038 8.67696C41.15 8.9308 41.15 9.34235 41.4038 9.59619C41.6576 9.85003 42.0692 9.85003 42.323 9.59619L46.4596 5.45962ZM0 5.65H46V4.35H0V5.65Z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

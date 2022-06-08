@@ -1,0 +1,159 @@
+@import "param";
+
+.personal {
+  margin-bottom: 16rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav-block {
+    width: 33.1rem;
+    height: fit-content;
+    padding: 1.4rem;
+    border-radius: 100rem 100rem 0 0;
+    background-color: $pale-pink;
+  }
+
+  &__nav-bg {
+    width: 100%;
+    padding-top: 3.5rem;
+    border-radius: 100rem 100rem 0 0;
+    border: 1px solid rgba(218, 209, 211, 1);
+  }
+
+  &__img-box {
+    width: 7rem;
+    height: 7rem;
+    margin: 0 auto 2rem auto;
+    border-radius: 100%;
+    overflow: hidden;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__name {
+    margin-bottom: 2.5rem;
+    font-weight: bold;
+    font-size: 1.7rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__list {
+    padding: 4.5rem 1.5rem;
+    border-top: 1px solid rgba(218, 209, 211, 1);
+    border-bottom: 1px solid rgba(218, 209, 211, 1);
+  }
+
+  &__list-item {
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+
+    > a {
+      display: flex;
+      align-items: center;
+      font-family: $font-raleway;
+      font-size: 1.7rem;
+      line-height: 2.9rem;
+      color: $default-color-light;
+    }
+
+    &:hover {
+      > a {
+        color: $default-color;
+      }
+    }
+
+    &.active {
+      > a {
+        font-weight: 600;
+        color: $default-color;
+      }
+
+      .personal__item-icon {
+        .active {
+          display: block;
+        }
+
+        .transparent {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__item-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 2rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .active {
+      display: none;
+    }
+  }
+
+  &__question-block {
+    display: block;
+    padding: 1.5rem;
+  }
+
+  &__ask-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    line-height: 2.9rem;
+    color: $default-color-light;
+
+    &--bold {
+      font-family: 'Lovelace';
+      font-weight: bold;
+      font-size: 1.7rem;
+      line-height: 2.4rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: $default-color;
+
+      > span {
+        display: block;
+        margin-top: 0.4rem;
+      }
+
+      > svg {
+        width: 3.8rem;
+        height: 1rem;
+
+        path {
+          fill: $default-color;
+        }
+      }
+    }
+  }
+
+  &__content {
+    width: 109rem;
+    margin-top: 2rem;
+  }
+
+  &__title {
+    margin-bottom: 6rem;
+    font-weight: bold;
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+}

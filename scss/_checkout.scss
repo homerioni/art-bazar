@@ -18,6 +18,7 @@
 
   &__order-block {
     width: 53.4rem;
+    height: fit-content;
     padding: 6rem 6rem 8rem 6rem;
     background-color: $pale-pink;
   }
@@ -143,5 +144,9 @@
 
   &__user-info-block {
     width: 88rem;
+
+    > *:not(:last-child) {
+      margin-bottom: 5rem;
+    }
   }
 }
