@@ -5575,6 +5575,12 @@ input[type=number] {
   width: 109rem;
   margin-top: 2rem;
 }
+.personal__content--address .form-info__btn {
+  margin-top: 9rem;
+}
+.personal__content--address .form__row {
+  margin-bottom: 5rem;
+}
 .personal__title {
   margin-bottom: 6rem;
   font-weight: bold;

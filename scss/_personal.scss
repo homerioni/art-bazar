@@ -148,6 +148,16 @@
   &__content {
     width: 109rem;
     margin-top: 2rem;
+
+    &--address {
+      .form-info__btn {
+        margin-top: 9rem;
+      }
+
+      .form__row {
+        margin-bottom: 5rem;
+      }
+    }
   }
 
   &__title {

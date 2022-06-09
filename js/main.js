@@ -116,7 +116,7 @@ $(document).ready(function () {
     });
 
     // Checkout functions
-    $('.form-info__info-edit-btn').click(function () {
+    $('.form-info__info-edit-btn--edit').click(function () {
         $(this).parents('.form-info__item').find('.info').hide();
         $(this).parents('.form-info__item').find('.edit').show();
         $(this).parents('.form-info').find('.form-info__btn.info').hide();
@@ -125,14 +125,22 @@ $(document).ready(function () {
         $(this).parents('.form-info').find('.info').show();
         $(this).parents('.form-info').find('.edit').hide();
     });
+    $('.form-info__radio-label input').change(function () {
+        $(this).parents('.form-info').find('.form-info__item').removeClass('active');
+        $(this).parents('.form-info__item').addClass('active');
+    });
+    $('.form-info__tab').click(function () {
+        $('.form-info__tab').removeClass('active');
+        $(this).addClass('active');
+    });
 
     // Personal functions
-    $('.personal__input-edit-btn').click(function () {
+    $('.input-edit').click(function () {
         $(this).parents('.form__content').find('.personal__input-edit-btn').hide();
         $(this).parents('.form__content').find('.form__item input').removeAttr('disabled');
         $(this).parents('.form__content').find('.personal__update-btn').css('display', 'flex');
     });
-    $('.personal__update-btn').click(function () {
+    $('.input-save').click(function () {
         $(this).parents('.form__content').find('.personal__input-edit-btn').show();
         $(this).parents('.form__content').find('.form__item input').attr('disabled', true);
         $(this).hide();
