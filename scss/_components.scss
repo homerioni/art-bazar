@@ -571,10 +571,34 @@
   position: relative;
   width: fit-content;
 
+  &--two-btn {
+    .preview-wide__like {
+      right: 12.2rem;
+    }
+  }
+
   &__like {
     position: absolute;
     right: 5.6rem;
     top: -2.2rem;
+  }
+
+  &__cart {
+    position: absolute;
+    right: 4.2rem;
+    top: -2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6.8rem;
+    height: 6.8rem;
+    border-radius: 100%;
+    background-color: #C6B5B5;
+
+    > svg {
+      width: 2.4rem;
+      height: 2.6rem;
+    }
   }
 
   &__content {

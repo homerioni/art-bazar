@@ -145,7 +145,14 @@ $(document).ready(function () {
         $(this).hide();
     });
 
-    // Shipping.html
-    $('.shipping-edit').click(function () {});
+    // Favorites
+    $('.personal__tab').click(function () {
+        $('.personal__tab').removeClass('active');
+        $(this).addClass('active');
+    });
+    $('.personal__tab-content input').change(function () {
+        $('.personal__tab-content').removeClass('active');
+        $(this).parent().addClass('active');
+    });
 
 });

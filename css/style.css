@@ -743,10 +743,35 @@ input[type=number] {
   width: -moz-fit-content;
   width: fit-content;
 }
+.preview-wide--two-btn .preview-wide__like {
+  right: 12.2rem;
+}
 .preview-wide__like {
   position: absolute;
   right: 5.6rem;
   top: -2.2rem;
+}
+.preview-wide__cart {
+  position: absolute;
+  right: 4.2rem;
+  top: -2.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 6.8rem;
+  height: 6.8rem;
+  border-radius: 100%;
+  background-color: #C6B5B5;
+}
+.preview-wide__cart > svg {
+  width: 2.4rem;
+  height: 2.6rem;
 }
 .preview-wide__content {
   display: -webkit-box;
@@ -5586,6 +5611,52 @@ input[type=number] {
   font-weight: bold;
   font-size: 4rem;
   text-transform: uppercase;
+}
+.personal__title--tabs {
+  margin-bottom: 3.5rem;
+}
+.personal__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5rem;
+}
+.personal__tab {
+  border-bottom: 1px solid transparent;
+  font-family: "Raleway";
+  font-size: 1.7rem;
+  line-height: 2.9rem;
+  color: #89767D;
+  cursor: pointer;
+}
+.personal__tab:hover {
+  color: #503C3C;
+}
+.personal__tab:not(:last-child) {
+  margin-right: 5rem;
+}
+.personal__tab.active {
+  border-bottom: 1px solid rgb(162, 49, 70);
+  color: #503C3C;
+}
+.personal__tab > label {
+  display: block;
+  cursor: pointer;
+}
+.personal__tab-content {
+  display: none;
+}
+.personal__tab-content > *:not(:last-child) {
+  margin-bottom: 5rem;
+}
+.personal__tab-content > input {
+  display: none;
+}
+.personal__tab-content.active {
+  display: block;
 }
 .personal__block {
   padding: 6rem 5rem 7rem 5rem;
