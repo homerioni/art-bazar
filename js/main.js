@@ -117,11 +117,10 @@ $(document).ready(function () {
 
     // Checkout functions
     $('.form-info__info-edit-btn--edit').click(function () {
-        $(this).parents('.form-info__item').find('.info').hide();
-        $(this).parents('.form-info__item').find('.edit').show();
-        $(this).parents('.form-info').find('.form-info__btn.info').hide();
+        $(this).parents('.form-info').find('.info').hide();
+        $(this).parents('.form-info').find('.edit').show();
     });
-    $('.form-info__btn-cancel').click(function () {
+    $('.form-info__ready').click(function () {
         $(this).parents('.form-info').find('.info').show();
         $(this).parents('.form-info').find('.edit').hide();
     });
@@ -136,14 +135,17 @@ $(document).ready(function () {
 
     // Personal functions
     $('.input-edit').click(function () {
-        $(this).parents('.form__content').find('.personal__input-edit-btn').hide();
+        $(this).parents('.form__content').find('.input-edit').hide();
         $(this).parents('.form__content').find('.form__item input').removeAttr('disabled');
-        $(this).parents('.form__content').find('.personal__update-btn').css('display', 'flex');
+        $(this).parents('.form__content').find('.input-save').css('display', 'flex');
     });
     $('.input-save').click(function () {
-        $(this).parents('.form__content').find('.personal__input-edit-btn').show();
+        $(this).parents('.form__content').find('.input-edit').show();
         $(this).parents('.form__content').find('.form__item input').attr('disabled', true);
         $(this).hide();
     });
+
+    // Shipping.html
+    $('.shipping-edit').click(function () {});
 
 });
