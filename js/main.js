@@ -122,45 +122,45 @@ $(document).ready(function () {
     $('.hcm').change(function () {
         if ($(this).val()) {
             let inch = String($(this).val() * 0.393701);
-            $(this).addClass('cm');
+            $(this).parent().addClass('cm');
             inch = inch.split('.')[0] + '.' + inch.split('.')[1].slice(0, 2);
-            $(this).parent().find('.hin').addClass('inch').val(inch);
+            $(this).parent().parent().find('.hin').val(inch).parent().addClass('inch');
         } else {
-            $(this).removeClass('cm');
-            $(this).parent().find('.hin').removeClass('inch').val('');
+            $(this).parent().removeClass('cm');
+            $(this).parent().parent().find('.hin').val('').parent().removeClass('inch');
         }
     });
     $('.wcm').change(function () {
         if ($(this).val()) {
-            $(this).addClass('cm');
+            $(this).parent().addClass('cm');
             let inch = String($(this).val() * 0.393701);
             inch = inch.split('.')[0] + '.' + inch.split('.')[1].slice(0, 2);
-            $(this).parent().find('.win').addClass('inch').val(inch);
+            $(this).parent().parent().find('.win').val(inch).parent().addClass('inch');
         } else {
-            $(this).removeClass('cm');
-            $(this).parent().find('.win').removeClass('inch').val('');
+            $(this).parent().removeClass('cm');
+            $(this).parent().parent().find('.win').val('').parent().removeClass('inch');
         }
     });
     $('.hin').change(function () {
         if ($(this).val()) {
             let cm = String($(this).val() * 2.54);
-            $(this).addClass('inch');
+            $(this).parent().addClass('inch');
             cm = cm.split('.')[0] + '.' + cm.split('.')[1].slice(0, 1);
-            $(this).parent().find('.hcm').addClass('cm').val(cm);
+            $(this).parent().parent().find('.hcm').val(cm).parent().addClass('cm');
         } else {
-            $(this).removeClass('inch');
-            $(this).parent().find('.hcm').removeClass('cm').val('');
+            $(this).parent().removeClass('inch');
+            $(this).parent().parent().find('.hcm').val('').parent().removeClass('cm');
         }
     });
     $('.win').change(function () {
         if ($(this).val()) {
             let cm = String($(this).val() * 2.54);
-            $(this).addClass('inch');
+            $(this).parent().addClass('inch');
             cm = cm.split('.')[0] + '.' + cm.split('.')[1].slice(0, 1);
-            $(this).parent().find('.wcm').addClass('cm').val(cm);
+            $(this).parent().parent().find('.wcm').val(cm).parent().addClass('cm');
         } else {
-            $(this).removeClass('inch');
-            $(this).parent().find('.wcm').removeClass('cm').val('');
+            $(this).parent().removeClass('inch');
+            $(this).parent().parent().find('.wcm').val('').parent().removeClass('cm');
         }
     });
 

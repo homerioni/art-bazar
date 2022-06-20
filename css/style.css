@@ -3830,11 +3830,6 @@ input[type=number] {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.form__item--flex input {
-  width: 23%;
-  padding: 0 1rem;
-  text-align: center;
-}
 .form__item--checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3859,6 +3854,47 @@ input[type=number] {
   font-family: "Raleway";
   font-size: 1.7rem;
   line-height: 3.1rem;
+}
+.form__input:after {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  color: #89767D;
+}
+.form__input--label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 23%;
+  padding: 0 1rem;
+}
+.form__input--label > input {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.form__input.cm {
+  padding: 0 1rem 0 0;
+}
+.form__input.cm:after {
+  content: "cm";
+}
+.form__input.cm > input {
+  text-align: right;
+  margin-right: 0.5rem;
+}
+.form__input.inch {
+  padding: 0 1rem 0 0;
+}
+.form__input.inch:after {
+  content: "inch";
+}
+.form__input.inch > input {
+  text-align: right;
+  margin-right: 0.5rem;
 }
 .form__select {
   position: relative;
