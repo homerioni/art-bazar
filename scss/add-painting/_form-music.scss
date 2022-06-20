@@ -143,6 +143,11 @@
       .form-music__audio-line {
         width: 57.8rem;
         height: 4.2rem;
+
+        .timeline > img {
+          width: 57.8rem;
+          height: 4.2rem;
+        }
       }
 
       .form-music__play-btn {
@@ -202,13 +207,29 @@
   }
 
   &__audio-line {
-    width: 26.6rem;
+    position: relative;
+    width: 36.2rem;
     height: 2.9rem;
+    cursor: pointer;
 
     > img {
       width: 100%;
       height: 100%;
       object-fit: contain;
+    }
+
+    .timeline {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 100%;
+      overflow: hidden;
+
+      > img {
+        width: 36.2rem;
+        height: 2.9rem;
+      }
     }
   }
 

@@ -19,12 +19,46 @@ $(document).ready(function () {
     });
 
     // Player
+    let play = false;
     $('.audio-play').click(function () {
         if ($(this).hasClass('play')) {
             $(this).removeClass('play').parent().find('audio')[0].pause();
+            play = false;
         } else {
+            $('.audio-play').removeClass('play');
+            $('audio').each(function () {
+                $(this)[0].pause();
+            });
             $(this).addClass('play').parent().find('audio')[0].play();
+            play = true;
+            timelinePlay($(this).parent().find('audio')[0], $(this).parent().find('.timeline'));
         }
+    });
+
+    function timelinePlay (audio, timeline) {
+        setTimeout(function () {
+            if (audio.currentTime === audio.duration) {
+                timeline.css('width', '0');
+                $('.audio-play').removeClass('play');
+                play = false;
+                return;
+            }
+            let width = audio.currentTime / audio.duration * 100;
+            timeline.css('width', width + '%');
+            if (play === true) {
+                timelinePlay(audio, timeline);
+            }
+        }, 700);
+    }
+
+    $('.form-music__audio-line').click(function (e) {
+        let offset = $(this).offset();
+        let left = e.clientX - offset.left;
+        let width = $(this).width();
+        let audio = $(this).parents('.form-music__audio-block').find('audio');
+        let timeline = $(this).find('.timeline');
+        audio.prop('currentTime', audio[0].duration * left / width);
+        timeline.css('width', audio[0].currentTime / audio[0].duration * 100 + '%');
     });
 
     // Catalog and Filter
@@ -84,10 +118,60 @@ $(document).ready(function () {
         }
     });
 
+    // Input Dimensions
+    $('.hcm').change(function () {
+        if ($(this).val()) {
+            let inch = String($(this).val() * 0.393701);
+            $(this).addClass('cm');
+            inch = inch.split('.')[0] + '.' + inch.split('.')[1].slice(0, 2);
+            $(this).parent().find('.hin').addClass('inch').val(inch);
+        } else {
+            $(this).removeClass('cm');
+            $(this).parent().find('.hin').removeClass('inch').val('');
+        }
+    });
+    $('.wcm').change(function () {
+        if ($(this).val()) {
+            $(this).addClass('cm');
+            let inch = String($(this).val() * 0.393701);
+            inch = inch.split('.')[0] + '.' + inch.split('.')[1].slice(0, 2);
+            $(this).parent().find('.win').addClass('inch').val(inch);
+        } else {
+            $(this).removeClass('cm');
+            $(this).parent().find('.win').removeClass('inch').val('');
+        }
+    });
+    $('.hin').change(function () {
+        if ($(this).val()) {
+            let cm = String($(this).val() * 2.54);
+            $(this).addClass('inch');
+            cm = cm.split('.')[0] + '.' + cm.split('.')[1].slice(0, 1);
+            $(this).parent().find('.hcm').addClass('cm').val(cm);
+        } else {
+            $(this).removeClass('inch');
+            $(this).parent().find('.hcm').removeClass('cm').val('');
+        }
+    });
+    $('.win').change(function () {
+        if ($(this).val()) {
+            let cm = String($(this).val() * 2.54);
+            $(this).addClass('inch');
+            cm = cm.split('.')[0] + '.' + cm.split('.')[1].slice(0, 1);
+            $(this).parent().find('.wcm').addClass('cm').val(cm);
+        } else {
+            $(this).removeClass('inch');
+            $(this).parent().find('.wcm').removeClass('cm').val('');
+        }
+    });
+
     // Form music
     $('.form-music__delete').click(function () {
         $('.form-music__complete-block').hide();
         $('.form-music__add-block').css('display', 'flex');
+        $('.audio-play').removeClass('play');
+        $('audio').each(function () {
+            $(this)[0].pause();
+        });
     });
 
     // Modal music
