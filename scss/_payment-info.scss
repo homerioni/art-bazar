@@ -1,0 +1,211 @@
+@import "param";
+
+.payment-info {
+  &.active {
+    .form-info__radio-btn {
+      &:before {
+        content: '';
+      }
+    }
+  }
+
+  &__info-content {
+    margin-bottom: 8rem;
+  }
+
+  &__label-text {
+    margin-top: 0.6rem;
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+  }
+
+  &__card {
+    width: 80rem;
+  }
+
+  &__edit-content {
+    display: none;
+  }
+
+  &__edit-text-block {
+    &--title {
+      margin-bottom: 2rem;
+    }
+
+    &--name-card {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__edit-title {
+    font-weight: bold;
+    font-size: 1.7rem;
+    line-height: 2.6rem;
+    text-transform: uppercase;
+  }
+
+  &__edit-desc {
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    line-height: 3.1rem;
+    color: $default-color-light;
+  }
+
+  &__edit-form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__inputs {
+    width: 48.2rem;
+  }
+
+  &__edit-card-number {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5.4rem;
+    padding: 0 3.8rem 0 2.2rem;
+    margin-bottom: 6rem;
+    background-color: #EBE6E6;
+  }
+
+  &__card-type-icon {
+    width: 5rem;
+    height: 2.4rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__input-number-card {
+    width: 22rem;
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+  }
+
+  &__edit-cvv,
+  &__edit-exp-date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+  }
+
+  &__label-cvv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24.1rem;
+    height: 5.4rem;
+    background-color: #EBE6E6;
+  }
+
+  &__input-cvv {
+    width: 100%;
+    height: 100%;
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  &__exp-date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 24.1rem;
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+  }
+
+  &__label-date {
+    width: 10.5rem;
+    height: 5.4rem;
+    background-color: #EBE6E6;
+  }
+
+  &__input-date {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  &__edit-name-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5.4rem;
+    margin-bottom: 7rem;
+    padding: 0 3.8rem;
+    background-color: #EBE6E6;
+  }
+
+  &__input-name-card {
+    width: 100%;
+    height: 100%;
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    line-height: 3.1rem;
+    text-transform: uppercase;
+
+    &::placeholder {
+      text-transform: none;
+    }
+  }
+
+  &__edit-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31.1rem;
+    height: 44.3rem;
+    padding: 4.2rem 3.5rem;
+    margin-right: 7rem;
+    background-image: url("../img/payment-bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__card-info-img {
+    width: fit-content;
+    height: 4.1rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__card-name {
+    margin-bottom: 1rem;
+    font-family: $font-raleway;
+    font-weight: 500;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  &__card-number-block {
+  }
+
+  &__card-number {
+    margin-bottom: 4rem;
+    font-family: $font-fogli;
+    font-size: 2.3rem;
+    color: white;
+  }
+
+  &__card-date {
+    font-family: $font-fogli;
+    font-size: 1.8rem;
+    color: white;
+  }
+
+  &__add-btn {
+  }
+}

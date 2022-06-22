@@ -4,10 +4,18 @@ $(document).ready(function () {
 
     // Masked input
     $('.input-phone').mask('+7 999 999 - 99 - 99');
-    $('.input-card').mask('9999 9999 9999 9999');
+    $('.input-card').mask('9999 - 9999 - 9999 - 9999', {placeholder:'0'});
     $('.input-date-card').mask('99/99');
-    $('.input-cvv').mask('999');
-
+    $('.input-date-month').mask('99', {
+        placeholder:'0', completed: function () {
+        $('.payment-info__card-date .month').text($(this).val()); $('.input-date-year').focus()}
+    });
+    $('.input-date-year').mask('99', {placeholder:'0'});
+    $('.input-cvv')[0].oninput = function () {
+        if (this.value.length > 4) {
+            this.value = this.value.slice(0,4);
+        }
+    };
     // Like in product
     $('.like').click(function () {
         $(this).toggleClass('active');
@@ -211,6 +219,8 @@ $(document).ready(function () {
     $('.form-info__radio-label input').change(function () {
         $(this).parents('.form-info').find('.form-info__item').removeClass('active');
         $(this).parents('.form-info__item').addClass('active');
+        $('.payment-info').removeClass('active');
+        $(this).parents('.payment-info').addClass('active');
     });
     $('.form-info__tab').click(function () {
         $('.form-info__tab').removeClass('active');
@@ -237,6 +247,37 @@ $(document).ready(function () {
     $('.personal__tab-content input').change(function () {
         $('.personal__tab-content').removeClass('active');
         $(this).parent().addClass('active');
+    });
+
+    // Payment-info
+    $('.payment-info__input-number-card').keyup(function () {
+        $('.payment-info__card-number').text($(this).val().slice(0, 4) + ' **** **** ****');
+    });
+    $('.input-date-month').keyup(function () {
+        $('.payment-info__card-date .month').text($(this).val());
+    });
+    $('.input-date-year').keyup(function () {
+        $('.payment-info__card-date .year').text($(this).val());
+    });
+    $('.payment-info__input-name-card').keyup(function () {
+        if ($(this).val() === '') {
+            $('.payment-info__card-name').text('name on card');
+        } else {
+            $('.payment-info__card-name').text($(this).val());
+        }
+    });
+    $('.payment-info__edit-btn').click(function () {
+        $('.payment-info').hide();
+        $(this).parents('.payment-info').show()
+            .find('.info').hide()
+            .parent().find('.edit').show();
+        $('.payment-info__add-btn').hide();
+    });
+    $('.payment-info__save-btn').click(function () {
+        $(this).parents('.payment-info').find('.info').show()
+            .parent().find('.edit').hide();
+        $('.payment-info').show();
+        $('.payment-info__add-btn').show();
     });
 
 });

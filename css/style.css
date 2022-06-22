@@ -5745,6 +5745,228 @@ input[type=number] {
   display: none;
 }
 
+.payment-info.active .form-info__radio-btn:before {
+  content: "";
+}
+.payment-info__info-content {
+  margin-bottom: 8rem;
+}
+.payment-info__label-text {
+  margin-top: 0.6rem;
+  font-weight: bold;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+.payment-info__card {
+  width: 80rem;
+}
+.payment-info__edit-content {
+  display: none;
+}
+.payment-info__edit-text-block--title {
+  margin-bottom: 2rem;
+}
+.payment-info__edit-text-block--name-card {
+  margin-bottom: 2rem;
+}
+.payment-info__edit-title {
+  font-weight: bold;
+  font-size: 1.7rem;
+  line-height: 2.6rem;
+  text-transform: uppercase;
+}
+.payment-info__edit-desc {
+  font-family: "Raleway";
+  font-size: 1.7rem;
+  line-height: 3.1rem;
+  color: #89767D;
+}
+.payment-info__edit-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.payment-info__inputs {
+  width: 48.2rem;
+}
+.payment-info__edit-card-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 5.4rem;
+  padding: 0 3.8rem 0 2.2rem;
+  margin-bottom: 6rem;
+  background-color: #EBE6E6;
+}
+.payment-info__card-type-icon {
+  width: 5rem;
+  height: 2.4rem;
+}
+.payment-info__card-type-icon > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.payment-info__input-number-card {
+  width: 22rem;
+  font-family: "Raleway";
+  font-size: 1.7rem;
+}
+.payment-info__edit-cvv, .payment-info__edit-exp-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 6rem;
+}
+.payment-info__label-cvv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 24.1rem;
+  height: 5.4rem;
+  background-color: #EBE6E6;
+}
+.payment-info__input-cvv {
+  width: 100%;
+  height: 100%;
+  font-family: "Raleway";
+  font-size: 1.7rem;
+  text-align: center;
+}
+.payment-info__exp-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 24.1rem;
+  font-family: "Raleway";
+  font-size: 1.7rem;
+}
+.payment-info__label-date {
+  width: 10.5rem;
+  height: 5.4rem;
+  background-color: #EBE6E6;
+}
+.payment-info__input-date {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.payment-info__edit-name-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 5.4rem;
+  margin-bottom: 7rem;
+  padding: 0 3.8rem;
+  background-color: #EBE6E6;
+}
+.payment-info__input-name-card {
+  width: 100%;
+  height: 100%;
+  font-family: "Raleway";
+  font-size: 1.7rem;
+  line-height: 3.1rem;
+  text-transform: uppercase;
+}
+.payment-info__input-name-card::-webkit-input-placeholder {
+  text-transform: none;
+}
+.payment-info__input-name-card::-moz-placeholder {
+  text-transform: none;
+}
+.payment-info__input-name-card:-ms-input-placeholder {
+  text-transform: none;
+}
+.payment-info__input-name-card::-ms-input-placeholder {
+  text-transform: none;
+}
+.payment-info__input-name-card::placeholder {
+  text-transform: none;
+}
+.payment-info__edit-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 31.1rem;
+  height: 44.3rem;
+  padding: 4.2rem 3.5rem;
+  margin-right: 7rem;
+  background-image: url("../img/payment-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.payment-info__card-info-img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 4.1rem;
+}
+.payment-info__card-info-img > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.payment-info__card-name {
+  margin-bottom: 1rem;
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  color: white;
+}
+.payment-info__card-number {
+  margin-bottom: 4rem;
+  font-family: "FoglihtenNo06";
+  font-size: 2.3rem;
+  color: white;
+}
+.payment-info__card-date {
+  font-family: "FoglihtenNo06";
+  font-size: 1.8rem;
+  color: white;
+}
 body.lock {
   overflow: hidden;
 }
