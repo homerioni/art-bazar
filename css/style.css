@@ -5967,6 +5967,406 @@ input[type=number] {
   font-size: 1.8rem;
   color: white;
 }
+.inbox {
+  height: 82.4rem;
+  padding: 3rem;
+}
+.inbox__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.inbox__all-chats {
+  width: 32.9rem;
+  height: 100%;
+}
+.inbox__title {
+  margin-bottom: 2.5rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.inbox__search-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5.4rem;
+  padding: 0 2rem;
+  margin-bottom: 3.5rem;
+  background-color: #EBE6E6;
+}
+.inbox__search-label > svg {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 1.9rem;
+  height: 1.9rem;
+  margin-right: 1rem;
+}
+.inbox__search-label > svg path {
+  fill: #A8969D;
+}
+.inbox__search {
+  width: 100%;
+  font-family: "Raleway";
+  font-size: 1.7rem;
+  line-height: 3.1rem;
+}
+.inbox__chat-tabs {
+  height: calc(100% - 14rem);
+  overflow-Y: scroll;
+}
+.inbox__chat-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 2rem;
+}
+.inbox__chat-tab:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.inbox__chat-tab:hover {
+  background-color: #EBE6E6;
+}
+.inbox__chat-tab.new-msg {
+  background-color: #EBE6E6;
+}
+.inbox__chat-tab.new-msg .inbox__user-text-block {
+  width: 14.2rem;
+}
+.inbox__chat-tab.active {
+  background-color: #996973;
+}
+.inbox__chat-tab.active .inbox__username {
+  color: white;
+}
+.inbox__chat-tab.active .inbox__user-desc {
+  color: #DCC6CE;
+}
+.inbox__avatar {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 5.5rem;
+  height: 5.5rem;
+  margin-right: 2rem;
+  border-radius: 100%;
+  border: 3px solid white;
+  overflow: hidden;
+}
+.inbox__avatar > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.inbox__user-text-block {
+  width: 21rem;
+}
+.inbox__username {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 1.7rem;
+  line-height: 2.9rem;
+}
+.inbox__user-desc {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Raleway";
+  font-size: 1.7rem;
+  line-height: 2.9rem;
+  color: #89767D;
+}
+.inbox__qty-new-msg {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: auto;
+  border-radius: 100%;
+  background: linear-gradient(152.82deg, #9E6F7A 12.88%, #7E4852 105.36%), linear-gradient(0deg, #A23146, #A23146);
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: white;
+}
+.inbox__chat-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 66.7rem;
+  height: 100%;
+  padding: 3rem;
+  background-color: #EBE6E6;
+}
+.inbox__user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 8.7rem;
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 6rem;
+  background-color: #FCF7F7;
+}
+.inbox__user-info-text {
+  width: 41rem;
+}
+.inbox__info-username {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.3rem;
+}
+.inbox__info-online {
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  color: #7FA066;
+}
+.inbox__user-info-desc {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Raleway";
+  font-size: 1.7rem;
+  line-height: 2.9rem;
+  color: #89767D;
+}
+.inbox__user-info-btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1.2rem;
+  height: 2.2rem;
+  margin-left: auto;
+}
+.inbox__user-info-btn > span {
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: #E3D8DC;
+}
+.inbox__user-info-btn > span:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: #E3D8DC;
+}
+.inbox__user-info-btn > span:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: #E3D8DC;
+}
+.inbox__chat {
+  width: 100%;
+  height: 53rem;
+  margin-bottom: 5rem;
+  overflow-y: scroll;
+}
+.inbox__chat-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.inbox__chat-item:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.inbox__chat-item--right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.inbox__chat-item--right .inbox__chat-info-box {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin: 0 0 0 2rem;
+}
+.inbox__chat-info-box {
+  margin-right: 2rem;
+}
+.inbox__chat-info-box .inbox__avatar {
+  margin-right: 0;
+}
+.inbox__chat-time {
+  font-family: "Raleway";
+  font-size: 1.5rem;
+  line-height: 2.9rem;
+  text-align: center;
+  color: #89767D;
+}
+.inbox__chat-text-box {
+  position: relative;
+  max-width: 45rem;
+  padding: 2rem;
+  background-color: white;
+}
+.inbox__chat-name {
+  margin-bottom: 0.5rem;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 1.7rem;
+  line-height: 2.9rem;
+}
+.inbox__chat-text {
+  font-family: "Raleway";
+  font-size: 1.7rem;
+  line-height: 2.6rem;
+  color: #89767D;
+}
+.inbox__info-read {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+.inbox__info-read > svg {
+  width: 1.6rem;
+  height: 1.3rem;
+  margin-left: -1.2rem;
+}
+.inbox__info-read > svg path {
+  stroke: #7FA066;
+}
+.inbox__form-input-msg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 1rem;
+  background-color: #FCF7F7;
+}
+.inbox__btn-load {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 4.3rem;
+  height: 4.3rem;
+  margin-right: 1.5rem;
+  background-color: #EBE6E6;
+}
+.inbox__btn-load > input {
+  display: none;
+}
+.inbox__btn-load > svg {
+  width: 1.2rem;
+  height: 1.7rem;
+}
+.inbox__btn-load > svg path {
+  stroke: #A8969D;
+}
+.inbox__msg-label {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+.inbox__msg-input {
+  width: 100%;
+  font-family: "Raleway";
+  font-size: 1.7rem;
+  line-height: 2.6rem;
+}
+.inbox__msg-btn {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 4.3rem;
+  height: 4.3rem;
+  margin-left: 1.5rem;
+  background: linear-gradient(152.82deg, #9E6F7A 12.88%, #7E4852 105.36%), linear-gradient(0deg, #A23146, #A23146);
+}
+.inbox__msg-btn > svg {
+  width: 1.3rem;
+  height: 1.4rem;
+}
+.inbox__msg-btn > svg path {
+  fill: white;
+}
+
 body.lock {
   overflow: hidden;
 }
