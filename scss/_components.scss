@@ -577,6 +577,36 @@
     }
   }
 
+  &--items-page {
+    width: 100%;
+
+    .preview-wide__content {
+      width: 100%;
+    }
+
+    .preview-wide__info-block {
+      margin-left: 5rem;
+      margin-right: auto;
+    }
+
+    .preview-wide__title {
+      text-align: left;
+    }
+
+    .preview-wide__data-block {
+      justify-content: normal;
+      margin-bottom: 3rem;
+    }
+
+    .preview-wide__country {
+      margin-right: 2rem;
+    }
+
+    .preview-wide__price {
+      justify-content: normal;
+    }
+  }
+
   &__like {
     position: absolute;
     right: 5.6rem;

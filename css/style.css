@@ -746,6 +746,33 @@ input[type=number] {
 .preview-wide--two-btn .preview-wide__like {
   right: 12.2rem;
 }
+.preview-wide--items-page {
+  width: 100%;
+}
+.preview-wide--items-page .preview-wide__content {
+  width: 100%;
+}
+.preview-wide--items-page .preview-wide__info-block {
+  margin-left: 5rem;
+  margin-right: auto;
+}
+.preview-wide--items-page .preview-wide__title {
+  text-align: left;
+}
+.preview-wide--items-page .preview-wide__data-block {
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  margin-bottom: 3rem;
+}
+.preview-wide--items-page .preview-wide__country {
+  margin-right: 2rem;
+}
+.preview-wide--items-page .preview-wide__price {
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+}
 .preview-wide__like {
   position: absolute;
   right: 5.6rem;
@@ -6365,6 +6392,65 @@ input[type=number] {
 }
 .inbox__msg-btn > svg path {
   fill: white;
+}
+
+.my-items__add-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5rem;
+}
+.my-items__qty {
+  font-weight: bold;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+.my-items__btn-block {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  margin-right: 2rem;
+}
+.my-items__items-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 6.8rem;
+  height: 6.8rem;
+  border-radius: 100%;
+  background-color: #C6B5B5;
+}
+.my-items__items-btn:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.my-items__items-btn > svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.my-items__items-btn > svg path {
+  stroke: white;
+}
+.my-items__music-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4.8rem 3rem 4.8rem 3.8rem;
+  background-color: #FCF7F7;
 }
 
 body.lock {

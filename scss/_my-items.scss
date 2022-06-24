@@ -1,0 +1,51 @@
+@import "param";
+
+.my-items {
+  &__add-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+  }
+
+  &__qty {
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+  }
+
+  &__btn-block {
+    flex: none;
+    margin-right: 2rem;
+  }
+
+  &__items-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6.8rem;
+    height: 6.8rem;
+    border-radius: 100%;
+    background-color: #C6B5B5;
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+
+    > svg {
+      width: 2.5rem;
+      height: 2.5rem;
+
+      path {
+        stroke: white;
+      }
+    }
+  }
+
+  &__music-block {
+    display: flex;
+    align-items: center;
+    padding: 4.8rem 3rem 4.8rem 3.8rem;
+    background-color: $pale-pink;
+  }
+}

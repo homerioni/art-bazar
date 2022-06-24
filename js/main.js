@@ -11,11 +11,14 @@ $(document).ready(function () {
         $('.payment-info__card-date .month').text($(this).val()); $('.input-date-year').focus()}
     });
     $('.input-date-year').mask('99', {placeholder:'0'});
-    $('.input-cvv')[0].oninput = function () {
-        if (this.value.length > 4) {
-            this.value = this.value.slice(0,4);
-        }
-    };
+    if ($('.input-cvv')[0]) {
+        $('.input-cvv')[0].oninput = function () {
+            if (this.value.length > 4) {
+                this.value = this.value.slice(0,4);
+            }
+        };
+    }
+
     // Like in product
     $('.like').click(function () {
         $(this).toggleClass('active');
