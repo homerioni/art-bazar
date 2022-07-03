@@ -27,6 +27,8 @@ $(document).ready(function () {
     // Burger menu
     $('.header__burger').click(function () {
         $(this).toggleClass('active');
+        $('.header__menu').slideToggle();
+        $('body').toggleClass('lock');
     });
 
     // Player
@@ -281,6 +283,27 @@ $(document).ready(function () {
             .parent().find('.edit').hide();
         $('.payment-info').show();
         $('.payment-info__add-btn').show();
+    });
+
+    // Search
+    $('.search-btn').click(function () {
+        $('.search').slideDown().addClass('open');
+        $('.search__input').focus();
+        $('body').addClass('lock');
+    });
+    $('.search__close').click(function () {
+        $('.search').slideUp().removeClass('open');
+        $('body').removeClass('lock');
+    });
+    $('.filters-btn').click(function () {
+        $('.header__filters').slideDown(250);
+        $('body').addClass('lock');
+    });
+    $('.header__filters-close').click(function () {
+        $('.header__filters').slideUp(250);
+        if (!$('.search').hasClass('open')) {
+            $('body').removeClass('lock');
+        }
     });
 
 });
