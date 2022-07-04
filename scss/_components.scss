@@ -760,8 +760,7 @@
     padding: 0 6.6rem;
 
     &--center {
-      justify-content: center;
-      padding: 0 2.5rem;
+      padding: 0 5rem;
 
       .button__icon {
         margin-left: 1rem;
@@ -801,10 +800,9 @@
     }
 
     &__text {
-      margin-top: 0.6rem;
-      font-size: 2rem;
-      color: $white;
-      text-transform: uppercase;
+      font-weight: bold;
+      margin-top: 1.2rem;
+      font-size: 3.2rem;
     }
 
     &__arrow {
@@ -825,14 +823,13 @@
 
     &__icon {
       flex: none;
-      width: 3rem;
-      height: 3rem;
+      width: 5rem;
+      height: 5rem;
     }
   }
 
   .slider-nav {
     &--vertical {
-      // not change
     }
 
     &--horizontal {
@@ -874,7 +871,21 @@
       }
 
       &--vertical {
-        // not change
+        .slider-nav__pagination-separator {
+          width: 8.2rem;
+          margin: 2rem 0;
+        }
+
+        .swiper-pagination-current,
+        .slider-nav__current {
+          margin-bottom: -1.2rem;
+          font-size: 3.8rem;
+        }
+
+        .swiper-pagination-total,
+        .slider-nav__total {
+          font-size: 3.2rem;
+        }
       }
 
       &--circle {
@@ -903,11 +914,16 @@
       height: 2rem;
 
       &:first-child {
-        // not change
+        //margin-right: 2rem;
       }
 
       &--vertical {
-        // not change
+        width: 2rem;
+        height: 13rem;
+
+        &:first-child {
+          margin-right: 0;
+        }
       }
     }
 

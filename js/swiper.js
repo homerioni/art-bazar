@@ -217,7 +217,6 @@ const prod_intro_slider = new Swiper(".prod-intro__slider", {
             }
             $('.prod-intro .slider-nav__total').text(total);
             $('.prod-intro .slider-nav__current').text('01');
-            $('.prod-intro__slider-nav').height($('.prod-intro__container').height());
         },
 
         slideChange: function (slider) {

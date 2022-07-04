@@ -134,6 +134,7 @@
   }
 
   &__slider-nav {
+    align-self: stretch;
     margin: -6rem 0;
     padding: 6rem 3rem;
     border-right: 1px solid rgba(184, 172, 176, 0.7);
@@ -266,5 +267,240 @@
 
   &__button {
     margin-right: 3rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .prod-intro {
+    margin-bottom: 26rem;
+    border: none;
+
+    &__container {
+      flex-wrap: wrap;
+      padding: 0 4rem;
+    }
+
+    .prod-intro__pagination-bullet {
+      .swiper-pagination-bullet {
+        &:not(:last-child) {
+          margin-bottom: 2.6rem;
+        }
+      }
+    }
+
+    &__image-block {
+      position: relative;
+    }
+
+    &__slider {
+      width: 64rem;
+      height: 70rem;
+      margin-bottom: 0;
+    }
+
+    &__slide {
+      > img {
+        border: 8rem solid $pale-pink;
+        border-image: url("../../img/img-border1.png") 107 104 95 107 round;
+      }
+
+      &--not-border {
+        > img {
+          border: 4rem solid $pale-pink;
+          border-image: none;
+        }
+      }
+    }
+
+    &__audio-block {
+      position: absolute;
+      bottom: -14rem;
+      left: 0;
+    }
+
+    &__audio-icon {
+      width: 4.8rem;
+      height: 3.8rem;
+    }
+
+    &__audio-author {
+      font-size: 2rem;
+    }
+
+    &__audio-name {
+      margin-right: 5rem;
+      font-size: 2.4rem;
+    }
+
+    &__audio-play {
+      // MAYBE
+      display: none;
+      //width: 5rem;
+      //height: 5rem;
+      //border-radius: 100%;
+      //border: 1px solid rgba(199, 189, 192, 1);
+      //
+      //> svg {
+      //  width: 0.9rem;
+      //  height: 1.6rem;
+      //
+      //  path {
+      //    fill: $default-color;
+      //  }
+      //}
+      //
+      //&.play {
+      //  > svg {
+      //    display: none;
+      //  }
+      //
+      //  &:before {
+      //    content: '';
+      //    display: block;
+      //    width: 3px;
+      //    height: 1.6rem;
+      //    margin-right: 0.5rem;
+      //    background-color: $default-color;
+      //  }
+      //
+      //  &:after {
+      //    content: '';
+      //    display: block;
+      //    width: 3px;
+      //    height: 1.6rem;
+      //    background-color: $default-color;
+      //  }
+      //}
+    }
+
+    &__slider-nav {
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+
+    &__info-block {
+      position: relative;
+      width: 100%;
+      min-height: auto;
+      margin-top: 30rem;
+    }
+
+    &__title-block {
+      display: block;
+      width: 100%;
+      margin-bottom: 7rem;
+      text-align: center;
+    }
+
+    &__title {
+      width: 100%;
+      margin-bottom: 4rem;
+      font-size: 5.6rem;
+      line-height: 12rem;
+    }
+
+    &__desc-content {
+      margin-bottom: 9rem;
+    }
+
+    &__desc-block {
+      &:nth-child(n + 3) {
+        margin-top: 8rem;
+      }
+
+      &--auction {
+      }
+    }
+
+    &__desc-title {
+      margin-bottom: 1rem;
+      font-size: 3.2rem;
+
+      &--auction {
+        //display: flex;
+        //align-items: center;
+        //color: $red;
+        //text-transform: none;
+        //
+        //> svg {
+        //  width: 2.4rem;
+        //  height: 2.4rem;
+        //  margin-right: 1rem;
+        //
+        //  path {
+        //    stroke: $red;
+        //  }
+        //}
+        //
+        //> span {
+        //  margin-top: 0.8rem;
+        //}
+      }
+    }
+
+    &__desc-text {
+      font-size: 3.2rem;
+      line-height: 5rem;
+
+      &--title {
+        width: 100%;
+      }
+
+      &--btn {
+        margin-left: 1.8rem;
+      }
+    }
+
+    &__auction-title {
+      //font-family: $font-antarctic;
+      //font-size: 6rem;
+      //line-height: 3rem;
+      //color: $red;
+    }
+
+    &__button-block {
+      &:not(:last-child) {
+        //margin-bottom: 3rem;
+      }
+
+      &--not-like {
+        //padding-right: 6.8rem;
+      }
+    }
+
+    &__price-block {
+    }
+
+    &__price {
+      display: flex;
+      align-items: flex-start;
+      font-family: $font-def;
+      font-weight: bold;
+      font-size: 5.4rem;
+
+      &:before {
+        content: '$';
+        font-weight: 500;
+        font-size: 3.6rem;
+      }
+    }
+
+    &__button {
+      margin-right: 0;
+    }
+
+    &__like {
+      position: absolute;
+      right: 0;
+      top: -22.6rem;
+      width: 9.2rem;
+      height: 9.2rem;
+
+      > svg {
+        width: 3.2rem;
+        height: 2.8rem;
+      }
+    }
   }
 }

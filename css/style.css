@@ -942,10 +942,7 @@ input[type=number] {
     padding: 0 6.6rem;
   }
   .button--center {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0 2.5rem;
+    padding: 0 5rem;
   }
   .button--center .button__icon {
     margin-left: 1rem;
@@ -976,10 +973,9 @@ input[type=number] {
     font-size: 3.8rem;
   }
   .button__text {
-    margin-top: 0.6rem;
-    font-size: 2rem;
-    color: #fff;
-    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 1.2rem;
+    font-size: 3.2rem;
   }
   .button__arrow {
     height: 2rem;
@@ -997,8 +993,8 @@ input[type=number] {
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
-    width: 3rem;
-    height: 3rem;
+    width: 5rem;
+    height: 5rem;
   }
 
   .slider-nav__pagination-block--normal .slider-nav__pagination-separator {
@@ -1027,6 +1023,19 @@ input[type=number] {
     margin-left: 6rem;
     font-size: 3.2rem;
   }
+  .slider-nav__pagination-block--vertical .slider-nav__pagination-separator {
+    width: 8.2rem;
+    margin: 2rem 0;
+  }
+  .slider-nav__pagination-block--vertical .swiper-pagination-current,
+.slider-nav__pagination-block--vertical .slider-nav__current {
+    margin-bottom: -1.2rem;
+    font-size: 3.8rem;
+  }
+  .slider-nav__pagination-block--vertical .swiper-pagination-total,
+.slider-nav__pagination-block--vertical .slider-nav__total {
+    font-size: 3.2rem;
+  }
   .slider-nav__pagination-block--circle .swiper-pagination-bullet {
     width: 1.6rem;
     height: 1.6rem;
@@ -1037,6 +1046,13 @@ input[type=number] {
   .slider-nav__arrow {
     width: 9.2rem;
     height: 2rem;
+  }
+  .slider-nav__arrow--vertical {
+    width: 2rem;
+    height: 13rem;
+  }
+  .slider-nav__arrow--vertical:first-child {
+    margin-right: 0;
   }
   .slider-nav__arrow-separator {
     height: 6.8rem;
@@ -2640,6 +2656,9 @@ input[type=number] {
   background-color: #503C3C;
 }
 .prod-intro__slider-nav {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
   margin: -6rem 0;
   padding: 6rem 3rem;
   border-right: 1px solid rgba(184, 172, 176, 0.7);
@@ -2782,6 +2801,130 @@ input[type=number] {
   margin-right: 3rem;
 }
 
+@media (max-width: 48em) {
+  .prod-intro {
+    margin-bottom: 26rem;
+    border: none;
+  }
+  .prod-intro__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0 4rem;
+  }
+  .prod-intro .prod-intro__pagination-bullet .swiper-pagination-bullet:not(:last-child) {
+    margin-bottom: 2.6rem;
+  }
+  .prod-intro__image-block {
+    position: relative;
+  }
+  .prod-intro__slider {
+    width: 64rem;
+    height: 70rem;
+    margin-bottom: 0;
+  }
+  .prod-intro__slide > img {
+    border: 8rem solid #FCF7F7;
+    -o-border-image: url("../../img/img-border1.png") 107 104 95 107 round;
+       border-image: url("../../img/img-border1.png") 107 104 95 107 round;
+  }
+  .prod-intro__slide--not-border > img {
+    border: 4rem solid #FCF7F7;
+    -o-border-image: none;
+       border-image: none;
+  }
+  .prod-intro__audio-block {
+    position: absolute;
+    bottom: -14rem;
+    left: 0;
+  }
+  .prod-intro__audio-icon {
+    width: 4.8rem;
+    height: 3.8rem;
+  }
+  .prod-intro__audio-author {
+    font-size: 2rem;
+  }
+  .prod-intro__audio-name {
+    margin-right: 5rem;
+    font-size: 2.4rem;
+  }
+  .prod-intro__audio-play {
+    display: none;
+  }
+  .prod-intro__slider-nav {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  .prod-intro__info-block {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    margin-top: 30rem;
+  }
+  .prod-intro__title-block {
+    display: block;
+    width: 100%;
+    margin-bottom: 7rem;
+    text-align: center;
+  }
+  .prod-intro__title {
+    width: 100%;
+    margin-bottom: 4rem;
+    font-size: 5.6rem;
+    line-height: 12rem;
+  }
+  .prod-intro__desc-content {
+    margin-bottom: 9rem;
+  }
+  .prod-intro__desc-block:nth-child(n+3) {
+    margin-top: 8rem;
+  }
+  .prod-intro__desc-title {
+    margin-bottom: 1rem;
+    font-size: 3.2rem;
+  }
+  .prod-intro__desc-text {
+    font-size: 3.2rem;
+    line-height: 5rem;
+  }
+  .prod-intro__desc-text--title {
+    width: 100%;
+  }
+  .prod-intro__desc-text--btn {
+    margin-left: 1.8rem;
+  }
+  .prod-intro__price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    font-family: "Lovelace";
+    font-weight: bold;
+    font-size: 5.4rem;
+  }
+  .prod-intro__price:before {
+    content: "$";
+    font-weight: 500;
+    font-size: 3.6rem;
+  }
+  .prod-intro__button {
+    margin-right: 0;
+  }
+  .prod-intro__like {
+    position: absolute;
+    right: 0;
+    top: -22.6rem;
+    width: 9.2rem;
+    height: 9.2rem;
+  }
+  .prod-intro__like > svg {
+    width: 3.2rem;
+    height: 2.8rem;
+  }
+}
 .prod-about {
   margin-bottom: 16rem;
 }
