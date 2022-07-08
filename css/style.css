@@ -992,7 +992,7 @@ input[type=number] {
     width: 10rem;
   }
   .button__arrow--small {
-    width: 3.6rem;
+    width: 7rem;
   }
   .button__icon {
     -webkit-box-flex: 0;
@@ -2941,9 +2941,36 @@ input[type=number] {
   .prod-intro__desc-block:nth-child(n+3) {
     margin-top: 8rem;
   }
+  .prod-intro__desc-block--auction-info {
+    -webkit-box-ordinal-group: 100;
+        -ms-flex-order: 99;
+            order: 99;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    margin-top: 8rem;
+  }
   .prod-intro__desc-title {
     margin-bottom: 1rem;
     font-size: 3.2rem;
+  }
+  .prod-intro__desc-title--auction {
+    margin-bottom: 0;
+  }
+  .prod-intro__desc-title--auction > svg {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2rem;
+  }
+  .prod-intro__desc-title--auction > span {
+    margin-top: 1.2rem;
   }
   .prod-intro__desc-text {
     font-size: 3.2rem;
@@ -2954,6 +2981,12 @@ input[type=number] {
   }
   .prod-intro__desc-text--btn {
     margin-left: 1.8rem;
+  }
+  .prod-intro__button-block:not(:last-child) {
+    margin-bottom: 10rem;
+  }
+  .prod-intro__button-block--not-like {
+    padding-right: 0;
   }
   .prod-intro__price-block {
     margin-top: 2rem;

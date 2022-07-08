@@ -414,6 +414,15 @@
 
       &--auction {
       }
+
+      &--auction-info {
+        order: 99;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 8rem;
+      }
     }
 
     &__desc-title {
@@ -421,24 +430,17 @@
       font-size: 3.2rem;
 
       &--auction {
-        //display: flex;
-        //align-items: center;
-        //color: $red;
-        //text-transform: none;
-        //
-        //> svg {
-        //  width: 2.4rem;
-        //  height: 2.4rem;
-        //  margin-right: 1rem;
-        //
-        //  path {
-        //    stroke: $red;
-        //  }
-        //}
-        //
-        //> span {
-        //  margin-top: 0.8rem;
-        //}
+        margin-bottom: 0;
+
+        > svg {
+          width: 4rem;
+          height: 4rem;
+          margin-right: 2rem;
+        }
+
+        > span {
+          margin-top: 1.2rem;
+        }
       }
     }
 
@@ -456,19 +458,15 @@
     }
 
     &__auction-title {
-      //font-family: $font-antarctic;
-      //font-size: 6rem;
-      //line-height: 3rem;
-      //color: $red;
     }
 
     &__button-block {
       &:not(:last-child) {
-        //margin-bottom: 3rem;
+        margin-bottom: 10rem;
       }
 
       &--not-like {
-        //padding-right: 6.8rem;
+        padding-right: 0;
       }
     }
 
