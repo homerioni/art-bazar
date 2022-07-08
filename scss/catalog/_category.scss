@@ -64,3 +64,43 @@
     text-transform: uppercase;
   }
 }
+
+@media (max-width: 48em) {
+  .category {
+    margin-bottom: 26rem;
+
+    &__cards {
+    }
+
+    &__item {
+      justify-content: normal;
+      width: 100%;
+      min-height: 17.2rem;
+      padding: 2.4rem 4rem;
+      margin-right: 0;
+
+      &:nth-child(n + 2) {
+        margin-top: 2rem;
+      }
+    }
+
+    &__img-box {
+      width: 11.6rem;
+      height: 12rem;
+      margin-right: 3.6rem;
+    }
+
+    &__img {
+      width: 80%;
+      height: 80%;
+    }
+
+    &__img-border {
+    }
+
+    &__item-title {
+      font-size: 3.2rem;
+      line-height: 5.2rem;
+    }
+  }
+}

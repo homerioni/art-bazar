@@ -3802,6 +3802,36 @@ input[type=number] {
   text-transform: uppercase;
 }
 
+@media (max-width: 48em) {
+  .category {
+    margin-bottom: 26rem;
+  }
+  .category__item {
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+    width: 100%;
+    min-height: 17.2rem;
+    padding: 2.4rem 4rem;
+    margin-right: 0;
+  }
+  .category__item:nth-child(n+2) {
+    margin-top: 2rem;
+  }
+  .category__img-box {
+    width: 11.6rem;
+    height: 12rem;
+    margin-right: 3.6rem;
+  }
+  .category__img {
+    width: 80%;
+    height: 80%;
+  }
+  .category__item-title {
+    font-size: 3.2rem;
+    line-height: 5.2rem;
+  }
+}
 .filter__block:not(:last-child) {
   margin-bottom: 7.5rem;
 }
