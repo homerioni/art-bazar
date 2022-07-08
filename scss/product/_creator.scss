@@ -3,7 +3,7 @@
 .creator {
   margin-bottom: 16rem;
 
-  &__container {
+  &__bg {
     display: flex;
     justify-content: space-between;
     padding: 2.2rem;
@@ -165,6 +165,153 @@
   &__btn {
     &:not(:last-child) {
       margin-bottom: 3rem;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .creator {
+    margin-bottom: 26rem;
+
+    &__bg {
+      display: block;
+      padding: 4.4rem 2.2rem;
+    }
+
+    &__info-block {
+      width: 100%;
+      padding: 6rem 3rem 8rem 3rem;
+      border-bottom: none;
+    }
+
+    &__title {
+      font-size: 5.6rem;
+    }
+
+    &__sub-title {
+      font-size: 8rem;
+      line-height: 6rem;
+    }
+
+    &__author-block {
+      width: 100%;
+      display: block;
+    }
+
+    &__author-img-block {
+      display: flex;
+      align-items: stretch;
+      margin-right: 0;
+      margin-bottom: 9rem;
+    }
+
+    &__avatar {
+      width: 13rem;
+      height: 13rem;
+      margin-bottom: 0;
+      margin-right: 4rem;
+    }
+
+    &__author-title-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    &__rating-box {
+      justify-content: normal;
+    }
+
+    &__rating-icon {
+      width: 2.6rem;
+      height: 2.6rem;
+    }
+
+    &__rating {
+      font-size: 2.4rem;
+    }
+
+    &__desc {
+    }
+
+    &__desc-title {
+      margin-bottom: 0;
+      font-size: 3.2rem;
+    }
+
+    &__desc-content {
+      display: block;
+    }
+
+    &__desc-box {
+      max-width: none;
+
+      &:nth-child(odd) {
+        margin-right: 0;
+      }
+
+      &:nth-child(even) {
+        margin-left: 0;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 6rem;
+      }
+    }
+
+    &__desc-text {
+      font-size: 3.2rem;
+      line-height: 5rem;
+
+      &--flex {
+        align-items: center;
+
+        &:not(:last-child) {
+          margin-bottom: 3rem;
+        }
+      }
+
+      &--name {
+        min-width: 36rem;
+      }
+
+      &--bold {
+        margin-top: 1rem;
+        font-size: 2.4rem;
+        line-height: 3.3rem;
+      }
+
+      > img {
+        width: 3.2rem;
+        height: 3.2rem;
+        margin-right: 2rem;
+      }
+    }
+
+    &__locate {
+      margin-top: 8rem;
+      font-size: 3.2rem;
+      line-height: 6.2rem;
+    }
+
+    &__btn-block {
+      align-items: normal;
+      padding: 0 3rem 7rem 3rem;
+      border: 1px solid rgba(184, 172, 176, 1);
+      border-top: none;
+    }
+
+    &__btn-title {
+      margin-bottom: 8rem;
+      font-size: 3.2rem;
+    }
+
+    &__btn {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
     }
   }
 }
