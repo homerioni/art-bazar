@@ -217,7 +217,7 @@
     height: 1rem;
     cursor: pointer;
 
-    &:first-child {
+    &.prev {
       margin-right: 2rem;
     }
 
@@ -895,6 +895,8 @@
       }
 
       &--circle {
+        justify-content: center;
+
         .swiper-pagination-bullet {
           width: 1.6rem;
           height: 1.6rem;
@@ -919,8 +921,8 @@
       width: 9.2rem;
       height: 2rem;
 
-      &:first-child {
-        //margin-right: 2rem;
+      &.prev {
+        margin-right: 3rem;
       }
 
       &--vertical {

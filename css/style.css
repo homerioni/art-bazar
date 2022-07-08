@@ -379,7 +379,7 @@ input[type=number] {
   height: 1rem;
   cursor: pointer;
 }
-.slider-nav__arrow:first-child {
+.slider-nav__arrow.prev {
   margin-right: 2rem;
 }
 .slider-nav__arrow--vertical {
@@ -1041,6 +1041,11 @@ input[type=number] {
 .slider-nav__pagination-block--vertical .slider-nav__total {
     font-size: 3.2rem;
   }
+  .slider-nav__pagination-block--circle {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .slider-nav__pagination-block--circle .swiper-pagination-bullet {
     width: 1.6rem;
     height: 1.6rem;
@@ -1051,6 +1056,9 @@ input[type=number] {
   .slider-nav__arrow {
     width: 9.2rem;
     height: 2rem;
+  }
+  .slider-nav__arrow.prev {
+    margin-right: 3rem;
   }
   .slider-nav__arrow--vertical {
     width: 2rem;
@@ -3642,6 +3650,80 @@ input[type=number] {
   background-color: #EBE6E6;
 }
 
+@media (max-width: 48em) {
+  .catalog-intro {
+    margin-bottom: 26rem;
+    margin-top: 10rem;
+    border: none;
+  }
+  .catalog-intro__container {
+    display: block;
+    padding: 0 4rem;
+  }
+  .catalog-intro__info-block {
+    width: 100%;
+    border: none;
+  }
+  .catalog-intro__title-block {
+    height: auto;
+    display: block;
+    padding-left: 0;
+    border: none;
+  }
+  .catalog-intro__title {
+    width: 100%;
+    margin-bottom: 2rem;
+    font-size: 5.6rem;
+    line-height: 8rem;
+  }
+  .catalog-intro__sub-title {
+    margin-bottom: 8rem;
+    font-size: 8rem;
+    line-height: 6rem;
+  }
+  .catalog-intro__info-text {
+    width: 60rem;
+    font-size: 3.2rem;
+    line-height: 5.8rem;
+  }
+  .catalog-intro__slider {
+    padding: 7rem 0;
+    margin: 0 -4rem;
+  }
+  .catalog-intro__img-box {
+    width: 100%;
+    height: 56rem;
+    margin: 0 auto 6rem auto;
+  }
+  .catalog-intro__slide-title {
+    margin-bottom: 2rem;
+    font-size: 3.2rem;
+  }
+  .catalog-intro__slide-price {
+    font-size: 5.4rem;
+  }
+  .catalog-intro__slide-price:before {
+    margin-right: 0.6rem;
+    font-size: 3.8rem;
+  }
+  .catalog-intro__pagination-fraction {
+    position: static;
+  }
+  .catalog-intro__pagination-fraction:before {
+    content: none;
+  }
+  .catalog-intro__pagination-fraction .slider-nav__pagination-block {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 12rem;
+    height: 12rem;
+  }
+  .catalog-intro__pagination-fraction .slider-nav__pagination-separator {
+    width: 5rem;
+    margin: 1.5rem 0 1rem 0;
+  }
+}
 .category {
   margin-bottom: 14rem;
 }

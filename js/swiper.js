@@ -56,15 +56,21 @@ const catalog_intro_slider = new Swiper('.catalog-intro__slider', {
     breakpoints: {
         769: {
             slidesPerView: 1.7,
+
+            pagination: {
+                el: '.desktop .catalog-intro__pagination-bullet',
+                type: 'bullets',
+            }
         },
         0: {
-            slidesPerView: 1,
-        },
-    },
+            slidesPerView: 1.5,
+            spaceBetween: rem(1),
 
-    pagination: {
-        el: '.catalog-intro__pagination-bullet',
-        type: 'bullets',
+            pagination: {
+                el: '.mobile .catalog-intro__pagination-bullet',
+                type: 'bullets',
+            },
+        },
     },
 
     navigation: {
