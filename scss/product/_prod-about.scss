@@ -63,3 +63,54 @@
     text-transform: uppercase;
   }
 }
+
+@media (max-width: 48em) {
+  .prod-about {
+    margin-bottom: 26rem;
+
+    &__container {
+    }
+
+    &__title {
+      font-size: 5.6rem;
+    }
+
+    &__block {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 8rem;
+      }
+    }
+
+    &__feature {
+      display: block;
+
+      &:not(:last-child) {
+        margin-bottom: 8rem;
+      }
+
+      > div:first-child {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+
+    &__text {
+      &--light {
+        font-size: 3.2rem;
+        line-height: 5rem;
+      }
+
+      &--bold {
+        margin-top: 1.2rem;
+        font-size: 3.2rem;
+      }
+    }
+
+    &__block-title {
+      margin-bottom: 8rem;
+      font-size: 3.2rem;
+    }
+  }
+}

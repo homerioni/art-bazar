@@ -2991,6 +2991,42 @@ input[type=number] {
   text-transform: uppercase;
 }
 
+@media (max-width: 48em) {
+  .prod-about {
+    margin-bottom: 26rem;
+  }
+  .prod-about__title {
+    font-size: 5.6rem;
+  }
+  .prod-about__block {
+    width: 100%;
+  }
+  .prod-about__block:not(:last-child) {
+    margin-bottom: 8rem;
+  }
+  .prod-about__feature {
+    display: block;
+  }
+  .prod-about__feature:not(:last-child) {
+    margin-bottom: 8rem;
+  }
+  .prod-about__feature > div:first-child {
+    width: 100%;
+    margin-right: 0;
+  }
+  .prod-about__text--light {
+    font-size: 3.2rem;
+    line-height: 5rem;
+  }
+  .prod-about__text--bold {
+    margin-top: 1.2rem;
+    font-size: 3.2rem;
+  }
+  .prod-about__block-title {
+    margin-bottom: 8rem;
+    font-size: 3.2rem;
+  }
+}
 .creator {
   margin-bottom: 16rem;
 }
