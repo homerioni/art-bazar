@@ -2823,12 +2823,16 @@ input[type=number] {
     margin-bottom: 0;
   }
   .prod-intro__slide > img {
-    border: 8rem solid #FCF7F7;
+    border: 10rem solid #FCF7F7;
     -o-border-image: url("../../img/img-border1.png") 107 104 95 107 round;
        border-image: url("../../img/img-border1.png") 107 104 95 107 round;
   }
+  .prod-intro__slide--not-border {
+    width: 95%;
+    margin: auto;
+  }
   .prod-intro__slide--not-border > img {
-    border: 4rem solid #FCF7F7;
+    border: 5rem solid #FCF7F7;
     -o-border-image: none;
        border-image: none;
   }
@@ -2893,6 +2897,9 @@ input[type=number] {
   }
   .prod-intro__desc-text--btn {
     margin-left: 1.8rem;
+  }
+  .prod-intro__price-block {
+    margin-top: 2rem;
   }
   .prod-intro__price {
     display: -webkit-box;
