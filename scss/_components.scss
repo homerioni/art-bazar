@@ -961,6 +961,96 @@
     }
   }
 
+  .preview {
+    &__like {
+      right: 3rem;
+      top: -5.2rem;
+      width: 10.4rem;
+      height: 10.4rem;
+
+      > svg {
+        width: 4rem;
+        height: 3.2rem;
+      }
+    }
+
+    &__content {
+      width: 100%;
+      padding: 6rem 5rem;
+    }
+
+    &__img-box {
+      width: 100%;
+      height: 45rem;
+      margin-bottom: 4rem;
+    }
+
+    &__data-block {
+      padding: 1.6rem 0;
+      margin-bottom: 5rem;
+    }
+
+    &__auction-day {
+      //position: absolute;
+      //left: 50%;
+      //top: -5rem;
+      //transform: translateX(-50%);
+      //padding: 0.8rem 2rem;
+      //background-color: $pale-pink;
+      //
+      //white-space: nowrap;
+      //font-family: $font-raleway;
+      //font-size: 1.6rem;
+      //color: $default-color-light;
+    }
+
+    &__country {
+      font-size: 3.2rem;
+
+      > svg {
+        width: 3.4rem;
+        height: 3.4rem;
+        margin-right: 1.2rem;
+        transform: translateY(-0.4rem);
+      }
+    }
+
+    &__category {
+      font-size: 3.2rem;
+    }
+
+    &__author {
+      margin-bottom: 5rem;
+      font-size: 3.2rem;
+    }
+
+    &__title {
+      margin-bottom: 5rem;
+      font-size: 3.2rem;
+    }
+
+    &__price-block {
+      //display: flex;
+      //align-items: center;
+      //justify-content: center;
+      //
+      //> svg {
+      //  width: 2.2rem;
+      //  height: 2.2rem;
+      //  margin-right: 1.5rem;
+      //}
+    }
+
+    &__price {
+      font-size: 5.4rem;
+
+      &:before {
+        margin-right: 0.6rem;
+        font-size: 3.6rem;
+      }
+    }
+  }
+
   .preview-big {
     padding: 1.6rem;
 

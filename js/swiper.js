@@ -320,3 +320,20 @@ const top_creators_slider = new Swiper('.top-creators__slider', {
         delay: 5000,
     },
 });
+
+if ($(window).width() <= 768) {
+    $('.more-prod__cards').addClass('swiper');
+    $('.more-prod__wrapper').addClass('swiper-wrapper');
+    $('.more-prod__item').addClass('swiper-slide');
+
+    const more_prod_slider = new Swiper('.more-prod__cards', {
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 1.5,
+        spaceBetween: rem(2),
+
+        autoplay: {
+            delay: 5000,
+        },
+    });
+}
