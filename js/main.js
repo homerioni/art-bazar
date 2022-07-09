@@ -202,7 +202,11 @@ $(document).ready(function () {
     }
     $('.music-modal__choose-btn').click(function () {
         $('.form-music__add-block').hide();
-        $('.form-music__complete-block').css('display', 'flex');
+        if ($(window).width() <= 768) {
+            $('.form-music__complete-block').css('display', 'block');
+        } else {
+            $('.form-music__complete-block').css('display', 'flex');
+        }
         musicModalClose();
     });
     $('.music-modal__close').click(musicModalClose);
