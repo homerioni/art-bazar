@@ -269,10 +269,6 @@ document.querySelectorAll('.music-catalog').forEach(n => {
                 }
             },
         },
-
-        autoplay: {
-            delay: 6000,
-        },
     });
 
     music_catalog_slider.controller.control = music_catalog_slider;

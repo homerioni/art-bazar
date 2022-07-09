@@ -4514,6 +4514,121 @@ input[type=number] {
      object-fit: contain;
 }
 
+@media (max-width: 48em) {
+  .music-intro {
+    margin-bottom: 10rem;
+    margin-top: 6rem;
+  }
+  .music-intro__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 8rem;
+  }
+  .music-intro__content--center {
+    width: 55rem;
+  }
+  .music-intro__content--center .music-intro__img-box {
+    width: 100%;
+    height: 50rem;
+    margin: -8.4rem 0 11rem 0;
+  }
+  .music-intro__content--center .music-intro__img-box > img {
+    border-radius: 100rem 100rem 0 0;
+  }
+  .music-intro__content--center .music-intro__img-box:before {
+    left: 1rem;
+    top: 1rem;
+  }
+  .music-intro__content--last {
+    width: 15.2rem;
+    padding-top: 11.2rem;
+  }
+  .music-intro__content--last .music-intro__img-box {
+    height: 18.1rem;
+    margin-bottom: 4rem;
+    padding: 0.8rem;
+  }
+  .music-intro__content--last .music-intro__img-box:nth-child(3) {
+    margin-bottom: 10rem;
+  }
+  .music-intro__title-white > span {
+    left: 0;
+    top: -2px;
+    width: auto;
+    white-space: nowrap;
+    font-size: 5.6rem;
+    line-height: 8.8rem;
+  }
+  .music-intro__sign-in-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .music-intro__sign-in-sub-title {
+    width: 100%;
+    margin-bottom: 3rem;
+    font-size: 3.2rem;
+  }
+  .music-intro__sign-in-sub-title > svg {
+    width: 4rem;
+    height: 4.6rem;
+    margin-right: 2.8rem;
+  }
+  .music-intro__sign-in-title {
+    width: 40rem;
+    margin-bottom: 0;
+    font-size: 3.2rem;
+    line-height: 5.6rem;
+  }
+  .music-intro__sign-in-link {
+    margin-bottom: 0;
+  }
+  .music-intro__img-box > img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .music-intro__title {
+    -ms-flex-item-align: normal;
+        -ms-grid-row-align: normal;
+        align-self: normal;
+    font-size: 5.6rem;
+    line-height: 8.8rem;
+    white-space: nowrap;
+  }
+  .music-intro__text {
+    width: 100%;
+    padding: 0 5.8rem 0 2.6rem;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+  .music-intro__text > svg:first-child {
+    left: 0;
+    top: 0;
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+  .music-intro__text > svg:last-child {
+    right: 0;
+    bottom: 0;
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+  .music-intro__audio-icon-block {
+    width: 8.4rem;
+    height: 8.4rem;
+  }
+}
 .music-catalog {
   margin-bottom: 13rem;
 }

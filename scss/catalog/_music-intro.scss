@@ -197,3 +197,141 @@
     }
   }
 }
+
+@media (max-width: 48em) {
+  .music-intro {
+    margin-bottom: 10rem;
+    margin-top: 6rem;
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8rem;
+    }
+
+    &__content {
+      &--first {
+      }
+
+      &--center {
+        width: 55rem;
+
+        .music-intro__img-box {
+          width: 100%;
+          height: 50rem;
+          margin: -8.4rem 0 11rem 0;
+
+          > img {
+            border-radius: 100rem 100rem 0 0;
+          }
+
+          &:before {
+            left: 1rem;
+            top: 1rem;
+          }
+        }
+      }
+
+      &--last {
+        width: 15.2rem;
+        padding-top: 11.2rem;
+
+        .music-intro__img-box {
+          height: 18.1rem;
+          margin-bottom: 4rem;
+          padding: 0.8rem;
+
+          &:nth-child(3) {
+            margin-bottom: 10rem;
+          }
+        }
+      }
+    }
+
+    &__title-white {
+      > span {
+        left: 0;
+        top: -2px;
+        width: auto;
+        white-space: nowrap;
+        font-size: 5.6rem;
+        line-height: 8.8rem;
+      }
+    }
+
+    &__sign-in-block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__sign-in-sub-title {
+      width: 100%;
+      margin-bottom: 3rem;
+      font-size: 3.2rem;
+
+      > svg {
+        width: 4rem;
+        height: 4.6rem;
+        margin-right: 2.8rem;
+      }
+    }
+
+    &__sign-in-title {
+      width: 40rem;
+      margin-bottom: 0;
+      font-size: 3.2rem;
+      line-height: 5.6rem;
+    }
+
+    &__sign-in-link {
+      margin-bottom: 0;
+    }
+
+    &__img-box {
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__title {
+      align-self: normal;
+      font-size: 5.6rem;
+      line-height: 8.8rem;
+      white-space: nowrap;
+    }
+
+    &__text {
+      width: 100%;
+      padding: 0 5.8rem 0 2.6rem;
+      font-size: 3.2rem;
+      line-height: 4.2rem;
+
+      > svg {
+        &:first-child {
+          left: 0;
+          top: 0;
+          width: 1.4rem;
+          height: 1.4rem;
+        }
+
+        &:last-child {
+          right: 0;
+          bottom: 0;
+          width: 1.4rem;
+          height: 1.4rem;
+        }
+      }
+    }
+
+    &__sub-title {
+    }
+
+    &__audio-icon-block {
+      width: 8.4rem;
+      height: 8.4rem;
+    }
+  }
+}
