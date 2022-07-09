@@ -985,6 +985,7 @@
       width: 100%;
       height: 45rem;
       margin-bottom: 4rem;
+      border-radius: 30rem 30rem 0 0;
     }
 
     &__data-block {
@@ -993,17 +994,9 @@
     }
 
     &__auction-day {
-      //position: absolute;
-      //left: 50%;
-      //top: -5rem;
-      //transform: translateX(-50%);
-      //padding: 0.8rem 2rem;
-      //background-color: $pale-pink;
-      //
-      //white-space: nowrap;
-      //font-family: $font-raleway;
-      //font-size: 1.6rem;
-      //color: $default-color-light;
+      top: -10rem;
+      padding: 1.2rem 2.6rem;
+      font-size: 3.2rem;
     }
 
     &__country {
@@ -1032,15 +1025,11 @@
     }
 
     &__price-block {
-      //display: flex;
-      //align-items: center;
-      //justify-content: center;
-      //
-      //> svg {
-      //  width: 2.2rem;
-      //  height: 2.2rem;
-      //  margin-right: 1.5rem;
-      //}
+      > svg {
+        width: 5.2rem;
+        height: 5.2rem;
+        margin-right: 2rem;
+      }
     }
 
     &__price {
