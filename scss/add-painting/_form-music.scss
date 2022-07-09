@@ -274,7 +274,7 @@
     padding: 10rem 3rem;
 
     &__title {
-      margin-bottom: 10rem;
+      margin-bottom: 5rem;
 
       > span {
         margin-top: 1.4rem;
@@ -292,6 +292,7 @@
     }
 
     &__add-block {
+      align-items: normal;
     }
 
     &__add-btn {
@@ -317,7 +318,9 @@
     }
 
     &__complete-block {
-      margin-top: -5rem;
+      &--add-track {
+        margin-top: 10rem;
+      }
     }
 
     &__img-box {
@@ -329,13 +332,13 @@
     }
 
     &__complete-info-block {
-      margin-bottom: 8rem;
     }
 
     &__complete-info-mob {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      margin-top: 8rem;
     }
 
     &__complete-text-block {
@@ -363,25 +366,34 @@
 
     &__audio-block {
       &--add-track {
-        //.form-music__audio-line {
-        //  width: 57.8rem;
-        //  height: 4.2rem;
-        //
-        //  .timeline > img {
-        //    width: 57.8rem;
-        //    height: 4.2rem;
-        //  }
-        //}
-        //
-        //.form-music__play-btn {
-        //  width: 7.9rem;
-        //  height: 7.9rem;
-        //
-        //  > svg {
-        //    width: 1.4rem;
-        //    height: 2.5rem;
-        //  }
-        //}
+        position: relative;
+
+        .form-music__audio-line {
+          width: 33.8rem;
+          height: 3.8rem;
+
+          > img {
+            object-fit: cover;
+            object-position: left;
+          }
+
+          .timeline > img {
+            width: 33.8rem;
+            height: 3.8rem;
+            object-fit: cover;
+            object-position: left;
+          }
+        }
+
+        .form-music__play-btn {
+          width: 7.8rem;
+          height: 7.8rem;
+
+          > svg {
+            width: 1.6rem;
+            height: 2.6rem;
+          }
+        }
       }
     }
 
@@ -430,19 +442,17 @@
     }
 
     &__filename {
-      //font-family: $font-raleway;
-      //font-weight: bold;
-      //font-size: 1.7rem;
+      font-size: 3.2rem;
     }
 
     &__new-track {}
 
     &__new-track-name {
-      //margin-bottom: 0.5rem;
-      //font-family: $font-raleway;
-      //font-weight: bold;
-      //font-size: 1.7rem;
-      //line-height: 3.1rem;
+      position: absolute;
+      left: 0;
+      top: -6rem;
+      font-weight: 500;
+      font-size: 3.2rem;
     }
   }
 }

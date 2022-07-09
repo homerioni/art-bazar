@@ -4784,6 +4784,14 @@ input[type=number] {
   position: absolute;
   left: -0.5rem;
   top: -0.7rem;
+  width: 100%;
+  height: 19.6rem;
+}
+.add-paint__status-bg-text > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .add-paint__status-title {
   position: relative;
@@ -4932,7 +4940,9 @@ input[type=number] {
   }
   .add-paint__status-bg-text {
     left: -3rem;
-    top: -3rem;
+    top: -4.4rem;
+    width: 105%;
+    height: 48rem;
   }
   .add-paint__status-title {
     margin: 12rem auto 8rem auto;
@@ -5017,6 +5027,10 @@ input[type=number] {
   }
   .add-paint__block:not(:last-child) {
     margin-bottom: 11rem;
+  }
+  .add-paint__publish-btn {
+    width: 100%;
+    height: 14.8rem;
   }
 }
 .form {
@@ -5875,7 +5889,7 @@ input[type=number] {
     padding: 10rem 3rem;
   }
   .form-music__title {
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
   }
   .form-music__title > span {
     margin-top: 1.4rem;
@@ -5885,6 +5899,11 @@ input[type=number] {
     width: 7.2rem;
     height: 6rem;
     margin-right: 2.5rem;
+  }
+  .form-music__add-block {
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
   }
   .form-music__add-btn {
     width: 20rem;
@@ -5904,8 +5923,8 @@ input[type=number] {
     font-size: 3.2rem;
     line-height: 4.2rem;
   }
-  .form-music__complete-block {
-    margin-top: -5rem;
+  .form-music__complete-block--add-track {
+    margin-top: 10rem;
   }
   .form-music__img-box {
     -webkit-box-flex: 0;
@@ -5915,9 +5934,6 @@ input[type=number] {
     height: 18rem;
     margin-right: 5rem;
     border: 1rem solid #EBE6E6;
-  }
-  .form-music__complete-info-block {
-    margin-bottom: 8rem;
   }
   .form-music__complete-info-mob {
     display: -webkit-box;
@@ -5929,6 +5945,7 @@ input[type=number] {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-top: 8rem;
   }
   .form-music__complete-title-block {
     display: block;
@@ -5943,6 +5960,35 @@ input[type=number] {
   .form-music__track-name {
     font-size: 3.2rem;
     line-height: 5.2rem;
+  }
+  .form-music__audio-block--add-track {
+    position: relative;
+  }
+  .form-music__audio-block--add-track .form-music__audio-line {
+    width: 33.8rem;
+    height: 3.8rem;
+  }
+  .form-music__audio-block--add-track .form-music__audio-line > img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: left;
+       object-position: left;
+  }
+  .form-music__audio-block--add-track .form-music__audio-line .timeline > img {
+    width: 33.8rem;
+    height: 3.8rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: left;
+       object-position: left;
+  }
+  .form-music__audio-block--add-track .form-music__play-btn {
+    width: 7.8rem;
+    height: 7.8rem;
+  }
+  .form-music__audio-block--add-track .form-music__play-btn > svg {
+    width: 1.6rem;
+    height: 2.6rem;
   }
   .form-music__play-btn {
     width: 8rem;
@@ -5975,6 +6021,16 @@ input[type=number] {
   .form-music__delete > svg {
     width: 4.8rem;
     height: 4.8rem;
+  }
+  .form-music__filename {
+    font-size: 3.2rem;
+  }
+  .form-music__new-track-name {
+    position: absolute;
+    left: 0;
+    top: -6rem;
+    font-weight: 500;
+    font-size: 3.2rem;
   }
 }
 .feedback {

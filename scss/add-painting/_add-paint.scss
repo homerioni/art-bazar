@@ -27,6 +27,14 @@
     position: absolute;
     left: -0.5rem;
     top: -0.7rem;
+    width: 100%;
+    height: 19.6rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
 
   &__status-title {
@@ -190,7 +198,9 @@
 
     &__status-bg-text {
       left: -3rem;
-      top: -3rem;
+      top: -4.4rem;
+      width: 105%;
+      height: 48rem;
     }
 
     &__status-title {
@@ -293,6 +303,8 @@
     }
 
     &__publish-btn {
+      width: 100%;
+      height: 14.8rem;
     }
   }
 }

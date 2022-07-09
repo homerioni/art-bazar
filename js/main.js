@@ -179,9 +179,9 @@ $(document).ready(function () {
 
     // Form music
     $('.form-music__delete').click(function () {
-        $('.form-music__complete-block').hide();
-        $('.form-music__add-block').css('display', 'flex');
-        $('.audio-play').removeClass('play');
+        $(this).parents('.form-music').find('.form-music__complete-block').hide();
+        $(this).parents('.form-music').find('.form-music__add-block').css('display', 'flex');
+        $(this).parents('.form-music').find('.audio-play').removeClass('play');
         $('audio').each(function () {
             $(this)[0].pause();
         });
