@@ -1042,6 +1042,40 @@
     }
   }
 
+  .preview-small {
+    width: 18.2rem;
+
+    &__like {
+      top: 0;
+      width: 7rem;
+      height: 7rem;
+
+      > svg {
+        width: 2.6rem;
+        height: 2.2rem;
+      }
+    }
+
+    &__content {
+      width: 100%;
+      padding: 4rem 2rem 3rem 2rem;
+      margin-top: 3rem;
+    }
+
+    &__img-box {
+      margin: 0 auto 5rem auto;
+    }
+
+    &__title {
+      margin-bottom: 1rem;
+      font-size: 3.2rem;
+    }
+
+    &__author {
+      font-size: 3.2rem;
+    }
+  }
+
   .preview-big {
     padding: 1.6rem;
 

@@ -61,3 +61,63 @@
     }
   }
 }
+
+@media (max-width: 48em) {
+  .music-catalog {
+    margin-bottom: 20rem;
+
+    &--title {
+      margin-bottom: 20rem;
+      padding: 0 4rem;
+      border-bottom: none;
+    }
+
+    &__title {
+      margin-bottom: 8rem;
+      font-size: 5.6rem;
+      text-align: left;
+    }
+
+    &__upload {
+      width: 100%;
+      height: 14.8rem;
+    }
+
+    &__title-block {
+      margin-bottom: 10rem;
+    }
+
+    &__category-block {
+    }
+
+    &__category {
+      font-size: 5.6rem;
+    }
+
+    &__category-text {
+      font-size: 3.2rem;
+    }
+
+    &__more-link {
+      flex: none;
+      flex-direction: column;
+      align-items: flex-end;
+
+      .link-more__text {
+        margin-right: 0;
+        margin-bottom: 3rem;
+      }
+    }
+
+    &__slider {
+      padding-top: 0;
+      margin-bottom: 10rem;
+    }
+
+    &__slide {
+    }
+
+    &__slider-nav {
+    }
+  }
+}

@@ -1153,6 +1153,34 @@ input[type=number] {
     font-size: 3.6rem;
   }
 
+  .preview-small {
+    width: 18.2rem;
+  }
+  .preview-small__like {
+    top: 0;
+    width: 7rem;
+    height: 7rem;
+  }
+  .preview-small__like > svg {
+    width: 2.6rem;
+    height: 2.2rem;
+  }
+  .preview-small__content {
+    width: 100%;
+    padding: 4rem 2rem 3rem 2rem;
+    margin-top: 3rem;
+  }
+  .preview-small__img-box {
+    margin: 0 auto 5rem auto;
+  }
+  .preview-small__title {
+    margin-bottom: 1rem;
+    font-size: 3.2rem;
+  }
+  .preview-small__author {
+    font-size: 3.2rem;
+  }
+
   .preview-big {
     padding: 1.6rem;
   }
@@ -4678,6 +4706,54 @@ input[type=number] {
   color: #503C3C;
 }
 
+@media (max-width: 48em) {
+  .music-catalog {
+    margin-bottom: 20rem;
+  }
+  .music-catalog--title {
+    margin-bottom: 20rem;
+    padding: 0 4rem;
+    border-bottom: none;
+  }
+  .music-catalog__title {
+    margin-bottom: 8rem;
+    font-size: 5.6rem;
+    text-align: left;
+  }
+  .music-catalog__upload {
+    width: 100%;
+    height: 14.8rem;
+  }
+  .music-catalog__title-block {
+    margin-bottom: 10rem;
+  }
+  .music-catalog__category {
+    font-size: 5.6rem;
+  }
+  .music-catalog__category-text {
+    font-size: 3.2rem;
+  }
+  .music-catalog__more-link {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .music-catalog__more-link .link-more__text {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+  .music-catalog__slider {
+    padding-top: 0;
+    margin-bottom: 10rem;
+  }
+}
 .add-paint {
   margin-top: 6rem;
   margin-bottom: 16rem;

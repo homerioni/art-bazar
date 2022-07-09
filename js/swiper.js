@@ -241,6 +241,22 @@ document.querySelectorAll('.music-catalog').forEach(n => {
         slidesPerView: 5,
         spaceBetween: rem(5),
 
+        breakpoints: {
+            769: {
+                slidesPerView: 5,
+                spaceBetween: rem(5),
+            },
+            0: {
+                slidesPerView: 2,
+                spaceBetween: rem(1),
+
+                grid: {
+                    rows: 2,
+                    fill: 'row',
+                },
+            },
+        },
+
         navigation: {
             nextEl: n.querySelector('.next'),
             prevEl: n.querySelector('.prev'),
