@@ -143,45 +143,37 @@ $(document).ready(function () {
     $('.hcm').change(function () {
         if ($(this).val()) {
             let inch = String($(this).val() * 0.393701);
-            $(this).parent().addClass('cm');
             inch = inch.split('.')[0] + '.' + inch.split('.')[1].slice(0, 2);
-            $(this).parent().parent().find('.hin').val(inch).parent().addClass('inch');
+            $(this).parent().parent().find('.hin').val(inch);
         } else {
-            $(this).parent().removeClass('cm');
-            $(this).parent().parent().find('.hin').val('').parent().removeClass('inch');
+            $(this).parent().parent().find('.hin').val('');
         }
     });
     $('.wcm').change(function () {
         if ($(this).val()) {
-            $(this).parent().addClass('cm');
             let inch = String($(this).val() * 0.393701);
             inch = inch.split('.')[0] + '.' + inch.split('.')[1].slice(0, 2);
-            $(this).parent().parent().find('.win').val(inch).parent().addClass('inch');
+            $(this).parent().parent().find('.win').val(inch);
         } else {
-            $(this).parent().removeClass('cm');
-            $(this).parent().parent().find('.win').val('').parent().removeClass('inch');
+            $(this).parent().parent().find('.win').val('');
         }
     });
     $('.hin').change(function () {
         if ($(this).val()) {
             let cm = String($(this).val() * 2.54);
-            $(this).parent().addClass('inch');
             cm = cm.split('.')[0] + '.' + cm.split('.')[1].slice(0, 1);
-            $(this).parent().parent().find('.hcm').val(cm).parent().addClass('cm');
+            $(this).parent().parent().find('.hcm').val(cm);
         } else {
-            $(this).parent().removeClass('inch');
-            $(this).parent().parent().find('.hcm').val('').parent().removeClass('cm');
+            $(this).parent().parent().find('.hcm').val('');
         }
     });
     $('.win').change(function () {
         if ($(this).val()) {
             let cm = String($(this).val() * 2.54);
-            $(this).parent().addClass('inch');
             cm = cm.split('.')[0] + '.' + cm.split('.')[1].slice(0, 1);
-            $(this).parent().parent().find('.wcm').val(cm).parent().addClass('cm');
+            $(this).parent().parent().find('.wcm').val(cm);
         } else {
-            $(this).parent().removeClass('inch');
-            $(this).parent().parent().find('.wcm').val('').parent().removeClass('cm');
+            $(this).parent().parent().find('.wcm').val('');
         }
     });
 
