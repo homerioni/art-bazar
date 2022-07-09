@@ -4647,6 +4647,109 @@ input[type=number] {
   opacity: 0.5;
 }
 
+@media (max-width: 48em) {
+  .add-paint {
+    margin-bottom: 20rem;
+  }
+  .add-paint__container {
+    display: block;
+  }
+  .add-paint__status-block-bg {
+    width: 100%;
+    padding: 2rem;
+  }
+  .add-paint__status-block {
+    border: 1px solid transparent;
+  }
+  .add-paint__status-bg-text {
+    left: -3rem;
+    top: -3rem;
+  }
+  .add-paint__status-title {
+    margin: 12rem auto 8rem auto;
+    font-size: 8rem;
+    line-height: 6rem;
+  }
+  .add-paint__status-title > img {
+    left: -3rem;
+    top: -4rem;
+    width: 22rem;
+    height: 15rem;
+  }
+  .add-paint__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 7rem;
+    padding: 0 4rem;
+  }
+  .add-paint__item {
+    -webkit-box-flex: 25%;
+        -ms-flex: 25%;
+            flex: 25%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .add-paint__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .add-paint__item:not(:last-child) .add-paint__item-icon:after {
+    left: calc(100% + 1.2rem);
+    top: 3.6rem;
+    width: 6rem;
+    height: 1px;
+  }
+  .add-paint__item.active .add-paint__item-text {
+    color: white;
+  }
+  .add-paint__item-icon {
+    width: 7.2rem;
+    height: 7.2rem;
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
+  .add-paint__item-icon > svg {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+  .add-paint__item-text {
+    font-weight: 300;
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    text-align: center;
+    color: #F2EEEE;
+  }
+  .add-paint__ask-btn {
+    padding: 2rem 3rem;
+  }
+  .add-paint__ask-sub-text {
+    font-size: 3.2rem;
+  }
+  .add-paint__ask-text {
+    font-size: 3.2rem;
+  }
+  .add-paint__ask-text > svg {
+    width: 8.4rem;
+    height: 3.6rem;
+  }
+  .add-paint__ask-text > span {
+    margin-top: 1rem;
+  }
+  .add-paint__content {
+    width: 100%;
+    padding-top: 11rem;
+  }
+  .add-paint__title {
+    margin-bottom: 10rem;
+    font-size: 5.6rem;
+    text-align: center;
+  }
+  .add-paint__block:not(:last-child) {
+    margin-bottom: 11rem;
+  }
+}
 .form {
   padding: 5.5rem 5rem 6.6rem 5rem;
   background-color: #FCF7F7;

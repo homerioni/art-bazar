@@ -170,3 +170,129 @@
     }
   }
 }
+
+@media (max-width: 48em) {
+  .add-paint {
+    margin-bottom: 20rem;
+
+    &__container {
+      display: block;
+    }
+
+    &__status-block-bg {
+      width: 100%;
+      padding: 2rem;
+    }
+
+    &__status-block {
+      border: 1px solid transparent;
+    }
+
+    &__status-bg-text {
+      left: -3rem;
+      top: -3rem;
+    }
+
+    &__status-title {
+      margin: 12rem auto 8rem auto;
+      font-size: 8rem;
+      line-height: 6rem;
+
+      > img {
+        left: -3rem;
+        top: -4rem;
+        width: 22rem;
+        height: 15rem;
+      }
+    }
+
+    &__list {
+      display: flex;
+      margin-bottom: 7rem;
+      padding: 0 4rem;
+    }
+
+    &__item {
+      flex: 25%;
+      flex-direction: column;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+
+        .add-paint__item-icon:after {
+          left: calc(100% + 1.2rem);
+          top: 3.6rem;
+          width: 6rem;
+          height: 1px;
+        }
+      }
+
+      &.active {
+        .add-paint__item-text {
+          color: white;
+        }
+      }
+    }
+
+    &__item-icon {
+      width: 7.2rem;
+      height: 7.2rem;
+      margin-right: 0;
+      margin-bottom: 4rem;
+
+      > svg {
+        width: 3.6rem;
+        height: 3.6rem;
+      }
+    }
+
+    &__item-text {
+      font-weight: 300;
+      font-size: 3.2rem;
+      line-height: 3.8rem;
+      text-align: center;
+      color: #F2EEEE;
+    }
+
+    &__ask-btn {
+      padding: 2rem 3rem;
+    }
+
+    &__ask-sub-text {
+      font-size: 3.2rem;
+    }
+
+    &__ask-text {
+      font-size: 3.2rem;
+
+      > svg {
+        width: 8.4rem;
+        height: 3.6rem;
+      }
+
+      > span {
+        margin-top: 1rem;
+      }
+    }
+
+    &__content {
+      width: 100%;
+      padding-top: 11rem;
+    }
+
+    &__title {
+      margin-bottom: 10rem;
+      font-size: 5.6rem;
+      text-align: center;
+    }
+
+    &__block {
+      &:not(:last-child) {
+        margin-bottom: 11rem;
+      }
+    }
+
+    &__publish-btn {
+    }
+  }
+}
