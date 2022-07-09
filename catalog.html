@@ -653,8 +653,19 @@
     </section>
     <section class="catalog">
         <div class="container catalog__container">
-            <form class="catalog__filters filter">
-                <div class="catalog__title catalog__title--filter">filters</div>
+            <form class="catalog__filters filter desktop">
+                <button type="button" class="catalog__filters-close close"></button>
+                <div class="catalog__title catalog__title--filter desktop">filters</div>
+                <div class="catalog__select-block mobile">
+                    <select class="catalog__select">
+                        <option value="">Recommended</option>
+                        <option value="">Not recommended</option>
+                    </select>
+                    <select class="catalog__select">
+                        <option value="">60 per page</option>
+                        <option value="">120 per page</option>
+                    </select>
+                </div>
                 <div class="filter__block">
                     <div class="filter__block-title">
                         <span>category</span>
@@ -939,7 +950,7 @@
             <div class="catalog__content">
                 <div class="catalog__title-block">
                     <h2 class="catalog__title">All paintings</h2>
-                    <div class="catalog__select-block">
+                    <div class="catalog__select-block desktop">
                         <select class="catalog__select">
                             <option value="">Recommended</option>
                             <option value="">Not recommended</option>
@@ -950,6 +961,12 @@
                         </select>
                     </div>
                 </div>
+                <button class="catalog__filters-btn filters-catalog-btn mobile">
+                    <span>filters</span>
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.83984 9L11.6796 15L17.5194 9" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
                 <div class="catalog__cards">
                     <div class="catalog__item preview">
                         <button type="button" class="preview__like like">

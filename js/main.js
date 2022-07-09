@@ -92,6 +92,14 @@ $(document).ready(function () {
             $(this).addClass('active');
         }
     });
+    $('.filters-catalog-btn').click(function () {
+        $('.catalog__filters').slideDown();
+        $('body').addClass('lock');
+    });
+    $('.catalog__filters .close').click(function () {
+        $('.catalog__filters').slideUp();
+        $('body').removeClass('lock');
+    });
 
     // Form select
     $('.form__select-dropdown').each(function () {

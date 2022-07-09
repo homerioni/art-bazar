@@ -71,3 +71,129 @@
     }
   }
 }
+
+@media (max-width: 48em) {
+  .catalog {
+    margin-bottom: 26rem;
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__filters {
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 20;
+      width: 100%;
+      height: 100%;
+      padding: 20rem 4rem;
+      overflow-y: scroll;
+      background-color: $pale-pink;
+    }
+
+    &__filters-close {
+      position: absolute;
+      right: 4rem;
+      top: 6rem;
+      width: 6rem;
+      height: 6rem;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 1px;
+        transform: translateY(-50%) rotate(45deg);
+        background-color: rgba(80, 60, 60, 1);
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 1px;
+        transform: translateY(-50%) rotate(-45deg);
+        background-color: rgba(80, 60, 60, 1);
+      }
+    }
+
+    &__filters-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 10rem;
+      padding: 0 4.6rem 0 2.8rem;
+      margin-bottom: 15rem;
+      background: linear-gradient(152.82deg, #9E6F7A 12.88%, #7E4852 105.36%);
+
+      font-weight: bold;
+      font-size: 3.2rem;
+      text-transform: uppercase;
+      color: white;
+
+      > span {
+        margin-top: 1.2rem;
+      }
+
+      > svg {
+        width: 4.8rem;
+        height: 4.8rem;
+
+        path {
+          stroke: white;
+        }
+      }
+    }
+
+    &__title {
+      font-size: 5.6rem;
+      line-height: 5.2rem;
+
+      &--filter {
+      }
+    }
+
+    &__content {
+      width: 100%;
+    }
+
+    &__title-block {
+      margin-bottom: 8rem;
+    }
+
+    &__select-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10rem;
+    }
+
+    &__select {
+      padding-right: 0;
+      font-size: 3.4rem;
+      text-align: left;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+
+    &__cards {
+    }
+
+    &__item {
+      margin-right: 0;
+
+      &:nth-child(n + 2) {
+        margin-top: 7rem;
+      }
+    }
+  }
+}
