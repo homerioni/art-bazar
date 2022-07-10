@@ -188,3 +188,150 @@
     }
   }
 }
+
+@media (max-width: 48em) {
+  .cart {
+    margin-top: 10rem;
+
+    &__title-block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 12rem;
+    }
+
+    &__title {
+      width: 100%;
+      margin-bottom: 4rem;
+      font-size: 5.6rem;
+    }
+
+    &__sub-title {
+      font-size: 8rem;
+      line-height: 6rem;
+    }
+
+    &__list {
+    }
+
+    &__item {
+      display: block;
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 16rem;
+      }
+    }
+
+    &__info-block {
+      width: 100%;
+      padding: 6rem 3rem;
+    }
+
+    &__delete {
+      top: -4.6rem;
+      right: 3rem;
+      width: 9.2rem;
+      height: 9.2rem;
+
+      > svg {
+        width: 2.8rem;
+        height: 2.8rem;
+      }
+    }
+
+    &__like {
+      top: -4.6rem;
+      right: 15.2rem;
+      width: 9.2rem;
+      height: 9.2rem;
+
+      > svg {
+        width: 3.6rem;
+        height: 2.8rem;
+      }
+    }
+
+    &__image-block {
+      width: 24.2rem;
+      margin-right: 6rem;
+    }
+
+    &__img-box {
+      display: none;
+
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      &:first-child {
+        display: block;
+        width: 100%;
+        height: 33.4rem;
+      }
+    }
+
+    &__text-block {
+      align-self: flex-end;
+      width: 100%;
+    }
+
+    &__author {
+      margin-bottom: 3rem;
+      font-size: 3.2rem;
+      line-height: 5.8rem;
+    }
+
+    &__item-title {
+      margin-bottom: 3rem;
+      font-size: 3.2rem;
+      line-height: 4.3rem;
+    }
+
+    &__price {
+      justify-content: flex-end;
+      font-weight: bold;
+      font-size: 5.4rem;
+
+      &:before {
+        font-size: 3.6rem;
+      }
+
+      &--shipping {
+        font-size: 5.4rem;
+
+        &:before {
+          margin-right: 0.6rem;
+          font-size: 3.6rem;
+        }
+      }
+    }
+
+    &__price-block {
+      padding: 6rem 3.4rem;
+    }
+
+    &__price-text {
+      font-size: 3.2rem;
+
+      &:nth-child(n + 2) {
+        margin-top: 4rem;
+      }
+    }
+
+    &__btn {
+      width: 100%;
+      height: 15rem;
+
+      .button__content {
+        > svg {
+          width: 5rem;
+          height: 5.6rem;
+          margin-right: 3.2rem;
+        }
+      }
+    }
+  }
+}
