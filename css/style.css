@@ -6674,6 +6674,7 @@ input[type=number] {
   height: 10rem;
   margin-right: 2.5rem;
   border-radius: 100%;
+  border: 3px solid #5F5D5D;
   overflow: hidden;
 }
 .creators__name {
@@ -6683,7 +6684,96 @@ input[type=number] {
   text-transform: uppercase;
   color: white;
 }
-
+@media (max-width: 48em) {
+  .creators:before {
+    top: -46rem;
+    height: calc(100% + 61rem);
+    border-radius: 4rem 4rem 0 0;
+  }
+  .creators__title {
+    margin-bottom: 6rem;
+    font-size: 5.6rem;
+  }
+  .creators__filter {
+    padding: 2rem 0;
+  }
+  .creators__filter-item {
+    font-size: 3.2rem;
+    padding: 0 1.5rem;
+  }
+  .creators__block {
+    margin-top: 12rem;
+  }
+  .creators__block-name {
+    margin-bottom: 6rem;
+    font-size: 5.6rem;
+  }
+  .creators__list.open .creators__item {
+    display: block;
+  }
+  .creators__item {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    display: none;
+    width: 25%;
+  }
+  .creators__item > a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .creators__item:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
+  .creators__item:nth-child(n+4) {
+    margin-top: 0;
+  }
+  .creators__item:nth-child(n+5) {
+    margin-top: 6rem;
+  }
+  .creators__item:nth-child(-n+4) {
+    display: block;
+  }
+  .creators__img-box {
+    width: 15.4rem;
+    height: 15.4rem;
+    margin-right: 0;
+    margin-bottom: 5rem;
+  }
+  .creators__name {
+    font-size: 3.2rem;
+    line-height: 4.5rem;
+    text-align: center;
+  }
+  .creators__more-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-top: 8rem;
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    color: white;
+  }
+  .creators__more-btn > svg {
+    width: 13rem;
+    height: 2rem;
+    margin-left: 5rem;
+  }
+  .creators__more-btn > svg path {
+    fill: white;
+  }
+}
 .cart {
   margin-top: 12rem;
   margin-bottom: 16rem;

@@ -310,4 +310,10 @@ $(document).ready(function () {
         }
     });
 
+    // Creators
+    $('.creators__more-btn').click(function () {
+        $(this).hide()
+            .parent().find('.creators__list').addClass('open');
+    });
+
 });
