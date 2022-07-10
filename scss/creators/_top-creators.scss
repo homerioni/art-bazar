@@ -86,3 +86,58 @@
   &__qty {
   }
 }
+
+@media (max-width: 48em) {
+  .top-creators {
+    margin-bottom: 20rem;
+
+    &__title {
+      margin-bottom: 4rem;
+      font-size: 5.6rem;
+    }
+
+    &__sub-title {
+      margin-bottom: 12rem;
+      font-weight: 400;
+      font-size: 8rem;
+      line-height: 6rem;
+    }
+
+    &__slider {
+      margin: 0 -4rem 10rem -4rem;
+      padding-left: 4rem;
+    }
+
+    &__item {
+      padding: 6rem 3rem 3rem 3rem;
+    }
+
+    &__img-box {
+      width: 16rem;
+      height: 16rem;
+      margin: 0 auto 5rem auto;
+    }
+
+    &__name {
+      margin-bottom: 8rem;
+      font-size: 3.2rem;
+      line-height: 4.5rem;
+    }
+
+    &__info {
+      padding-top: 2rem;
+      font-size: 3.2rem;
+    }
+
+    &__country {
+      > svg {
+        width: 3.4rem;
+        height: 3.4rem;
+        margin-right: 1.4rem;
+      }
+    }
+
+    &__qty {
+    }
+  }
+}

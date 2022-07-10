@@ -300,8 +300,8 @@ const top_creators_slider = new Swiper('.top-creators__slider', {
             spaceBetween: rem(5),
         },
         0: {
-            slidesPerView: 1.3,
-            spaceBetween: rem(2),
+            slidesPerView: 2.2,
+            spaceBetween: rem(1),
         },
     },
 
