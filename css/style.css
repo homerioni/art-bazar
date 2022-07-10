@@ -6159,6 +6159,80 @@ input[type=number] {
   margin-top: 7rem;
 }
 
+@media (max-width: 48em) {
+  .feedback {
+    margin-top: 10rem;
+  }
+  .feedback__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+  }
+  .feedback__socials-content {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+    min-height: auto;
+    padding: 9rem 2.6rem;
+    background: url("../img/feedback-socials-bg-mob.svg") no-repeat #343131;
+  }
+  .feedback__social-title {
+    margin-bottom: 8rem;
+    font-size: 3.2rem;
+  }
+  .feedback__socials {
+    margin-bottom: 9rem;
+  }
+  .feedback__social-link {
+    width: 10rem;
+    height: 10rem;
+  }
+  .feedback__social-link:not(:nth-child(3n+4)) {
+    margin-right: 0;
+  }
+  .feedback__social-link:nth-child(n+5) {
+    margin-top: 0;
+  }
+  .feedback__social-link:not(:nth-child(5n+6)) {
+    margin-right: 4rem;
+  }
+  .feedback__social-link:nth-child(n+7) {
+    margin-top: 4rem;
+  }
+  .feedback__contacts {
+    font-weight: 300;
+    font-size: 3.2rem;
+    color: #EBE6E6;
+  }
+  .feedback__contacts > *:not(:last-child) {
+    margin-bottom: 8rem;
+  }
+  .feedback__form {
+    -ms-flex-item-align: normal;
+        -ms-grid-row-align: normal;
+        align-self: normal;
+    width: 100%;
+    margin-bottom: 11rem;
+  }
+  .feedback__form textarea {
+    padding: 3rem;
+    height: 23rem;
+  }
+  .feedback__title {
+    margin-bottom: 8rem;
+    font-size: 5.6rem;
+  }
+  .feedback__btn {
+    width: 100%;
+    height: 15rem;
+    margin-top: 11rem;
+  }
+}
 .creators-intro {
   margin-top: 10rem;
   margin-bottom: 16rem;

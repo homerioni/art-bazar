@@ -118,3 +118,84 @@
     margin-top: 7rem;
   }
 }
+
+@media (max-width: 48em) {
+  .feedback {
+    margin-top: 10rem;
+
+    &__container {
+      flex-direction: column;
+      justify-content: normal;
+    }
+
+    &__socials-content {
+      order: 2;
+      width: 100%;
+      min-height: auto;
+      padding: 9rem 2.6rem;
+      background: url("../img/feedback-socials-bg-mob.svg") no-repeat #343131;
+    }
+
+    &__social-title {
+      margin-bottom: 8rem;
+      font-size: 3.2rem;
+    }
+
+    &__socials {
+      margin-bottom: 9rem;
+    }
+
+    &__social-link {
+      width: 10rem;
+      height: 10rem;
+
+      &:not(:nth-child(3n + 4)) {
+        margin-right: 0;
+      }
+
+      &:nth-child(n + 5) {
+        margin-top: 0;
+      }
+
+      &:not(:nth-child(5n + 6)) {
+        margin-right: 4rem;
+      }
+
+      &:nth-child(n + 7) {
+        margin-top: 4rem;
+      }
+    }
+
+    &__contacts {
+      font-weight: 300;
+      font-size: 3.2rem;
+      color: #EBE6E6;
+
+      & > *:not(:last-child) {
+        margin-bottom: 8rem;
+      }
+    }
+
+    &__form {
+      align-self: normal;
+      width: 100%;
+      margin-bottom: 11rem;
+
+      textarea {
+        padding: 3rem;
+        height: 23rem;
+      }
+    }
+
+    &__title {
+      margin-bottom: 8rem;
+      font-size: 5.6rem;
+    }
+
+    &__btn {
+      width: 100%;
+      height: 15rem;
+      margin-top: 11rem;
+    }
+  }
+}
