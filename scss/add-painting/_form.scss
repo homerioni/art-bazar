@@ -414,6 +414,12 @@
       &:not(:last-child) {
         margin-bottom: 10rem;
       }
+
+      .form__item {
+        &:not(:last-child) {
+          margin-bottom: 10rem;
+        }
+      }
     }
 
     &__item {
