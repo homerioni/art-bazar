@@ -3006,8 +3006,8 @@ input[type=number] {
   }
   .prod-intro__slide > img {
     border: 10rem solid #FCF7F7;
-    -o-border-image: url("../../img/img-border1.png") 107 104 95 107 round;
-       border-image: url("../../img/img-border1.png") 107 104 95 107 round;
+    -o-border-image: url("../img/img-border1.png") 107 104 95 107 round;
+       border-image: url("../img/img-border1.png") 107 104 95 107 round;
   }
   .prod-intro__slide--not-border {
     width: 95%;
