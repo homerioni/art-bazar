@@ -209,3 +209,150 @@
   &__add-btn {
   }
 }
+
+@media (max-width: 48em) {
+  .payment-info {
+    &__info-content {
+      margin-bottom: 10rem;
+    }
+
+    &__label-text {
+      margin-top: 1.2rem;
+      font-size: 3.2rem;
+    }
+
+    &__card {
+      width: 100%;
+      padding-left: 0;
+
+      .form-info__card-block {
+        width: 100%;
+        height: 40rem;
+        margin-bottom: 8rem;
+      }
+    }
+
+    &__edit-content {
+    }
+
+    &__edit-text-block {
+      &--title {
+      }
+
+      &--name-card {
+        //margin-bottom: 2rem;
+      }
+    }
+
+    &__edit-title {
+      font-size: 3.2rem;
+      line-height: 5.2rem;
+    }
+
+    &__edit-desc {
+      font-size: 3.2rem;
+      line-height: 4.2rem;
+    }
+
+    &__edit-form {
+      display: block;
+      margin-bottom: 10rem;
+    }
+
+    &__inputs {
+      width: 100%;
+    }
+
+    &__edit-card-number {
+      height: 10.8rem;
+      padding: 0 3.6rem 0 2rem;
+      margin-bottom: 10rem;
+    }
+
+    &__card-type-icon {
+      width: 10rem;
+      height: 5rem;
+    }
+
+    &__input-number-card {
+      width: 44rem;
+      font-size: 3.2rem;
+    }
+
+    &__edit-cvv,
+    &__edit-exp-date {
+      margin-bottom: 10rem;
+    }
+
+    &__label-cvv {
+      width: 34rem;
+      height: 10.8rem;
+    }
+
+    &__input-cvv {
+      font-size: 3.2rem;
+    }
+
+    &__exp-date {
+      width: 34rem;
+      font-size: 3.2rem;
+    }
+
+    &__label-date {
+      width: 15rem;
+      height: 10.8rem;
+    }
+
+    &__input-date {
+    }
+
+    &__edit-name-card {
+      height: 10.8rem;
+      margin-bottom: 10rem;
+      padding: 0 3rem;
+    }
+
+    &__input-name-card {
+      font-size: 3.2rem;
+      line-height: 6.2rem;
+    }
+
+    &__edit-card {
+      width: 100%;
+      height: 50rem;
+      padding: 4rem 6rem;
+      margin-right: 0;
+    }
+
+    &__card-info-img {
+      height: 6rem;
+    }
+
+    &__card-name {
+      margin-bottom: 3rem;
+      font-size: 3.2rem;
+    }
+
+    &__card-number-block {
+    }
+
+    &__card-number {
+      margin-bottom: 3rem;
+      font-size: 3.2rem;
+    }
+
+    &__card-date {
+      font-size: 3.2rem;
+    }
+
+    &__add-btn {
+      width: 100%;
+      height: 15rem;
+    }
+
+    &__save-btn {
+      width: 100%;
+      height: 15rem;
+    }
+  }
+}

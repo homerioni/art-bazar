@@ -8349,6 +8349,107 @@ input[type=number] {
   font-size: 1.8rem;
   color: white;
 }
+@media (max-width: 48em) {
+  .payment-info__info-content {
+    margin-bottom: 10rem;
+  }
+  .payment-info__label-text {
+    margin-top: 1.2rem;
+    font-size: 3.2rem;
+  }
+  .payment-info__card {
+    width: 100%;
+    padding-left: 0;
+  }
+  .payment-info__card .form-info__card-block {
+    width: 100%;
+    height: 40rem;
+    margin-bottom: 8rem;
+  }
+  .payment-info__edit-title {
+    font-size: 3.2rem;
+    line-height: 5.2rem;
+  }
+  .payment-info__edit-desc {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+  .payment-info__edit-form {
+    display: block;
+    margin-bottom: 10rem;
+  }
+  .payment-info__inputs {
+    width: 100%;
+  }
+  .payment-info__edit-card-number {
+    height: 10.8rem;
+    padding: 0 3.6rem 0 2rem;
+    margin-bottom: 10rem;
+  }
+  .payment-info__card-type-icon {
+    width: 10rem;
+    height: 5rem;
+  }
+  .payment-info__input-number-card {
+    width: 44rem;
+    font-size: 3.2rem;
+  }
+  .payment-info__edit-cvv, .payment-info__edit-exp-date {
+    margin-bottom: 10rem;
+  }
+  .payment-info__label-cvv {
+    width: 34rem;
+    height: 10.8rem;
+  }
+  .payment-info__input-cvv {
+    font-size: 3.2rem;
+  }
+  .payment-info__exp-date {
+    width: 34rem;
+    font-size: 3.2rem;
+  }
+  .payment-info__label-date {
+    width: 15rem;
+    height: 10.8rem;
+  }
+  .payment-info__edit-name-card {
+    height: 10.8rem;
+    margin-bottom: 10rem;
+    padding: 0 3rem;
+  }
+  .payment-info__input-name-card {
+    font-size: 3.2rem;
+    line-height: 6.2rem;
+  }
+  .payment-info__edit-card {
+    width: 100%;
+    height: 50rem;
+    padding: 4rem 6rem;
+    margin-right: 0;
+  }
+  .payment-info__card-info-img {
+    height: 6rem;
+  }
+  .payment-info__card-name {
+    margin-bottom: 3rem;
+    font-size: 3.2rem;
+  }
+  .payment-info__card-number {
+    margin-bottom: 3rem;
+    font-size: 3.2rem;
+  }
+  .payment-info__card-date {
+    font-size: 3.2rem;
+  }
+  .payment-info__add-btn {
+    width: 100%;
+    height: 15rem;
+  }
+  .payment-info__save-btn {
+    width: 100%;
+    height: 15rem;
+  }
+}
 .inbox {
   height: 82.4rem;
   padding: 3rem;
