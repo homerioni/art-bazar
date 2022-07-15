@@ -8071,6 +8071,15 @@ input[type=number] {
     margin-bottom: 0;
     margin-right: 2rem;
   }
+  .personal__list-item:not(:last-child) .personal__item-icon:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 2.8rem;
+    width: 13rem;
+    height: 1px;
+    background-color: #EBE6E6;
+  }
   .personal__list-item > a {
     display: block;
     font-size: 3.2rem;
@@ -8084,15 +8093,6 @@ input[type=number] {
     height: 5.6rem;
     margin-right: 0;
     margin-bottom: 4rem;
-  }
-  .personal__item-icon:before {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 2.8rem;
-    width: 13rem;
-    height: 1px;
-    background-color: #EBE6E6;
   }
   .personal__question-block {
     padding: 1rem 3rem;
@@ -8886,6 +8886,210 @@ input[type=number] {
   fill: white;
 }
 
+@media (max-width: 48em) {
+  .inbox {
+    height: 133.6rem;
+    padding: 4rem 3rem;
+    overflow: hidden;
+  }
+  .inbox__container {
+    position: relative;
+    display: block;
+  }
+  .inbox__all-chats {
+    width: 100%;
+  }
+  .inbox__title {
+    margin-bottom: 3rem;
+    font-size: 3.2rem;
+  }
+  .inbox__search-label {
+    height: 7rem;
+    padding: 0 4rem;
+    margin-bottom: 6rem;
+  }
+  .inbox__search-label > svg {
+    width: 3.8rem;
+    height: 3.8rem;
+    margin-right: 3rem;
+  }
+  .inbox__search {
+    font-size: 3.2rem;
+    line-height: 6.2rem;
+  }
+  .inbox__chat-tabs {
+    height: calc(100% - 20rem);
+  }
+  .inbox__chat-tab {
+    padding: 2rem 3rem;
+  }
+  .inbox__chat-tab:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+  .inbox__chat-tab.new-msg .inbox__user-text-block {
+    width: 40rem;
+  }
+  .inbox__avatar {
+    width: 11rem;
+    height: 11rem;
+    margin-right: 4rem;
+  }
+  .inbox__user-text-block {
+    width: 70%;
+  }
+  .inbox__username {
+    font-size: 3.2rem;
+    line-height: 5.8rem;
+  }
+  .inbox__user-desc {
+    font-size: 3.2rem;
+    line-height: 5.8rem;
+  }
+  .inbox__qty-new-msg {
+    width: 5rem;
+    height: 5rem;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+  .inbox__chat-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 5rem 3rem;
+    -webkit-transform: translateX(120%);
+            transform: translateX(120%);
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  }
+  .inbox__chat-box.active {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .inbox__chat-box .inbox__avatar {
+    width: 9.6rem;
+    height: 9.6rem;
+  }
+  .inbox__user-info {
+    width: 100%;
+    height: 12.2rem;
+    padding: 2rem 3rem;
+    margin-bottom: 10rem;
+  }
+  .inbox__user-info-text {
+    width: 38rem;
+    margin-left: -1rem;
+    margin-top: 1rem;
+  }
+  .inbox__info-username {
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+  }
+  .inbox__user-info-desc {
+    font-size: 3.2rem;
+    line-height: 5.8rem;
+  }
+  .inbox__user-info-btn {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 2rem;
+    height: 3.4rem;
+  }
+  .inbox__user-info-btn > span {
+    width: 3px;
+    height: 3px;
+  }
+  .inbox__user-info-btn > span:before {
+    width: 3px;
+    height: 3px;
+  }
+  .inbox__user-info-btn > span:after {
+    width: 3px;
+    height: 3px;
+  }
+  .inbox__chat {
+    width: 100%;
+    height: 100%;
+  }
+  .inbox__chat-item:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+  .inbox__chat-item--right {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .inbox__chat-item--right .inbox__chat-info-box {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 0 0 0 6rem;
+  }
+  .inbox__chat-info-box {
+    margin-right: 6rem;
+  }
+  .inbox__chat-info-box .inbox__avatar {
+    margin-right: 0;
+  }
+  .inbox__chat-time {
+    font-size: 3.2rem;
+    line-height: 5.8rem;
+  }
+  .inbox__chat-text-box {
+    max-width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1.5rem 3rem 3rem 3rem;
+  }
+  .inbox__chat-name {
+    font-size: 3.2rem;
+    line-height: 5.8rem;
+  }
+  .inbox__chat-text {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+  .inbox__info-read {
+    right: 3rem;
+    top: 3rem;
+  }
+  .inbox__info-read > svg {
+    width: 3.2rem;
+    height: 2.6rem;
+    margin-left: -2.2rem;
+  }
+  .inbox__form-input-msg {
+    padding: 2.4rem 3rem;
+  }
+  .inbox__btn-load {
+    width: 5.4rem;
+    height: 5.4rem;
+    margin-right: 3rem;
+  }
+  .inbox__btn-load > svg {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  .inbox__msg-input {
+    font-size: 3.2rem;
+    line-height: 5.2rem;
+  }
+  .inbox__msg-btn {
+    width: 5.4rem;
+    height: 5.4rem;
+    margin-left: 2rem;
+  }
+  .inbox__msg-btn > svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
 .my-items__add-block {
   display: -webkit-box;
   display: -ms-flexbox;

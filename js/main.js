@@ -316,4 +316,9 @@ $(document).ready(function () {
             .parent().find('.creators__list').addClass('open');
     });
 
+    // Chat
+    $('.inbox__chat-tab').click(function () {
+        $('.inbox__chat-box').addClass('active');
+    });
+
 });

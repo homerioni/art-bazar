@@ -388,3 +388,249 @@
     }
   }
 }
+
+@media (max-width: 48em) {
+  .inbox {
+    height: 133.6rem;
+    padding: 4rem 3rem;
+    overflow: hidden;
+
+    &__container {
+      position: relative;
+      display: block;
+    }
+
+    &__all-chats {
+      width: 100%;
+    }
+
+    &__title {
+      margin-bottom: 3rem;
+      font-size: 3.2rem;
+    }
+
+    &__search-label {
+      height: 7rem;
+      padding: 0 4rem;
+      margin-bottom: 6rem;
+
+      > svg {
+        width: 3.8rem;
+        height: 3.8rem;
+        margin-right: 3rem;
+      }
+    }
+
+    &__search {
+      font-size: 3.2rem;
+      line-height: 6.2rem;
+    }
+
+    &__chat-tabs {
+      height: calc(100% - 20rem);
+    }
+
+    &__chat-tab {
+      padding: 2rem 3rem;
+
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+
+      &.new-msg {
+        .inbox__user-text-block {
+          width: 40rem;
+        }
+      }
+    }
+
+    &__avatar {
+      width: 11rem;
+      height: 11rem;
+      margin-right: 4rem;
+    }
+
+    &__user-text-block {
+      width: 70%;
+    }
+
+    &__username {
+      font-size: 3.2rem;
+      line-height: 5.8rem;
+    }
+
+    &__user-desc {
+      font-size: 3.2rem;
+      line-height: 5.8rem;
+    }
+
+    &__qty-new-msg {
+      width: 5rem;
+      height: 5rem;
+      font-weight: 500;
+      font-size: 2.4rem;
+      line-height: 2.8rem;
+    }
+
+    &__chat-box {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      padding: 5rem 3rem;
+      transform: translateX(120%);
+      transition: transform 0.3s ease;
+
+      &.active {
+        transform: translateX(0);
+      }
+
+      .inbox__avatar {
+        width: 9.6rem;
+        height: 9.6rem;
+      }
+    }
+
+    &__user-info {
+      width: 100%;
+      height: 12.2rem;
+      padding: 2rem 3rem;
+      margin-bottom: 10rem;
+    }
+
+    &__user-info-text {
+      width: 38rem;
+      margin-left: -1rem;
+      margin-top: 1rem;
+    }
+
+    &__info-username {
+      font-size: 3.2rem;
+      line-height: 3.6rem;
+    }
+
+    &__info-online {
+    }
+
+    &__user-info-desc {
+      font-size: 3.2rem;
+      line-height: 5.8rem;
+    }
+
+    &__user-info-btn {
+      flex: none;
+      width: 2rem;
+      height: 3.4rem;
+
+      > span {
+        width: 3px;
+        height: 3px;
+
+        &:before {
+          width: 3px;
+          height: 3px;
+        }
+
+        &:after {
+          width: 3px;
+          height: 3px;
+        }
+      }
+    }
+
+    &__chat {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__chat-item {
+      &:not(:last-child) {
+        margin-bottom: 6rem;
+      }
+
+      &--right {
+        justify-content: flex-end;
+
+        .inbox__chat-info-box {
+          order: 2;
+          margin: 0 0 0 6rem;
+        }
+      }
+    }
+
+    &__chat-info-box {
+      margin-right: 6rem;
+
+      .inbox__avatar {
+        margin-right: 0;
+      }
+    }
+
+    &__chat-time {
+      font-size: 3.2rem;
+      line-height: 5.8rem;
+    }
+
+    &__chat-text-box {
+      max-width: 100%;
+      height: fit-content;
+      padding: 1.5rem 3rem 3rem 3rem;
+    }
+
+    &__chat-name {
+      font-size: 3.2rem;
+      line-height: 5.8rem;
+    }
+
+    &__chat-text {
+      font-size: 3.2rem;
+      line-height: 4.2rem;
+    }
+
+    &__info-read {
+      right: 3rem;
+      top: 3rem;
+
+      > svg {
+        width: 3.2rem;
+        height: 2.6rem;
+        margin-left: -2.2rem;
+      }
+    }
+
+    &__form-input-msg {
+      padding: 2.4rem 3rem;
+    }
+
+    &__btn-load {
+      width: 5.4rem;
+      height: 5.4rem;
+      margin-right: 3rem;
+
+      > svg {
+        width: 2.2rem;
+        height: 2.2rem;
+      }
+    }
+
+    &__msg-label {
+    }
+
+    &__msg-input {
+      font-size: 3.2rem;
+      line-height: 5.2rem;
+    }
+
+    &__msg-btn {
+      width: 5.4rem;
+      height: 5.4rem;
+      margin-left: 2rem;
+
+      > svg {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+}
