@@ -386,57 +386,31 @@
       font-size: 5.6rem;
 
       &--tabs {
-        //margin-bottom: 3.5rem;
+        margin-bottom: 8rem;
       }
     }
 
     &__tabs {
-      //display: flex;
-      //align-items: center;
-      //margin-bottom: 5rem;
+      margin-bottom: 12rem;
     }
 
     &__tab {
-      //border-bottom: 1px solid transparent;
-      //font-family: $font-raleway;
-      //font-size: 1.7rem;
-      //line-height: 2.9rem;
-      //color: $default-color-light;
-      //cursor: pointer;
-      //
-      //&:hover {
-      //  color: $default-color;
-      //}
-      //
-      //&:not(:last-child) {
-      //  margin-right: 5rem;
-      //}
-      //
-      //&.active {
-      //  border-bottom: 1px solid rgba(162, 49, 70, 1);
-      //  color: $default-color;
-      //}
-      //
-      //> label {
-      //  display: block;
-      //  cursor: pointer;
-      //}
+      padding-bottom: 1rem;
+      font-family: $font-def;
+      font-weight: bold;
+      font-size: 5.6rem;
+      line-height: 5.2rem;
+      text-transform: uppercase;
+
+      &:not(:last-child) {
+        margin-right: 9rem;
+      }
     }
 
     &__tab-content {
-      //display: none;
-      //
-      //> *:not(:last-child) {
-      //  margin-bottom: 5rem;
-      //}
-      //
-      //> input {
-      //  display: none;
-      //}
-      //
-      //&.active {
-      //  display: block;
-      //}
+      > *:not(:last-child) {
+        margin-bottom: 12rem;
+      }
     }
 
     &__block {
