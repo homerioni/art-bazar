@@ -7252,6 +7252,85 @@ input[type=number] {
   margin-bottom: 5rem;
 }
 
+@media (max-width: 48em) {
+  .checkout {
+    margin-top: 8rem;
+    margin-bottom: 20rem;
+  }
+  .checkout__title {
+    font-size: 5.6rem;
+  }
+  .checkout__content {
+    display: block;
+  }
+  .checkout__order-block {
+    width: 100%;
+    padding: 10rem 3rem;
+    margin-bottom: 10rem;
+  }
+  .checkout__order-title {
+    margin-bottom: 10rem;
+    font-size: 5.6rem;
+  }
+  .checkout__order-box--title {
+    margin-bottom: 10rem;
+  }
+  .checkout__order-box:nth-child(n+3) {
+    padding: 3rem 0;
+  }
+  .checkout__img-box {
+    width: 23rem;
+    height: 25rem;
+    margin-right: 4rem;
+  }
+  .checkout__author {
+    margin-bottom: 3rem;
+    font-size: 3.2rem;
+    line-height: 5.8rem;
+  }
+  .checkout__product-title {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+  .checkout__text-box:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+  .checkout__text {
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+  }
+  .checkout__text--total {
+    font-size: 3.2rem;
+    color: #503C3C;
+  }
+  .checkout__price {
+    font-weight: 500;
+    font-size: 5.4rem;
+  }
+  .checkout__price:before {
+    margin-right: 0.6rem;
+    font-size: 3.2rem;
+  }
+  .checkout__promo {
+    height: 10.8rem;
+    margin-top: 8rem;
+    padding: 0 7rem 0 3rem;
+  }
+  .checkout__promo > svg {
+    width: 9rem;
+    height: 2rem;
+    margin-left: 2rem;
+  }
+  .checkout__promo > input {
+    font-size: 3.2rem;
+  }
+  .checkout__user-info-block {
+    width: 100%;
+  }
+  .checkout__user-info-block > *:not(:last-child) {
+    margin-bottom: 10rem;
+  }
+}
 .form-info {
   padding: 6.3rem 11rem 7.3rem 7.5rem;
   background-color: #FCF7F7;
@@ -7508,6 +7587,171 @@ input[type=number] {
   color: white;
 }
 
+@media (max-width: 48em) {
+  .form-info {
+    padding: 10rem 3rem;
+  }
+  .form-info__title {
+    margin-bottom: 3rem;
+    font-size: 5.6rem;
+  }
+  .form-info__desc {
+    width: 54rem;
+    margin-bottom: 8rem;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+  .form-info__item:not(:last-child) {
+    margin-bottom: 8rem;
+  }
+  .form-info__radio-label {
+    margin-bottom: 3rem;
+  }
+  .form-info__radio-btn {
+    width: 3.8rem;
+    height: 3.8rem;
+    margin-right: 3rem;
+  }
+  .form-info__radio-btn:before {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+  .form-info__item-desc {
+    padding-left: 7rem;
+    font-size: 3.2rem;
+  }
+  .form-info__item-title {
+    margin-top: 1rem;
+    font-size: 3.2rem;
+  }
+  .form-info__item-content {
+    display: block;
+    padding-left: 7rem;
+  }
+  .form-info__item-content.edit {
+    padding-left: 0;
+  }
+  .form-info__item-content .form__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 6rem;
+  }
+  .form-info__item-content .form__item {
+    -webkit-box-flex: 40%;
+        -ms-flex: 40%;
+            flex: 40%;
+  }
+  .form-info__item-content .form__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .form-info__item-content .form__item:nth-child(n+3) {
+    margin-top: 6rem;
+  }
+  .form-info__item-content .form__item:nth-child(even) {
+    margin-left: 3rem;
+  }
+  .form-info__item-content--payment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .form-info__info:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+  .form-info__info-name {
+    width: 18rem;
+    font-size: 3.2rem;
+  }
+  .form-info__info-text {
+    font-size: 3.2rem;
+  }
+  .form-info__info-edit-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 4rem;
+  }
+  .form-info__info-edit-btn {
+    padding: 0;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 5.8rem;
+  }
+  .form-info__info-edit-separator {
+    width: 1px;
+    height: 5.6rem;
+    margin: 0 2rem;
+  }
+  .form-info__btn {
+    width: 100%;
+    height: 15rem;
+  }
+  .form-info__edit-btn-block {
+    margin-top: 10rem;
+  }
+  .form-info__btn-cancel {
+    margin-left: 7rem;
+    margin-right: 3rem;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 6.2rem;
+  }
+  .form-info__tabs {
+    margin-bottom: 10rem;
+  }
+  .form-info__tab {
+    padding-bottom: 1rem;
+    font-size: 3.2rem;
+  }
+  .form-info__tab:not(:last-child) {
+    margin-right: 8rem;
+  }
+  .form-info__tab-content {
+    margin-bottom: 10rem;
+  }
+  .form-info__tab-content .form-info__radio-label {
+    margin-bottom: 0;
+  }
+  .form-info__tab-content .form-info__item-content {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .form-info__tab-content .form-info__info-edit-box {
+    width: 100%;
+    margin-left: 9rem;
+  }
+  .form-info__card-block {
+    width: 60rem;
+    height: 34rem;
+    padding: 5rem;
+  }
+  .form-info__card-info-img {
+    width: 6rem;
+    height: 4rem;
+  }
+  .form-info__card-name {
+    margin-bottom: 3rem;
+    font-size: 3.2rem;
+  }
+  .form-info__card-number {
+    font-size: 3.2rem;
+  }
+  .form-info__card-date {
+    font-size: 3.2rem;
+  }
+}
 .personal {
   margin-bottom: 16rem;
 }
