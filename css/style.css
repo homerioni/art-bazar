@@ -1861,8 +1861,8 @@ input[type=number] {
   max-width: 70rem;
   max-height: 65rem;
   border: 10rem solid #FCF7F7;
-  -o-border-image: url("../../img/img-border1.png") 107 104 95 107 round;
-     border-image: url("../../img/img-border1.png") 107 104 95 107 round;
+  -o-border-image: url("../img/img-border1.png") 107 104 95 107 round;
+     border-image: url("../img/img-border1.png") 107 104 95 107 round;
 }
 .main-intro__slide-info {
   display: -webkit-box;
