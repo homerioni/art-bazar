@@ -320,5 +320,8 @@ $(document).ready(function () {
     $('.inbox__chat-tab').click(function () {
         $('.inbox__chat-box').addClass('active');
     });
+    $('.back-chats').click(function () {
+        $('.inbox__chat-box').removeClass('active');
+    });
 
 });
