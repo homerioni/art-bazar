@@ -1144,6 +1144,12 @@
       }
     }
 
+    &--items-page {
+      .preview-wide__info-block {
+        margin-left: 0;
+      }
+    }
+
     &__like {
       right: 4.6rem;
       top: -5.6rem;

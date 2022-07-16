@@ -1233,6 +1233,9 @@ input[type=number] {
   .preview-wide--two-btn .preview-wide__content {
     padding-top: 6rem;
   }
+  .preview-wide--items-page .preview-wide__info-block {
+    margin-left: 0;
+  }
   .preview-wide__like {
     right: 4.6rem;
     top: -5.6rem;
@@ -9149,6 +9152,61 @@ input[type=number] {
   background-color: #FCF7F7;
 }
 
+@media (max-width: 48em) {
+  .my-items__add-block {
+    margin-bottom: 10rem;
+  }
+  .my-items__qty {
+    font-size: 3.2rem;
+  }
+  .my-items__btn-block {
+    position: absolute;
+    right: 3rem;
+    top: -4.6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0;
+  }
+  .my-items__items-btn {
+    width: 9.2rem;
+    height: 9.2rem;
+  }
+  .my-items__items-btn:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 3rem;
+  }
+  .my-items__items-btn > svg {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+  .my-items__music-block {
+    position: relative;
+    padding: 10rem 3rem 5rem 3rem;
+  }
+  .my-items__music-block .form-music__img-box {
+    margin-right: 4rem;
+  }
+  .my-items__music-block .form-music__play-btn {
+    width: 6rem;
+    height: 6rem;
+    margin-right: 2rem;
+  }
+  .my-items__music-block .form-music__play-btn > svg {
+    width: 2rem;
+    height: 2rem;
+  }
+  .my-items__music-block .form-music__play-btn::before, .my-items__music-block .form-music__play-btn::after {
+    height: 2rem;
+  }
+  .my-items__btn {
+    width: 100%;
+    height: 15rem;
+  }
+}
 @media (max-width: 48em) {
   .search {
     position: fixed;
