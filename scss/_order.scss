@@ -1,0 +1,190 @@
+@import "param";
+
+.order {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+
+  &__product-info {
+    flex: auto;
+    padding: 2.5rem;
+    background-color: #FCF7F7;
+  }
+
+  &__product-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img-box {
+    width: 30rem;
+    height: 26rem;
+    border-radius: 100rem 100rem 0 0;
+    overflow: hidden;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text-block {
+    width: 40rem;
+  }
+
+  &__stage {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 0 3.2rem;
+    margin-left: auto;
+    margin-bottom: 2rem;
+    background-color: #C6B5B5;
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    line-height: 3.1rem;
+    color: white;
+  }
+
+  &__author {
+    margin-bottom: 3rem;
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    color: #89767D;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+    font-weight: bold;
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+    text-transform: uppercase;
+  }
+
+  &__price {
+    display: flex;
+    align-items: flex-start;
+    font-family: $font-fogli;
+    font-size: 3.1rem;
+    color: $red;
+
+    &:before {
+      content: '$';
+      margin-right: 0.7rem;
+      font-size: 1.9rem;
+    }
+  }
+
+  &__order-info {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    padding: 8rem 5rem 3.5rem 5rem;
+    background-color: #fff;
+  }
+
+  &__order-info-text {
+    margin-bottom: 2rem;
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+
+    &--bold {
+      font-weight: bold;
+    }
+
+    > span:first-child {
+      display: inline-block;
+      width: 10rem;
+      margin-right: 2rem;
+    }
+  }
+
+  &__more {
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 48em) {
+  .order {
+    display: block;
+
+    &:not(:last-child) {
+      margin-bottom: 10rem;
+    }
+
+    &__product-info {
+      padding: 6rem 3rem;
+    }
+
+    &__product-box {
+      align-items: center;
+
+      &:first-child {
+        margin-bottom: 6rem;
+      }
+    }
+
+    &__img-box {
+      width: 24rem;
+      height: 26rem;
+    }
+
+    &__text-block {
+    }
+
+    &__stage {
+      padding: 0 9rem;
+      margin: 0;
+      font-size: 3.2rem;
+      line-height: 6.2rem;
+    }
+
+    &__author {
+      margin-bottom: 4rem;
+      font-size: 3.2rem;
+    }
+
+    &__title {
+      margin-bottom: 0;
+      font-size: 3.2rem;
+      line-height: 4.4rem;
+    }
+
+    &__price {
+      font-weight: bold;
+      font-size: 5.4rem;
+
+      &:before {
+        font-weight: 500;
+        margin-right: 0.6rem;
+        font-size: 3.6rem;
+      }
+    }
+
+    &__order-info {
+      padding: 5rem 3rem
+    }
+
+    &__order-info-text {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4rem;
+      font-size: 3.2rem;
+
+      &--bold {
+        font-weight: 500;
+      }
+
+      > span:first-child {
+        width: fit-content;
+      }
+    }
+
+    &__more {
+      margin-top: 2rem;
+    }
+  }
+}
