@@ -53,6 +53,10 @@
   &__chat-tabs {
     height: calc(100% - 14rem);
     overflow-Y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
   }
 
   &__chat-tab {
@@ -302,6 +306,10 @@
     height: 53rem;
     margin-bottom: 5rem;
     overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
   }
 
   &__chat-item {
@@ -341,7 +349,7 @@
     position: relative;
     max-width: 45rem;
     padding: 2rem;
-    background-color: white;
+    background-color: $pale-pink;
   }
 
   &__chat-name {

@@ -35,23 +35,43 @@
   }
 
   &__select-block {
+    display: flex;
+    align-items: center;
+  }
+
+  &__select-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    > svg {
+      width: 1.4rem;
+      height: 1.4rem;
+      margin-left: 2rem;
+
+      path {
+        stroke: $default-color;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 7rem;
+    }
   }
 
   &__select {
-    padding-right: 1rem;
     outline: none;
     border: none;
     background-color: transparent;
     cursor: pointer;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
 
     font-family: $font-raleway;
     font-size: 1.7rem;
     color: $default-color-light;
     text-align: right;
-
-    &:not(:last-child) {
-      margin-right: 7rem;
-    }
   }
 
   &__cards {
@@ -90,7 +110,7 @@
       height: 100%;
       padding: 20rem 4rem;
       overflow-y: scroll;
-      background-color: $pale-pink;
+      background-color: #EBE6E6;
     }
 
     &__filters-close {
@@ -169,10 +189,21 @@
     }
 
     &__select-block {
-      display: flex;
-      align-items: center;
       justify-content: space-between;
       margin-bottom: 10rem;
+    }
+
+    &__select-label {
+      > svg {
+        flex: none;
+        width: 2.8rem;
+        height: 2.8rem;
+        margin-left: 2rem;
+      }
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
     }
 
     &__select {

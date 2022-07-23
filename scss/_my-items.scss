@@ -43,10 +43,15 @@
   }
 
   &__music-block {
+    position: relative;
     display: flex;
     align-items: center;
     padding: 4.8rem 3rem 4.8rem 3.8rem;
     background-color: $pale-pink;
+
+    .preview-wide__like {
+      right: 12.2rem;
+    }
   }
 }
 
@@ -81,6 +86,13 @@
       > svg {
         width: 2.8rem;
         height: 2.8rem;
+      }
+
+      &--edit-mob {
+        > svg {
+          width: 3.4rem;
+          height: 3.4rem;
+        }
       }
     }
 

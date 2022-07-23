@@ -17,6 +17,22 @@
     background-color: #343131;
   }
 
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -36rem;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: calc(100% + 51rem);
+    border-radius: 7rem 7rem 0 0;
+    background-image: url("../img/creators-bg-patern.png");
+    background-repeat: repeat;
+    mix-blend-mode: overlay;
+    opacity: 0.2;
+  }
+
   &__title {
     margin-bottom: 6rem;
     font-weight: bold;

@@ -166,6 +166,10 @@
     font-size: 4rem;
     line-height: 6rem;
     text-transform: uppercase;
+
+    > span {
+      display: block;
+    }
   }
 
   &__desc-content {
@@ -187,7 +191,7 @@
   }
 
   &__desc-title {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.7rem;
     font-weight: bold;
     font-size: 1.8rem;
     text-transform: uppercase;
@@ -217,6 +221,7 @@
   &__desc-text {
     font-family: $font-raleway;
     font-size: 1.7rem;
+    line-height: 3.1rem;
     color: $default-color-light;
 
     &--title {
@@ -230,9 +235,11 @@
 
   &__auction-title {
     font-family: $font-antarctic;
+    font-weight: 400;
     font-size: 6rem;
     line-height: 3rem;
     color: $red;
+    text-transform: none;
   }
 
   &__button-block {
@@ -281,10 +288,10 @@
     }
 
     .prod-intro__pagination-bullet {
+      transform: translate(0);
+
       .swiper-pagination-bullet {
-        &:not(:last-child) {
-          margin-bottom: 2.6rem;
-        }
+        margin: 1.3rem 0;
       }
     }
 

@@ -542,7 +542,7 @@
                             <svg class="slider-nav__arrow prev desktop" viewBox="0 0 65 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="#503C3C" d="M0.540382 5.45962C0.286537 5.20578 0.286537 4.79422 0.540382 4.54038L4.67696 0.403806C4.9308 0.149965 5.34235 0.149965 5.5962 0.403806C5.85003 0.657647 5.85003 1.0692 5.5962 1.32304L1.91924 5L5.5962 8.67696C5.85003 8.9308 5.85003 9.34235 5.5962 9.59619C5.34235 9.85003 4.9308 9.85003 4.67696 9.59619L0.540382 5.45962ZM65 5.65H1V4.35H65V5.65Z"/>
                             </svg>
-                            <svg class="slider-nav__arrow prev mobile" viewBox="0 0 46 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="slider-nav__arrow slider-nav__arrow--catalog prev mobile" viewBox="0 0 46 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="#503C3C" d="M0.540382 5.45962C0.286541 5.20578 0.286541 4.79422 0.540382 4.54038L4.67696 0.403806C4.9308 0.149965 5.34235 0.149965 5.5962 0.403806C5.85003 0.657647 5.85003 1.0692 5.5962 1.32304L1.91924 5L5.5962 8.67696C5.85003 8.9308 5.85003 9.34235 5.5962 9.59619C5.34235 9.85003 4.9308 9.85003 4.67696 9.59619L0.540382 5.45962ZM46 5.65H1V4.35H46V5.65Z"/>
                             </svg>
                             <svg class="slider-nav__arrow next desktop" viewBox="0 0 65 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -606,7 +606,7 @@
                     <svg class="slider-nav__arrow prev desktop" viewBox="0 0 65 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill="#503C3C" d="M0.540382 5.45962C0.286537 5.20578 0.286537 4.79422 0.540382 4.54038L4.67696 0.403806C4.9308 0.149965 5.34235 0.149965 5.5962 0.403806C5.85003 0.657647 5.85003 1.0692 5.5962 1.32304L1.91924 5L5.5962 8.67696C5.85003 8.9308 5.85003 9.34235 5.5962 9.59619C5.34235 9.85003 4.9308 9.85003 4.67696 9.59619L0.540382 5.45962ZM65 5.65H1V4.35H65V5.65Z"/>
                     </svg>
-                    <svg class="slider-nav__arrow prev mobile" viewBox="0 0 46 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="slider-nav__arrow slider-nav__arrow--catalog prev mobile" viewBox="0 0 46 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill="#503C3C" d="M0.540382 5.45962C0.286541 5.20578 0.286541 4.79422 0.540382 4.54038L4.67696 0.403806C4.9308 0.149965 5.34235 0.149965 5.5962 0.403806C5.85003 0.657647 5.85003 1.0692 5.5962 1.32304L1.91924 5L5.5962 8.67696C5.85003 8.9308 5.85003 9.34235 5.5962 9.59619C5.34235 9.85003 4.9308 9.85003 4.67696 9.59619L0.540382 5.45962ZM46 5.65H1V4.35H46V5.65Z"/>
                     </svg>
                     <svg class="slider-nav__arrow next desktop" viewBox="0 0 65 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -657,14 +657,24 @@
                 <button type="button" class="catalog__filters-close close mobile"></button>
                 <div class="catalog__title catalog__title--filter desktop">filters</div>
                 <div class="catalog__select-block mobile">
-                    <select class="catalog__select">
-                        <option value="">Recommended</option>
-                        <option value="">Not recommended</option>
-                    </select>
-                    <select class="catalog__select">
-                        <option value="">60 per page</option>
-                        <option value="">120 per page</option>
-                    </select>
+                    <label class="catalog__select-label">
+                        <select class="catalog__select">
+                            <option value="">Recommended</option>
+                            <option value="">Not recommended</option>
+                        </select>
+                        <svg viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.839844 1L6.67961 7L12.5194 1" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </label>
+                    <label class="catalog__select-label">
+                        <select class="catalog__select">
+                            <option value="">60 per page</option>
+                            <option value="">120 per page</option>
+                        </select>
+                        <svg viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.839844 1L6.67961 7L12.5194 1" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </label>
                 </div>
                 <div class="filter__block">
                     <div class="filter__block-title">
@@ -951,14 +961,24 @@
                 <div class="catalog__title-block">
                     <h2 class="catalog__title">All paintings</h2>
                     <div class="catalog__select-block desktop">
-                        <select class="catalog__select">
-                            <option value="">Recommended</option>
-                            <option value="">Not recommended</option>
-                        </select>
-                        <select class="catalog__select">
-                            <option value="">60 per page</option>
-                            <option value="">120 per page</option>
-                        </select>
+                        <label class="catalog__select-label">
+                            <select class="catalog__select">
+                                <option value="">Recommended</option>
+                                <option value="">Not recommended</option>
+                            </select>
+                            <svg viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.839844 1L6.67961 7L12.5194 1" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </label>
+                        <label class="catalog__select-label">
+                            <select class="catalog__select">
+                                <option value="">60 per page</option>
+                                <option value="">120 per page</option>
+                            </select>
+                            <svg viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.839844 1L6.67961 7L12.5194 1" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </label>
                     </div>
                 </div>
                 <button class="catalog__filters-btn filters-catalog-btn mobile">

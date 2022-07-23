@@ -572,8 +572,19 @@
   width: fit-content;
 
   &--two-btn {
+    width: 100%;
+
     .preview-wide__like {
       right: 12.2rem;
+    }
+
+    .preview-wide__content {
+      justify-content: normal;
+      width: 100%;
+    }
+
+    .preview-wide__info-block {
+      margin: 0 0 0 12rem;
     }
   }
 
@@ -725,6 +736,175 @@
     margin-bottom: 2rem;
     text-align: center;
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.6rem;
+  }
+
+  &__price {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: $font-fogli;
+    font-size: 3.1rem;
+    color: $red;
+
+    &:before {
+      content: '$';
+      margin-right: 0.5rem;
+      font-size: 1.9rem;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    right: 3rem;
+    bottom: 3rem;
+    width: 6.4rem;
+    height: 1rem;
+  }
+}
+
+.preview-items {
+  position: relative;
+
+  &--edit {
+    .preview-items__data-block {
+      justify-content: normal;
+      margin-bottom: 3rem;
+    }
+
+    .preview-items__info-block {
+      margin-left: 5rem;
+      margin-right: auto;
+    }
+
+    .preview-items__title {
+      text-align: left;
+    }
+
+    .preview-items__price {
+      justify-content: normal;
+    }
+  }
+
+  &__like {
+    position: absolute;
+    right: 12.2rem;
+    top: -2.2rem;
+  }
+
+  &__cart {
+    position: absolute;
+    right: 4.2rem;
+    top: -2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6.8rem;
+    height: 6.8rem;
+    border-radius: 100%;
+    background-color: #C6B5B5;
+
+    > svg {
+      width: 2.4rem;
+      height: 2.6rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 3rem;
+    background-color: $pale-pink;
+  }
+
+  &__picture-block {
+    flex: none;
+    width: 33.7rem;
+  }
+
+  &__image-block {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__img-box {
+    width: 100%;
+    height: 24.4rem;
+    border-radius: 100rem 100rem 0 0;
+    overflow: hidden;
+
+    &:first-child {
+      flex: 100%;
+    }
+
+    &:nth-child(n + 2) {
+      flex: 33.333%;
+      min-width: 10.3rem;
+      max-width: 10.3rem;
+      height: 6rem;
+      margin-top: 1.5rem;
+      border-radius: 0;
+    }
+
+    &:nth-child(3n + 3) {
+      margin: 1.5rem auto 0 auto;
+    }
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__data-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  &__country {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+
+    font-family: $font-raleway;
+    font-size: 1.6rem;
+    color: $default-color-light;
+
+    > svg {
+      width: 1.7rem;
+      height: 1.7rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__category {
+    font-family: $font-raleway;
+    font-size: 1.6rem;
+    color: $default-color-light;
+  }
+
+  &__info-block {
+    width: 40rem;
+    margin-left: 12rem;
+  }
+
+  &__author {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: $font-raleway;
+    font-size: 1.7rem;
+    color: $default-color-light;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    text-align: center;
     font-weight: bold;
     font-size: 2.6rem;
   }
@@ -922,7 +1102,7 @@
       height: 2rem;
 
       &.prev {
-        margin-right: 3rem;
+        margin-right: 0;
       }
 
       &--vertical {
@@ -931,6 +1111,12 @@
 
         &:first-child {
           margin-right: 0;
+        }
+      }
+
+      &--catalog {
+        &.prev {
+          margin-right: 3.6rem;
         }
       }
     }
@@ -1142,6 +1328,10 @@
       .preview-wide__content {
         padding-top: 6rem;
       }
+
+      .preview-wide__info-block {
+        margin: 0;
+      }
     }
 
     &--items-page {
@@ -1211,10 +1401,12 @@
     &__author {
       margin-bottom: 3rem;
       font-size: 3.2rem;
+      line-height: 6.2rem;
     }
 
     &__title {
-      margin-bottom: 3rem;
+      width: 58rem;
+      margin: 0 auto 3rem auto;
       font-size: 3.8rem;
     }
 
@@ -1237,6 +1429,129 @@
         width: 4rem;
         height: 4rem;
       }
+    }
+  }
+
+  .preview-items {
+    position: relative;
+
+    &--edit {
+      .preview-items__title {
+        margin-bottom: 2.4rem;
+      }
+
+      .preview-items__data-block {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0;
+      }
+    }
+
+    &__like {
+      right: 15.2rem;
+      top: -4.6rem;
+      width: 9.2rem;
+      height: 9.2rem;
+
+      > svg {
+        width: 3.4rem;
+        height: 3.4rem;
+      }
+    }
+
+    &__cart {
+      right: 3rem;
+      top: -4.6rem;
+      width: 9.2rem;
+      height: 9.2rem;
+
+      > svg {
+        width: 3.4rem;
+        height: 3.4rem;
+      }
+    }
+
+    &__content {
+      align-items: normal;
+      width: 100%;
+      padding: 9rem 3rem 4rem 3rem;
+      background-color: $pale-pink;
+    }
+
+    &__picture-block {
+      flex: none;
+      width: 26.8rem;
+    }
+
+    &__image-block {
+    }
+
+    &__img-box {
+      height: 35.6rem;
+
+      &:nth-child(n + 2) {
+        display: none;
+      }
+    }
+
+    &__data-block {
+      display: block;
+      padding: 0;
+      margin-top: 4rem;
+    }
+
+    &__country {
+      margin-right: 0;
+      font-size: 3.2rem;
+      line-height: 6.2rem;
+
+      > svg {
+        width: 3.4rem;
+        height: 3.4rem;
+        margin-right: 1.4rem;
+      }
+    }
+
+    &__category {
+      font-size: 3.2rem;
+      line-height: 6.2rem;
+    }
+
+    &__info-block {
+      width: 100%;
+      margin-top: 3rem;
+      margin-left: 2rem;
+    }
+
+    &__author {
+      margin-bottom: 4rem;
+      font-size: 3.2rem;
+    }
+
+    &__title {
+      margin-bottom: 4rem;
+      font-size: 3.2rem;
+      line-height: 4.5rem;
+    }
+
+    &__price {
+      font-family: $font-def;
+      font-weight: bold;
+      font-size: 5.4rem;
+
+      &:before {
+        margin-right: 0.6rem;
+        font-weight: 500;
+        font-size: 3.6rem;
+      }
+    }
+
+    &__arrow {
+      position: absolute;
+      right: 3rem;
+      bottom: 6rem;
+      width: 12.8rem;
+      height: 2rem;
     }
   }
 }

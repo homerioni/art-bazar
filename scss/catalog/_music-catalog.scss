@@ -34,12 +34,14 @@
   &__category {
     font-weight: bold;
     font-size: 4rem;
+    line-height: 5.6rem;
     text-transform: uppercase;
   }
 
   &__category-text {
     font-family: $font-raleway;
     font-size: 1.7rem;
+    line-height: 2.9rem;
     color: $default-color-light;
   }
 
@@ -92,10 +94,12 @@
 
     &__category {
       font-size: 5.6rem;
+      line-height: 7.8rem;
     }
 
     &__category-text {
       font-size: 3.2rem;
+      line-height: 5.8rem;
     }
 
     &__more-link {

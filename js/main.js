@@ -117,7 +117,15 @@ $(document).ready(function () {
     });
     $('.form__select').click(function (e) {
         e.preventDefault();
-        $(this).find('.form__select-dropdown').slideToggle(200);
+        if ($(this).hasClass('open')) {
+            $(this).find('.form__select-dropdown').slideUp(200);
+            $(this).removeClass('open');
+        } else {
+            $('.form__select').removeClass('open');
+            $('.form__select-dropdown').slideUp(200);
+            $(this).find('.form__select-dropdown').slideDown(200);
+            $(this).addClass('open');
+        }
     });
     $('.form__select-dropdown li').click(function () {
         let num = $(this).attr('num'),
